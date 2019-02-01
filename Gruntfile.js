@@ -1,14 +1,6 @@
 module.exports = function (grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
-        // Css minify
-        cssmin: {
-            css: {
-                src: 'src/css/style.css',
-                dest: 'dist/css/style.min.css'
-            }
-        },
-
         // Js uglify
         uglify: {
             dist: {
@@ -18,7 +10,7 @@ module.exports = function (grunt) {
             }
         },
 
-        /*Imagemin*/
+        // Imagemin
         imagemin: {
             dist: {
                 options: {
@@ -33,15 +25,20 @@ module.exports = function (grunt) {
             }
         },
 
-        // Less
-        less: {
-            dev: {
-                options: {
-                    compress: true
-                },
-                files: {
-                    "dist/css/style.css": "src/less/all.less"
-                }
+        // Sass
+        sass: {
+            options: {
+                style: 'compressed'
+            }
+            ,
+            dist: {
+                files: [{
+                    expand: true,
+                    cwd: 'src/css',
+                    src: ['*.scss'],
+                    dest: 'dist/css',
+                    ext: '.css'
+                }]
             }
         },
 
@@ -52,6 +49,7 @@ module.exports = function (grunt) {
         watch: {
             project: {
                 files: ['**/*.js', '**/*.html', '**/*.json', '**/*.css'],
+                tasks: ['sass', 'uglify'],
                 options: {
                     livereload: true,
                 }
@@ -59,12 +57,11 @@ module.exports = function (grunt) {
         }
     });
 
-    grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-imagemin');
-    grunt.loadNpmTasks('grunt-contrib-less');
+    grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-contrib-watch');
 
-    grunt.registerTask('default', ['cssmin', 'uglify', 'imagemin', 'connect', 'watch']);
+    grunt.registerTask('default', ['uglify', 'imagemin', 'sass', 'watch', 'connect']);
 }
