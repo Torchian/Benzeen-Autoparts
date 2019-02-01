@@ -1,5 +1,47 @@
-// Your variable overrides
-$body-color: rgb(174, 22, 22);
+// All overrides
+$font-family: 'Open Sans', sans-serif !default;
+$font-family-base: $font-family !default;
+
+$grid-gutter-width: 20px;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1500px
+);
+
+$container-max-widths: (
+  sm: 1427px,
+  md: 1428px,
+  lg: 1429px,
+  xl: 1430px
+);
+
+$primary:   #f0ad4e !default;
+$body-color:    #404f54 !default;
+
+
+body {
+    h1, h2, h3, h4, h5, h6 {
+        font-family: $font-family;
+        color: $body-color;
+        line-height: 1.2;
+    }
+    p {
+        font-size: 16px;
+        line-height: 1.5;
+        margin: 0;
+    }
+}
+a {
+    text-decoration: none !important;
+}
 
 // Bootstrap and its default variables
 @import "../../node_modules/bootstrap/scss/bootstrap";
+
+// Import my styles
+@import "styles.css";
+@import "media.css";
