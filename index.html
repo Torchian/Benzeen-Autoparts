@@ -17,7 +17,7 @@
         crossorigin="anonymous">
 
     <!-- CSS -->
-    <!-- <link rel="stylesheet" href="../assets/css/swiper.min.css"> -->
+    <link rel="stylesheet" href="src/css/swiper.min.css">
     <link rel="stylesheet" href="dist/css/all.css">
 
     <!-- Site -->
@@ -25,9 +25,684 @@
     <link rel="shortcut icon" href="dist/img/logo.ico" type="image/x-icon">
 </head>
 
-<body>
-    <h1>sdv</h1>
-    <button class="btn btn-primary" type="button">Text</button>
+<body class="bnz-home">
+    <!-- Top Header -->
+    <header class="header" id="topNav">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-lg-3 col-xl-3 logo_cont">
+                    <a class="navbar-brand" href="/">
+                        <img src="../dist/img/icons/logo.png" alt="logo.png">
+                    </a>
+                </div>
+                <div class="col-12 col-lg-5 col-xl-6 d-flex align-items-center nav_srch">
+                    <form class="w-100">
+                        <div class="form-row w-100 m-0">
+                            <input type="text" class="form-control" placeholder="Search by Keyword or Part #...">
+                            <a href="#" class="search_btn">
+                                <img src="../dist/img/icons/search_icon.png" alt="">
+                            </a>
+                        </div>
+                    </form>
+                    <button class="navbar-toggler ml-3 d-block d-lg-none" type="button" data-toggle="collapse"
+                        data-target="#navbarTogglerTCO" aria-controls="navbarTogglerTCO" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon d-flex align-items-center"><i class="fas fa-bars"></i></span>
+                    </button>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-3 d-flex justify-content-md-end align-items-center top_nav">
+                    <img src="../dist/img/icons/phone_icon.png" alt="">
+                    <div class="phone_info">
+                        <h3>Call 877-247-1717</h3>
+                        <p>8 am to 5 pm PST Mon - Fri / 9 am to 2 pm PST Sat</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- top header -->
+
+    <!-- Header Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark py-0">
+        <div class="container">
+            <div class="collapse navbar-collapse tco_nav" id="navbarTogglerTCO">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Part Request</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sell Your Car</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Benzeen</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Warranty</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Shipping</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav my-2 my-lg-0 navbar_right">
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center" href="#"><img src="../dist/img/icons/account_icon.png"
+                                alt="">My Account</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center" href="#"><img src="../dist/img/icons/cart_icon.png"
+                                alt="">Cart</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- header navigation -->
+
+    <main>
+        <!-- Featured Parts -->
+        <section id="featured_parts">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-4 col-lg-3">
+                        <div class="sec_title">
+                            <h2><span>Search By</span> Make</h2>
+                        </div>
+                        <div class="search_list">
+                            <div class="accordion" id="benzeenAccordionMarks">
+                                <div class="card">
+                                    <div class="bnz_card_header card-header d-flex align-items-center justify-content-between"
+                                        id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                                        aria-controls="collapseOne">
+                                        <h5 class="mb-0">BMW</h5>
+                                        <button class="btn btn-link" type="button"></button>
+                                    </div>
+                                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                        data-parent="#benzeenAccordionMarks">
+                                        <div class="card-body">
+                                            <p class="mb-4">This is a genuine</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="bnz_card_header card-header d-flex align-items-center justify-content-between"
+                                        id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                                        aria-controls="collapseOne">
+                                        <h5 class="mb-0">BMW</h5>
+                                        <button class="btn btn-link" type="button"></button>
+                                    </div>
+                                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                        data-parent="#benzeenAccordionMarks">
+                                        <div class="card-body">
+                                            <p class="mb-4">This is a genuine</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="bnz_card_header card-header d-flex align-items-center justify-content-between"
+                                        id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                                        aria-controls="collapseOne">
+                                        <h5 class="mb-0">BMW</h5>
+                                        <button class="btn btn-link" type="button"></button>
+                                    </div>
+                                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                        data-parent="#benzeenAccordionMarks">
+                                        <div class="card-body">
+                                            <p class="mb-4">This is a genuine</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="bnz_card_header card-header d-flex align-items-center justify-content-between"
+                                        id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                                        aria-controls="collapseOne">
+                                        <h5 class="mb-0">BMW</h5>
+                                        <button class="btn btn-link" type="button"></button>
+                                    </div>
+                                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                        data-parent="#benzeenAccordionMarks">
+                                        <div class="card-body">
+                                            <p class="mb-4">This is a genuine</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="bnz_card_header card-header d-flex align-items-center justify-content-between"
+                                        id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                                        aria-controls="collapseOne">
+                                        <h5 class="mb-0">BMW</h5>
+                                        <button class="btn btn-link" type="button"></button>
+                                    </div>
+                                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                        data-parent="#benzeenAccordionMarks">
+                                        <div class="card-body">
+                                            <p class="mb-4">This is a genuine</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="bnz_card_header card-header d-flex align-items-center justify-content-between"
+                                        id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                                        aria-controls="collapseOne">
+                                        <h5 class="mb-0">BMW</h5>
+                                        <button class="btn btn-link" type="button"></button>
+                                    </div>
+                                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                        data-parent="#benzeenAccordionMarks">
+                                        <div class="card-body">
+                                            <p class="mb-4">This is a genuine</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="bnz_card_header card-header d-flex align-items-center justify-content-between"
+                                        id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                                        aria-controls="collapseOne">
+                                        <h5 class="mb-0">BMW</h5>
+                                        <button class="btn btn-link" type="button"></button>
+                                    </div>
+                                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                        data-parent="#benzeenAccordionMarks">
+                                        <div class="card-body">
+                                            <p class="mb-4">This is a genuine</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-8 col-lg-9">
+                        <div class="sec_title text-center">
+                            <h2><span>Featured Genuine</span> Oem Parts</h2>
+                            <div class="card mb-3">
+                                    <img src="..." class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Card title</h5>
+                                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    </div>
+                                  </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- featured parts -->
+
+        <!-- Recently Sold -->
+        <section id="recently_sold">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 sec_title text-center">
+                        <h2><span>Recently</span> Sold</h2>
+                    </div>
+                    <div class="col-12 sold_slider">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+
+                                <!-- One Slide -->
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <div class="card-body p-0">
+                                            <a href=""><img class="card-img-top" src="../dist/img/parts/part_01.png"
+                                                    alt="Card image cap"></a>
+                                            <div class="card-body text-left">
+                                                <a href="">
+                                                    <h5 class="card-title f_boldest">2016 C300 Mercedes <br>Dash Switch</h5>
+                                                </a>
+                                                <h6 class="card-subtitle">Stock 6160BL, Toyota 4 RUNNER</h6>
+                                                <h6 class="card-subtitle">SKU : 901.TO1506, Parts : 247661</h6>
+                                                <div class="text-center badges d-flex flex-wrap align-items-stretch justify-content-between">
+                                                    <span class="badge badge-secondary d-flex align-items-center">
+                                                        <img src="../dist/img/icons/calendar_icon.png" alt="">
+                                                        Year 2006
+                                                    </span>
+                                                    <span class="badge badge-secondary d-flex align-items-center">
+                                                        <img src="../dist/img/icons/warranty_icon_2.png" alt="">
+                                                        1 Year Warranty
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- one slide -->
+
+                                <!-- One Slide -->
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <div class="card-body p-0">
+                                            <a href=""><img class="card-img-top" src="../dist/img/parts/part_2.png" alt="Card image cap"></a>
+                                            <div class="card-body text-left">
+                                                <a href="">
+                                                    <h5 class="card-title f_boldest">2016 C300 Mercedes <br>Dash Switch</h5>
+                                                </a>
+                                                <h6 class="card-subtitle">Stock 6160BL, Toyota 4 RUNNER</h6>
+                                                <h6 class="card-subtitle">SKU : 901.TO1506, Parts : 247661</h6>
+                                                <div class="text-center badges d-flex flex-wrap align-items-stretch justify-content-between">
+                                                    <span class="badge badge-secondary d-flex align-items-center">
+                                                        <img src="../dist/img/icons/calendar_icon.png" alt="">
+                                                        Year 2006
+                                                    </span>
+                                                    <span class="badge badge-secondary d-flex align-items-center">
+                                                        <img src="../dist/img/icons/warranty_icon_2.png" alt="">
+                                                        1 Year Warranty
+                                                    </span>
+                                                    <div class="badge badge-secondary w-100 d-flex align-items-center justify-content-center">Brought
+                                                        by someone in <span class="ml-2">New York, NY.</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- one slide -->
+
+                                <!-- One Slide -->
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <div class="card-body p-0">
+                                            <a href=""><img class="card-img-top" src="../dist/img/parts/part_3.png" alt="Card image cap"></a>
+                                            <div class="card-body text-left">
+                                                <a href="">
+                                                    <h5 class="card-title f_boldest">2016 C300 Mercedes <br>Dash Switch</h5>
+                                                </a>
+                                                <h6 class="card-subtitle">Stock 6160BL, Toyota 4 RUNNER</h6>
+                                                <h6 class="card-subtitle">SKU : 901.TO1506, Parts : 247661</h6>
+                                                <div class="text-center badges d-flex flex-wrap align-items-stretch justify-content-between">
+                                                    <span class="badge badge-secondary d-flex align-items-center">
+                                                        <img src="../dist/img/icons/calendar_icon.png" alt="">
+                                                        Year 2006
+                                                    </span>
+                                                    <span class="badge badge-secondary d-flex align-items-center">
+                                                        <img src="../dist/img/icons/warranty_icon_2.png" alt="">
+                                                        1 Year Warranty
+                                                    </span>
+                                                    <div class="badge badge-secondary w-100 d-flex align-items-center justify-content-center">Brought
+                                                        by someone in <span class="ml-2">New York, NY.</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- one slide -->
+
+                                <!-- One Slide -->
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <div class="card-body p-0">
+                                            <a href=""><img class="card-img-top" src="../dist/img/parts/395579_04.jpg"
+                                                    alt="Card image cap"></a>
+                                            <div class="card-body text-left">
+                                                <a href="">
+                                                    <h5 class="card-title f_boldest">2016 C300 Mercedes <br>Dash Switch</h5>
+                                                </a>
+                                                <h6 class="card-subtitle">Stock 6160BL, Toyota 4 RUNNER</h6>
+                                                <h6 class="card-subtitle">SKU : 901.TO1506, Parts : 247661</h6>
+                                                <div class="text-center badges d-flex flex-wrap align-items-stretch justify-content-between">
+                                                    <span class="badge badge-secondary d-flex align-items-center">
+                                                        <img src="../dist/img/icons/calendar_icon.png" alt="">
+                                                        Year 2006
+                                                    </span>
+                                                    <span class="badge badge-secondary d-flex align-items-center">
+                                                        <img src="../dist/img/icons/warranty_icon_2.png" alt="">
+                                                        1 Year Warranty
+                                                    </span>
+                                                    <div class="badge badge-secondary w-100 d-flex align-items-center justify-content-center">Brought
+                                                        by someone in <span class="ml-2">New York, NY.</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- one slide -->
+
+                                <!-- One Slide -->
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <div class="card-body p-0">
+                                            <a href=""><img class="card-img-top" src="../dist/img/parts/395579_06.jpg"
+                                                    alt="Card image cap"></a>
+                                            <div class="card-body text-left">
+                                                <a href="">
+                                                    <h5 class="card-title f_boldest">2016 C300 Mercedes <br>Dash Switch</h5>
+                                                </a>
+                                                <h6 class="card-subtitle">Stock 6160BL, Toyota 4 RUNNER</h6>
+                                                <h6 class="card-subtitle">SKU : 901.TO1506, Parts : 247661</h6>
+                                                <div class="text-center badges d-flex flex-wrap align-items-stretch justify-content-between">
+                                                    <span class="badge badge-secondary d-flex align-items-center">
+                                                        <img src="../dist/img/icons/calendar_icon.png" alt="">
+                                                        Year 2006
+                                                    </span>
+                                                    <span class="badge badge-secondary d-flex align-items-center">
+                                                        <img src="../dist/img/icons/warranty_icon_2.png" alt="">
+                                                        1 Year Warranty
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- one slide -->
+
+                                <!-- One Slide -->
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <div class="card-body p-0">
+                                            <a href=""><img class="card-img-top" src="../dist/img/parts/part_01.png"
+                                                    alt="Card image cap"></a>
+                                            <div class="card-body text-left">
+                                                <a href="">
+                                                    <h5 class="card-title f_boldest">2016 C300 Mercedes <br>Dash Switch</h5>
+                                                </a>
+                                                <h6 class="card-subtitle">Stock 6160BL, Toyota 4 RUNNER</h6>
+                                                <h6 class="card-subtitle">SKU : 901.TO1506, Parts : 247661</h6>
+                                                <div class="text-center badges d-flex flex-wrap align-items-stretch justify-content-between">
+                                                    <span class="badge badge-secondary d-flex align-items-center">
+                                                        <img src="../dist/img/icons/calendar_icon.png" alt="">
+                                                        Year 2006
+                                                    </span>
+                                                    <span class="badge badge-secondary d-flex align-items-center">
+                                                        <img src="../dist/img/icons/warranty_icon_2.png" alt="">
+                                                        1 Year Warranty
+                                                    </span>
+                                                    <div class="badge badge-secondary w-100 d-flex align-items-center justify-content-center">Brought
+                                                        by someone in <span class="ml-2">New York, NY.</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- one slide -->
+                            </div>
+                            <!-- Add Arrows -->
+                            <div class="swiper-button-next d-flex">
+                                <img src="../dist/img/icons/arr_r_dark.png" alt="" class="m-auto">
+                            </div>
+                            <div class="swiper-button-prev d-flex">
+                                <img src="../dist/img/icons/arr_l_dark.png" alt="" class="m-auto">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 text-center">
+                        <div class="btn_sec">
+                            <button class="btn btn-primary">View All</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- recently sold -->
+
+        <!-- Product Reviews -->
+        <section id="reviews">
+            <div class="container">
+                <img src="../dist/img/icons/review_icon.png" alt="" class="rev_icon">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="rev_header text-center">
+                            <h2 class="ver_rev_title text-left">
+                                <span class="ver_r">Verified</span>
+                                <span class="rev_r">Reviews</span>
+                                <img src="../dist/img/icons/review_sup.png" alt="">
+                            </h2>
+                            <div class="d-flex align-items-center justify-content-center rev_stars">
+                                <img src="../dist/img/icons/full_star.png" alt="">
+                                <img src="../dist/img/icons/full_star.png" alt="">
+                                <img src="../dist/img/icons/full_star.png" alt="">
+                                <img src="../dist/img/icons/half_star.png" alt="">
+                                <img src="../dist/img/icons/empty_star.png" alt="">
+                            </div>
+                        </div>
+                        <div class="rev_stat text-center">
+                            <p><span>4.6/5 Excellent</span> - Based on 212 Reviews</p>
+                        </div>
+                        <div class="swiper-container-review">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide text-center">
+                                    <p class="review_text">“ The part I ordered came sooner than expected. <br>The
+                                        price was the best advertised online and works perfectly. <br>Thanks for great
+                                        service! ”</p>
+                                    <h4>- Tracy B.</h4>
+                                    <span>07-17-2017 by Tracy B. Order date 07-07-2017</span>
+                                </div>
+                                <div class="swiper-slide text-center">
+                                    <p class="review_text">“ Thanks for great service! The part I ordered came sooner
+                                        than expected. <br>The
+                                        price was the best advertised online and works perfectly. ”</p>
+                                    <h4>- Luke D.</h4>
+                                    <span>05-30-2016 by Luke D. Order date 07-07-2017</span>
+                                </div>
+                                <div class="swiper-slide text-center">
+                                    <p class="review_text">“ The part I ordered came sooner than expected. <br>The
+                                        price was the best advertised online and works perfectly. <br>Thanks for great
+                                        service! ”</p>
+                                    <h4>- Tracy B.</h4>
+                                    <span>07-17-2017 by Tracy B. Order date 07-07-2017</span>
+                                </div>
+                                <div class="swiper-slide text-center">
+                                    <p class="review_text">“ The part I ordered came sooner than expected. <br>The
+                                        price was the best advertised online and works perfectly. <br>Thanks for great
+                                        service! ”</p>
+                                    <h4>- Tracy B.</h4>
+                                    <span>07-17-2017 by Tracy B. Order date 07-07-2017</span>
+                                </div>
+                            </div>
+                            <!-- Add Arrows -->
+                            <div class="swiper-button-next d-flex">
+                                <img src="../dist/img/icons/arr_r.png" alt="" class="m-auto">
+                            </div>
+                            <div class="swiper-button-prev d-flex">
+                                <img src="../dist/img/icons/arr_l.png" alt="" class="m-auto">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 text-center">
+                        <div class="btn_sec">
+                            <button class="btn btn-primary">View All</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- product reviews -->
+
+        <!-- Assurance -->
+        <section id="assurance">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 sec_title text-center">
+                        <h2><span>Our</span> Assurance</h2>
+                        <p>Benzeenautoparts.com is your store for the best genuine OEM used auto parts online. <br>With
+                            a hassle-free 1 Year Warranty and the highest standards in quality and affordability, you
+                            can always rely on us and your part.</p>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-between align-items-center assur_body">
+                    <div class="col-6 col-md-3 d-flex flex-column align-items-center text-center assur_col">
+                        <span class="assur_img d-flex align-items-center">
+                            <img src="../dist/img/icons/assur_1.png" alt="" class="m-auto">
+                        </span>
+                        <h3>1 YEAR <br>WARRANTY</h3>
+                        <p>Hassle-free, Satisfaction <br>Guaranteed.</p>
+                    </div>
+                    <div class="col-6 col-md-3 d-flex flex-column align-items-center text-center assur_col">
+                        <span class="assur_img d-flex align-items-center">
+                            <img src="../dist/img/icons/assur_2.png" alt="" class="m-auto">
+                        </span>
+                        <h3>QUALITY <br>ASSURED PARTS</h3>
+                        <p>All Parts are Quality Tested <br>& Inspected.</p>
+                    </div>
+                    <div class="col-6 col-md-3 d-flex flex-column align-items-center text-center assur_col">
+                        <span class="assur_img d-flex align-items-center beat">
+                            <img src="../dist/img/icons/assur_3.png" alt="" class="m-auto">
+                        </span>
+                        <h3>24 HOUR <br>HANDLING</h3>
+                        <p>Parts Leave in 24 Business <br>Hours to Lower 48 States.</p>
+                    </div>
+                    <div class="col-6 col-md-3 d-flex flex-column align-items-center text-center assur_col">
+                        <span class="assur_img d-flex align-items-center">
+                            <img src="../dist/img/icons/assur_4.png" alt="" class="m-auto">
+                        </span>
+                        <h3>SECURE <br>TRANSACTIONS</h3>
+                        <p>256-BIT Level Encryption Security <br>Certified & Verified.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- assurance -->
+
+    </main>
+    <footer>
+
+        <!-- Footer Top -->
+        <div class="footer_nav">
+            <div class="container">
+                <div class="row nav_cols">
+                    <div class="col-12 col-md-4">
+                        <h3 class="footer_title">CONTACT INFO</h3>
+                        <ul class="footer_list">
+                            <li>
+                                <img src="../dist/img/icons/footer_loc.png" alt="">
+                                <p>Benzeen Auto Parts <br class="d-none d-md-block">3811 Recycle Road , Rancho Cordova,
+                                    CA 95742</p>
+                            </li>
+                            <li>
+                                <img src="../dist/img/icons/footer_phone.png" alt="">
+                                <p>Toll Free: 877-247-1717 / Local: 916-638-5555</p>
+                            </li>
+                            <li>
+                                <img src="../dist/img/icons/footer_mail.png" alt="">
+                                <p><a href="mailto:info@Benzeenautoparts.com">info@BenzeenAutoParts.com</a></p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 popular">
+                        <h3 class="footer_title">POPULAR MAKES</h3>
+                        <ul class="footer_list two_col">
+                            <li><a href="">BMW</a></li>
+                            <li><a href="">Mercedes-Benz</a></li>
+                            <li><a href="">Lexus</a></li>
+                            <li><a href="">Toyota</a></li>
+                            <li><a href="">Land Rover</a></li>
+                            <li><a href="">Audi</a></li>
+                            <li><a href="">Acura</a></li>
+                            <li><a href="">MINI</a></li>
+                            <li><a href="">Porsche</a></li>
+                            <li><a href="">Infiniti</a></li>
+                            <li><a href="">Nissan</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 links">
+                        <h3 class="footer_title">QUICK LINKS</h3>
+                        <ul class="footer_list two_col">
+                            <li><a href="">Privacy Policy</a></li>
+                            <li><a href="">Security Policy</a></li>
+                            <li><a href="">Warranty & Terms of Use</a></li>
+                            <li><a href="">Returns & Refunds</a></li>
+                            <li><a href="">Shipping</a></li>
+                            <li><a href="">Forms</a></li>
+                            <li><a href="">Sitemap</a></li>
+                            <li><a href="">FAQs</a></li>
+                            <li><a href="">Cut Sheets</a></li>
+                            <li><a href="">Order Tracking</a></li>
+                            <li><a href="">Estimates</a></li>
+                            <li><a href="">Sell Your Car</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row d-flex flex-wrap flex-lg-nowrap justify-content-between">
+                    <div class="footer_socials d-flex align-items-center justify-content-start">
+                        <a href=""><i class="fab fa-facebook-f pl-0"></i></a>
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                        <a href=""><i class="fab fa-google-plus-g"></i></a>
+                        <a href=""><i class="fab fa-youtube"></i></a>
+                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="bbb">
+                        <img src="../dist/img/icons/bbb.jpg" alt="">
+                    </div>
+                    <div class="affiliates d-flex align-items-center">
+                        <h3 class="footer_title">Our Affiliates</h3>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <a href=""><img src="../dist/img/icons/affiliate (3).png" alt=""></a>
+                            <a href=""><img src="../dist/img/icons/affiliate (4).png" alt=""></a>
+                            <a href=""><img src="../dist/img/icons/affiliate (5).png" alt=""></a>
+                            <a href=""><img src="../dist/img/icons/affiliate (6).png" alt=""></a>
+                            <a href=""><img src="../dist/img/icons/affiliate (1).png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer top -->
+
+        <!-- Footer Bottom -->
+        <div class="footer_main">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-12 col-md-4 footer_logo">
+                        <img src="../dist/img/icons/footer_logo.png" alt="">
+                        <h6 class="rights m-0">Copyright © 2017 Benzeen Auto Parts. All Rights Reserved.</h6>
+                    </div>
+                    <div class="col-12 col-md-4 text-center">
+                        <h6>We Accept:</h6>
+                        <div class="payments d-flex align-items-center justify-content-center">
+                            <img src="../dist/img/icons/footer_payment (1).png" alt="">
+                            <img src="../dist/img/icons/footer_payment (2).png" alt="">
+                            <img src="../dist/img/icons/footer_payment (3).png" alt="">
+                            <img src="../dist/img/icons/footer_payment (4).png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 text-right">
+                        <h6>Security Is Our Priority:</h6>
+                        <img src="../dist/img/icons/secured.png" alt="">
+                    </div>
+                </div>
+                <div class="row text-center footer_info">
+                    <div class="col-12">
+                        <p>Thank You for visiting Benzeen! Where our parts are pictured with accurate and detailed
+                            descriptions so you know exactly what to expect from the moment you place an order to the
+                            moment you receive your part. Because our hassle-free 1-year warranty comes standard,
+                            you'll
+                            enjoy the peace of mind that comes only with a Benzeen Auto Part. Buying used is a cost
+                            efficient and environmentally friendly alternative to purchasing new OEM parts, you'll save
+                            up
+                            to 70% off! Together, we are helping the environment by reducing consumption of the earth's
+                            resources to create new parts! Get the part you need, save time and money with a warranty
+                            you
+                            can depend on, all while helping the environment, only at Benzeenautoparts.com !
+                        </p>
+                        <p>This website is not endorsed, approved or affiliated with any of the makes that may be
+                            represented by their respective names or logos. None of the owners of these names or logos
+                            represent any of the products advertised or offered on this website. All make names and
+                            logos
+                            are property of their respective owners and are used in this website solely for
+                            identification
+                            and education.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer bottom -->
+
+    </footer>
+
+    <script src="src/js/jquery.3-3-1.min.js"></script>
+    <script src="src/js/popper.min.js"></script>
+    <script src="src/js/bootstrap.bundle.min.js"></script>
+    <script src="src/js/swiper.min.js"></script>
+    <script src="src/js/main.js"></script>
+
+    <!-- Grunt live preview -->
     <script src="//localhost:35729/livereload.js"></script>
 </body>
 
