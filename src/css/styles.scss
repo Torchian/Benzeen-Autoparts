@@ -626,6 +626,175 @@ $gray-base:             #000000 !default;
     }
 }
 // assurance section
+
+// Featured Parts
+#featured_parts {
+    // Accordion marks list
+    .search_list {
+        .accordion {
+            border-top: 5px solid $primary;
+            .card {
+                border: 0;
+            }
+            .bnz_card_header {
+                background-color: #e8e7e7;
+                border-bottom: 2px solid #ffffff;
+                h5 {
+                    font-size: 18px;
+                    color: #444343;
+                }
+                .btn-link {
+                    width: 15px;
+                    height: 15px;
+                    padding: 0;
+                    &::before {
+                        height: 2px;
+                    }
+                    &::after {
+                        width: 2px;
+                    }
+                }
+            }
+        }
+    }
+    // accordion marks list
+    .parts_cards {
+        .col-12.col-lg-4 {
+            margin-bottom: 20px;
+            &:nth-child(1) {
+                &:hover {
+                    img {
+                        animation: shake 0.3s; 
+                        animation-iteration-count: infinite;
+                    }
+                }
+            }
+            &:nth-child(3) {
+                .card {
+                    position: relative;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        top: 15px;
+                        left: -61%;
+                        height: 400px;
+                        width: 400px;
+                        background-color: rgba(255, 252, 234, 0);
+                        -webkit-clip-path: polygon(-20% 80%, 40% 120%, 89% 22%, 91% 18%, 91% 17%, 90% 15%, 87% 15%, 87% 15%, 84% 17%);
+                        clip-path: polygon(-20% 80%, 40% 120%, 89% 22%, 91% 18%, 91% 17%, 90% 15%, 87% 15%, 87% 15%, 84% 17%);
+                        transition: all .3s;
+                    }
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        top: 24px;
+                        left: -28.5%;
+                        height: 400px;
+                        width: 400px;
+                        background-color: rgba(249, 221, 81, 0);
+                        -webkit-clip-path: polygon(1% 82%, 31% 99%, 71% 14%, 71% 13%, 71% 13%, 70% 12%, 70% 12%, 68% 12%);
+                        clip-path: polygon(1% 82%, 31% 99%, 71% 14%, 71% 13%, 71% 13%, 70% 12%, 70% 12%, 68% 12%);
+                        transition: all .3s;
+                    }
+                    &:hover {
+                        &::before, &::after {
+                            background-color: rgba(255, 236, 141, 0.7);
+                        }
+                    }
+                }
+            }
+            &:nth-child(6) {
+                #bnz_bars {
+                    height: 30px;
+                    left: 53%;
+                    margin: -30px 0 0 -20px;
+                    position: absolute;
+                    top: 85px;
+                    width: 46px;
+                }
+                
+                .bnz_bar {
+                    background: $primary;
+                    bottom: 1px;
+                    height: 3px;
+                    position: absolute;
+                    width: 4px;
+                    animation: sound 0ms -800ms linear infinite alternate;
+                    display: none;
+                    
+                    &:nth-child(1)  { left: 1px; animation-duration: 474ms; }
+                    &:nth-child(2)  { left: 6px; animation-duration: 533ms; }
+                    &:nth-child(3)  { left: 11px; animation-duration: 407ms; }
+                    &:nth-child(4)  { left: 16px; animation-duration: 458ms; }
+                    &:nth-child(5)  { left: 21px; animation-duration: 400ms; }
+                    &:nth-child(6)  { left: 26px; animation-duration: 427ms; }
+                    &:nth-child(7)  { left: 31px; animation-duration: 541ms; }
+                    &:nth-child(8)  { left: 36px; animation-duration: 469ms; }
+                    &:nth-child(9)  { left: 41px; animation-duration: 387ms; }
+                }
+                &:hover {
+                    .bnz_bar {
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+        .card {
+            background-color: $gray-text;
+            padding: 40px 9%;
+            height: 100%;
+            overflow: hidden;
+            border: 0;
+            position: relative;
+            img {
+                width: 104px;
+                margin-bottom: 25px;
+                height: 80px;
+                object-fit: contain;
+            }
+            .card-title {
+                font-size: 16px;
+                color: #ffffff;
+                line-height: 1.2;
+                margin-bottom: 13px;
+            }
+            .card-text {
+                font-size: 14.444px;
+                color: #d6d6d6;
+                line-height: 1.2;
+                margin-bottom: 25px;
+            }
+            .btn-sm {
+                color: #ffffff;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+@keyframes shake {
+    0% { transform: translate(0.5px, 0.5px) rotate(0deg); }
+    10% { transform: translate(-0.5px, -1px) rotate(-1deg); }
+    20% { transform: translate(-2px, 0px) rotate(1deg); }
+    30% { transform: translate(1px, 1.5px) rotate(0deg); }
+    40% { transform: translate(0.5px, -0.5px) rotate(1deg); }
+    50% { transform: translate(-0.5px, 1px) rotate(-1deg); }
+    60% { transform: translate(-2px, 1px) rotate(0deg); }
+    70% { transform: translate(1px, 0.5px) rotate(-1deg); }
+    80% { transform: translate(-0.5px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 1px) rotate(0deg); }
+    100% { transform: translate(0.5px, -2px) rotate(-1deg); }
+}
+@keyframes sound {
+    0% {
+        opacity: .35;
+        height: 0; 
+    }
+    100% {
+        opacity: 1;       
+        height: 10px;        
+    }
+}
+// featured parts
 // - main
 
 // Footer Navigation

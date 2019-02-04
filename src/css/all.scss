@@ -3,6 +3,11 @@ $font-family: 'Open Sans', sans-serif !default;
 $font-family-base: $font-family !default;
 
 $grid-gutter-width: 20px;
+$border-radius: 0 !default;
+$border-radius-sm: 0 !default;
+$btn-padding-x-sm: 20px !default;
+$card-spacer-y: 20px !default;
+$card-spacer-x: 27px !default;
 
 $grid-breakpoints: (
   xs: 0,
