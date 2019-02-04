@@ -141,15 +141,53 @@ nav {
 // Recently Sold Section -
 #recently_sold {
     padding: 60px 0 32px;
-    background-color: #eeeeee;
-    .sold_slider {
-        margin-bottom: 46px;
-    }
     .swiper-container {
-        position: static;
+        .badges {
+            span.badge {
+                width: 49%;
+                margin-bottom: 5px;
+                justify-content: space-evenly;
+            }
+            .badge {
+                background-color: #f1f1f1;
+                border-top: 0;
+                img {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+// -recently sold section
+
+// Reviews Section
+#reviews {
+    padding-top: 80px;
+    padding-bottom: 50px;
+    background-image: url(../img/photos/prev_bg.png);
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.75);
+    }
+    .rev_header {
+        width: 220px;
+        margin: auto;
+    }
+    .ver_rev_title {
+        .ver_r, .rev_r {
+            font-size: 41px;
+        }
+    }
+    .swiper-container-review {
+        overflow: hidden;
         .swiper-button-next, .swiper-button-prev {
             background-image: none;
-            background-color: #000000;
+            background-color: $primary;
             padding: 10px 15px;
             transform: translateY(-50%);
             width: auto;
@@ -162,60 +200,44 @@ nav {
         .swiper-button-prev {
             left: 0;
         }
-        .swiper-wrapper {
-            position: static;
+    }
+    .swiper-slide {
+        color: #ffffff;
+        .review_text {
+            margin-bottom: 35px;
+            font-size: 18px;
         }
-        .card {
-            border: 0;
-            border-radius: 0;
-            overflow: hidden;
-            .card-img-top {
-                border-radius: 0;
-                height: 250px;
-                object-fit: cover;
-            }
-            .card-body {
-                padding: 25px 7px 7px;
-                .card-title {
-                    font-size: 16px;
-                    color: #010101;
-                    text-transform: uppercase;
-                    line-height: 1;
-                    margin-bottom: 20px;
-                }
-            }
+        h4 {
+            margin-bottom: 25px;
+            color: $primary-text;
+            font-style: italic;
+            font-weight: 600;
+            font-size: 22px;
         }
-        .badges {
-            margin-top: 10px;
-            span.badge {
-                width: 49%;
-                margin-bottom: 5px;
-                justify-content: space-evenly;
-            }
-            .badge {
-                background-color: #f1f1f1;
-                font-size: 15px;
-                color: $gray-text;
-                line-height: 1.467;
-                border-radius: 0;
-                height: 45px;
-                font-weight: normal;
-                span {
-                    font-weight: 600;
-                }
-            }
-        }
-        a {
-            h5 {
-                transition: all .3s;
-            }
-            &:hover {
-                text-decoration: none !important;
-                h5 {
-                    color: $primary-text !important;
-                }
-            }
+        span {
+            display: inline-block;
+            margin-bottom: 70px;
+            color: #c3c0c0;
+            font-size: 16px;
         }
     }
 }
-// -recently sold section
+
+@keyframes rotateRev {
+    0% {
+      transform: rotateY(0deg);
+    }
+    2% {
+      transform: rotateY(90deg);
+    }
+    4% {
+      transform: rotateY(180deg);
+    }
+    7% {
+      transform: rotateY(90deg);
+    }
+    10% {
+      transform: rotateY(0deg);
+    }
+}
+// reviews section

@@ -49,6 +49,19 @@ a {
     text-decoration: none !important;
 }
 
+.f_light {
+    font-weight: 200;
+}
+.f_bold {
+    font-weight: 600;
+}
+.f_bolder {
+    font-weight: 700;
+}
+.f_boldest {
+    font-weight: 800;
+}
+
 // Bootstrap and its default variables
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
@@ -175,21 +188,21 @@ a {
         }
         .badges {
             margin-top: 10px;
-            span.badge {
-                width: 49%;
-                margin-bottom: 5px;
-                justify-content: space-evenly;
-            }
             .badge {
-                background-color: #f1f1f1;
+                background-color: transparent;
                 font-size: 15px;
                 color: $gray-text;
                 line-height: 1.467;
                 border-radius: 0;
                 height: 45px;
                 font-weight: normal;
+                border-top: 1px solid #d0d0d0;
                 span {
                     font-weight: 600;
+                    margin-left: 4px;
+                }
+                img {
+                    margin-right: 10px;
                 }
             }
         }
@@ -207,6 +220,153 @@ a {
     }
 }
 // -recently sold section
+
+// Reviews Section
+#reviews {
+    padding-top: 50px;
+    padding-bottom: 34px;
+    background-image: url(../img/photos/prev_bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.75);
+    }
+    .container {
+        position: relative;
+        .rev_icon {
+            position: absolute;
+            top: -20px;
+            right: 40px;
+            z-index: 2;
+            animation: 10s infinite rotateRev;
+        }
+    }
+    .rev_header {
+        width: 220px;
+        margin: auto;
+    }
+    .ver_rev_title {
+        position: relative;
+        margin-bottom: 10px;
+        .ver_r, .rev_r {
+            font-size: 31px;
+            color: $primary-text;
+            line-height: 0;
+            text-transform: uppercase;
+        }
+        .rev_r {
+            color: #ffffff;
+            font-size: 45px;
+            font-weight: 800;
+        }
+        img {
+            position: absolute;
+            top: -4px;
+            right: -3px;
+        }
+    }
+    .rev_stars {
+        img {
+            margin: 0 5px 15px;
+        }
+    }
+    .rev_stat {
+        p {
+            font-size: 16px;
+            font-weight: 100;
+            color: #ffffff;
+        }
+        margin-bottom: 90px;
+        span {
+            font-weight: 600;
+        }
+    }
+    .swiper-container-customer-review {
+
+    }
+    .btn_sec {
+        .btn {
+            font-size: 15px;
+            padding: 10px;
+            min-width: 130px;
+        }
+    }
+}
+
+@keyframes rotateRev {
+    0% {
+      transform: rotateY(0deg);
+    }
+    2% {
+      transform: rotateY(90deg);
+    }
+    4% {
+      transform: rotateY(180deg);
+    }
+    7% {
+      transform: rotateY(90deg);
+    }
+    10% {
+      transform: rotateY(0deg);
+    }
+}
+// reviews section
+
+// Blog
+#blog {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #eeeeee;
+    .card {
+        border: 0;
+        background-color: transparent;
+        &>img {
+            object-fit: cover;
+        }
+        &.blog_full {
+            .card-body {
+                padding: 47px;
+            }
+            &>img {
+                max-height: 280px;
+            }
+        }
+        &.blog_half {
+            height: 50%;
+            &:first-child {
+                padding-bottom: 10px !important;
+            }
+            &:last-child {
+                padding-top: 10px !important;
+            }
+            .card-body {
+                padding: 22px;
+            }
+            &>img {
+                min-width: 50%;
+                width: 50%;
+            }
+        }
+        .card-body {
+            background-color: #ffffff;
+            .card-title {
+                margin-bottom: 22px;
+            }
+            .card-text {
+                margin-bottom: 40px;
+            }
+        }
+    }
+}
+// blog
 
 // Import my styles
 @import "styles.css";

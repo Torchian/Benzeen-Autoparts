@@ -5,15 +5,68 @@ $gray-text:             #343333 !default;
 $dark-bg:               #4d4d4d !default;
 $gray-base:             #000000 !default;
 
-.f_bold {
-    font-weight: 600;
+// Navbar
+.navbar.home_nav {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 4px solid $primary;
+    .nav-item {
+        .nav-link {
+            font-size: 17px;
+            text-transform: uppercase;
+            color: $gray-base;
+            position: relative;
+            padding: 20px 10px;
+            margin: 0 10px;
+            color: #ffffff !important;
+            transition: all .3s;
+            &:before {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 0;
+                background-color: $primary;
+                z-index: 0;
+                transition: all .3s;
+            }
+            &:hover {
+                color: $primary !important;
+                &:before {
+                    height: 5px;
+                }
+            }
+        }
+        &.active {
+            .nav-link {
+                &:before {
+                    height: 5px;
+                }
+            }
+        }
+    }
 }
-.f_bolder {
-    font-weight: 700;
+// navbar
+
+// Hero Section
+#hero {
+    height: 100vh;
+    background-image: url('../../dist/img/photos/hero_bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-image: linear-gradient(black 0%, transparent 25%);
+    }
 }
-.f_boldest {
-    font-weight: 800;
-}
+// hero section
 
 // Main -
 #product_view {
@@ -323,135 +376,49 @@ $gray-base:             #000000 !default;
 // -recently sold section
 
 // Reviews Section
-#reviews {
-    padding-top: 80px;
-    padding-bottom: 50px;
-    background-image: url(../img/photos/prev_bg.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-    &::before {
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        background-color: rgba(0, 0, 0, 0.75);
-    }
-    .container {
-        position: relative;
-        .rev_icon {
-            position: absolute;
-            top: -20px;
-            right: 40px;
-            z-index: 2;
-            animation: 10s infinite rotateRev;
-        }
-    }
-    .rev_header {
-        width: 220px;
-        margin: auto;
-    }
-    .ver_rev_title {
-        position: relative;
-        margin-bottom: 10px;
-        .ver_r, .rev_r {
-            font-size: 41px;
-            color: $primary-text;
-            line-height: 0;
-            text-transform: uppercase;
-        }
-        .rev_r {
-            color: #ffffff;
-            font-size: 45px;
-            font-weight: 800;
-        }
-        img {
-            position: absolute;
-            top: -4px;
-            right: -3px;
-        }
-    }
-    .rev_stars {
-        img {
-            margin: 0 5px 15px;
-        }
-    }
-    .rev_stat {
-        p {
-            font-size: 16px;
-            font-weight: 100;
-            color: #ffffff;
-        }
-        margin-bottom: 90px;
-        span {
-            font-weight: 600;
-        }
-    }
-    .swiper-container-review {
+.customer_rev {
+    .swiper-container-customer-review {
+        padding-top: 75px;
+        padding-bottom: 100px;
         overflow: hidden;
-        .swiper-button-next, .swiper-button-prev {
-            background-image: none;
-            background-color: $primary;
-            padding: 10px 15px;
-            transform: translateY(-50%);
-            width: auto;
-            height: auto;
-            margin: 0;
+        .card {
+            padding: 30px;
+            background-color: #222222;
+            .card-img-top {
+                width: 50px;
+                margin-bottom: 35px;
+            }
+            .card-body {
+                .card-title {
+                    font-size: 20px;
+                    color: #ffffff;
+                    margin-bottom: 22px;
+                }
+                .card-subtitle {
+                    font-size: 15px;
+                    color: #ffffff;
+                    margin-bottom: 20px;
+                    line-height: 1.45;
+                }
+            }
+            .rev_stars {
+                img {
+                    margin: 0 3px;
+                    width: 16px;
+                    &:first-child {
+                        margin-left: 0 !important;
+                    }
+                }
+            }
         }
-        .swiper-button-next {
-            right: 0;
+        .swiper-pagination-bullet {
+            height: 13px;
+            width: 13px;
+            background-color: #ffffff;
+            &.swiper-pagination-bullet-active {
+                background-color: $primary;
+            }
         }
-        .swiper-button-prev {
-            left: 0;
-        }
-    }
-    .swiper-slide {
-        color: #ffffff;
-        .review_text {
-            margin-bottom: 35px;
-            font-size: 18px;
-        }
-        h4 {
-            margin-bottom: 25px;
-            color: $primary-text;
-            font-style: italic;
-            font-weight: 600;
-            font-size: 22px;
-        }
-        span {
-            display: inline-block;
-            margin-bottom: 70px;
-            color: #c3c0c0;
-            font-size: 16px;
-        }
-    }
-    .btn_sec {
-        .btn {
-            font-size: 15px;
-            padding: 10px;
-            min-width: 130px;
-        }
-    }
-}
-
-@keyframes rotateRev {
-    0% {
-      transform: rotateY(0deg);
-    }
-    2% {
-      transform: rotateY(90deg);
-    }
-    4% {
-      transform: rotateY(180deg);
-    }
-    7% {
-      transform: rotateY(90deg);
-    }
-    10% {
-      transform: rotateY(0deg);
     }
 }
 // reviews section

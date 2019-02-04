@@ -46,6 +46,18 @@ $(document).ready(function () {
         },
     });
 
+    // Homepage Reviews
+    var swiper = new Swiper('.swiper-container-customer-review', {
+        loop: true,
+        slidesPerView: 4,
+        spaceBetween: 20,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
+
+    // Product page Reviews
     var swiper = new Swiper('.swiper-container-review', {
         loop: true,
         autoplay: true,
