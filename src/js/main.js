@@ -1,5 +1,23 @@
 $(document).ready(function () {
 
+    var headerNav = $('nav.navbar');
+
+    // Header Navbar
+    $(window).scroll(function (event) {
+        headerScroll();
+    });
+    headerScroll();
+
+    function headerScroll() {
+        scroll = $(window).scrollTop();
+
+        if (scroll > 0) {
+            headerNav.addClass('scrolled');
+        } else {
+            headerNav.removeClass('scrolled');
+        }
+    }
+
     var galleryThumbs = new Swiper('.gallery-thumbs', {
         spaceBetween: 5,
         slidesPerView: 5,
