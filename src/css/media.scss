@@ -58,6 +58,15 @@
     }
 }
 
+@media all and (min-width: 1200px) {
+    .recently_sliders {
+        .sold_slider {
+            padding-left: 80px;
+            padding-right: 80px;
+        }
+    }
+}
+
 // // Medium devices (tablets, less than 992px)
 @media (max-width: 991.98px) {
     .header {

@@ -24,8 +24,13 @@ $container-max-widths: (
   xl: 1430px
 );
 
-$primary:   #f0ad4e !default;
-$body-color:    #404f54 !default;
+$primary:               #f0ad4e !default;
+$default-text:          #000000 !default;
+$primary-text:          #de9e3c !default;
+$gray-text:             #343333 !default;
+$dark-bg:               #4d4d4d !default;
+$gray-base:             #000000 !default;
+$body-color:            #404f54 !default;
 
 
 body {
@@ -86,6 +91,122 @@ a {
     }
 }
 // accordion
+
+// Titles and Buttons
+.sec_title {
+    font-size: 26px;
+    text-transform: uppercase;
+    line-height: 0.615;
+    margin-bottom: 40px;
+    h2 {
+        font-weight: 800;
+    }
+    span {
+        color: $primary-text;
+    }
+}
+.btn_sec {
+    .btn {
+        font-size: 18px;
+        color: #ffffff;
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 0.757;
+        padding: 15px;
+        border-radius: 0;
+        box-shadow: none !important;
+        min-width: 170px;
+    }
+}
+// titles and buttons
+
+// Sliders -
+.recently_sliders {
+    padding: 60px 0 32px;
+    background-color: #eeeeee;
+    .sold_slider {
+        margin-bottom: 46px;
+    }
+    .swiper-container {
+        position: static;
+        .swiper-button-next, .swiper-button-prev {
+            background-image: none;
+            background-color: transparent;
+            padding: 10px 15px;
+            transform: translateY(-50%);
+            width: auto;
+            height: auto;
+            margin: 0;
+            outline: 0 !important;
+        }
+        .swiper-button-next {
+            right: 0;
+        }
+        .swiper-button-prev {
+            left: 0;
+        }
+        .swiper-wrapper {
+            position: static;
+        }
+        .card {
+            border: 0;
+            border-radius: 0;
+            overflow: hidden;
+            .card-img-top {
+                border-radius: 0;
+                height: 250px;
+                object-fit: cover;
+            }
+            .card-body {
+                padding: 25px 7px 7px;
+                .card-title {
+                    font-size: 16px;
+                    color: #010101;
+                    text-transform: uppercase;
+                    line-height: 1;
+                    margin-bottom: 20px;
+                }
+                .card-subtitle {
+                    font-size: 15px;
+                    color: $gray-text;
+                    line-height: 1.8;
+                }
+            }
+        }
+        .badges {
+            margin-top: 10px;
+            span.badge {
+                width: 49%;
+                margin-bottom: 5px;
+                justify-content: space-evenly;
+            }
+            .badge {
+                background-color: #f1f1f1;
+                font-size: 15px;
+                color: $gray-text;
+                line-height: 1.467;
+                border-radius: 0;
+                height: 45px;
+                font-weight: normal;
+                span {
+                    font-weight: 600;
+                }
+            }
+        }
+        a {
+            h5 {
+                transition: all .3s;
+            }
+            &:hover {
+                text-decoration: none !important;
+                h5 {
+                    color: $primary-text !important;
+                }
+            }
+        }
+    }
+}
+// -recently sold section
 
 // Import my styles
 @import "styles.css";
