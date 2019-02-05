@@ -65,7 +65,7 @@ $(document).ready(function () {
     });
 
     // Hero Slider
-    var swiper = new Swiper('.swiper-container-hero', {
+    var swiperHero = new Swiper('.swiper-container-hero', {
         slidesPerView: 1,
         spaceBetween: 0,
         pagination: {
@@ -75,8 +75,8 @@ $(document).ready(function () {
     });
 
     // Homepage Reviews
-    var swiper = new Swiper('.swiper-container-customer-review', {
-        loop: true,
+    var swiperCustomerReview = new Swiper('.swiper-container-customer-review', {
+        // autoplay: true,
         slidesPerView: 4,
         spaceBetween: 20,
         pagination: {
@@ -86,7 +86,7 @@ $(document).ready(function () {
     });
 
     // Product page Reviews
-    var swiper = new Swiper('.swiper-container-review', {
+    var swiperReview = new Swiper('.swiper-container-review', {
         loop: true,
         autoplay: true,
         spaceBetween: 30,

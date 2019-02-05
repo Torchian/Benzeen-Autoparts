@@ -73,7 +73,7 @@ $gray-base:             #000000 !default;
         z-index: 1;
         .nav_srch {
             h2 {
-                font-size: 24px;
+                font-size: 31px;
                 color: #ffffff;
                 line-height: 1.5;
                 margin-bottom: 25px;
@@ -106,6 +106,9 @@ $gray-base:             #000000 !default;
                     animation: spin 10s linear infinite;
                 }
                 &.bnz_ship_2 {
+                    animation: bobbing 0.1s infinite ease-in-out forwards alternate;
+                }
+                &.bnz_ship_3 {
                     padding-left: 22px;
                 }
             }
@@ -458,9 +461,13 @@ $gray-base:             #000000 !default;
         padding-top: 75px;
         padding-bottom: 100px;
         overflow: hidden;
+        .swiper-slide {
+            height: auto;
+        }
         .card {
             padding: 30px;
             background-color: #222222;
+            height: 100%;
             .card-img-top {
                 width: 50px;
                 margin-bottom: 35px;
@@ -478,9 +485,12 @@ $gray-base:             #000000 !default;
                     line-height: 1.45;
                 }
             }
+            .rev_status {
+                margin-top: auto;
+            }
             .rev_stars {
                 img {
-                    margin: 0 3px;
+                    margin: 0 3px !important;
                     width: 16px;
                     &:first-child {
                         margin-left: 0 !important;
@@ -492,75 +502,9 @@ $gray-base:             #000000 !default;
 }
 // reviews section
 
-// Assurance Section
-#assurance {
-    padding-top: 75px;
-    padding-bottom: 100px;
-    background-image: url(../img/photos/assurance_bg.png);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    .sec_title {
-        margin-bottom: 45px;
-        h2 {
-            margin-bottom: 23px;
-        }
-        p {
-            text-transform: none;
-            font-size: 23px;
-        }
-    }
-    .assur_body {
-        .assur_col {
-            .assur_img {
-                border-radius: 50%;
-                background-color: $primary;
-                height: 157px;
-                width: 157px;
-                margin-bottom: 45px;
-                &.beat {
-                    animation: 1.6s infinite beatHeart;
-                }
-            }
-            h3 {
-                font-size: 16px;
-                color: #010101;
-                text-transform: uppercase;
-                line-height: 1;
-                font-weight: 800;
-                margin-bottom: 10px;
-            }
-            p {
-                font-size: 15px;
-                color: $gray-text;
-                max-width: 230px;
-                line-height: 1.467;
-            }
-        }
-    }
-}
-
-@keyframes beatHeart {
-    0% {
-      transform: scale(1);
-    }
-    25% {
-      transform: scale(1.1);
-    }
-    40% {
-      transform: scale(1);
-    }
-    60% {
-      transform: scale(1.1);
-    }
-    100% {
-      transform: scale(1);
-    }
-}
-// assurance section
-
 // Featured Parts
 #featured_parts {
+    margin-bottom: 55px;
     // Accordion marks list
     .search_list {
         .accordion {
@@ -583,11 +527,27 @@ $gray-base:             #000000 !default;
                     height: 15px;
                     padding: 0;
                     &::before {
-                        height: 2px;
+                        height: 2.4px;
                     }
                     &::after {
-                        width: 2px;
+                        width: 2.4px;
+                        height: 0;
+                        top: 50%;
                     }
+                    &.collapsed {
+                        &::after {
+                            height: 100%;
+                            top: 0;
+                        }
+                    }
+                }
+            }
+            .bnz_card_btn {
+                .btn {
+                    padding: 16px 25px;
+                    width: 100%;
+                    color: #ffffff;
+                    text-transform: uppercase;
                 }
             }
         }
