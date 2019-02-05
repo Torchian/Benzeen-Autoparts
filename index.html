@@ -64,7 +64,7 @@
                 aria-controls="navbarTogglerTCO" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon d-flex align-items-center"><i class="fas fa-bars"></i></span>
             </button>
-            <div class="logo_cont px-0 px-md-5">
+            <div class="logo_cont px-0 pr-md-5">
                 <a class="navbar-brand" href="/">
                     <img src="dist/img/icons/logo.png" alt="logo.png">
                 </a>
@@ -89,8 +89,7 @@
                         <a class="nav-link d-flex align-items-center" href="#">My Account</a>
                     </li>
                     <li class="nav-item m-0 p-0">
-                        <a class="nav-link d-flex basket h-100" href="#"><img src="dist/img/icons/cart_icon.png"
-                                alt=""></a>
+                        <a class="nav-link d-flex basket h-100" href="#"><img src="dist/img/icons/cart_icon.png" alt=""></a>
                     </li>
                 </ul>
             </div>
@@ -100,7 +99,47 @@
 
     <!-- Hero -->
     <section id="hero">
-
+        <div class="container hero_nav_cont">
+            <div class="d-flex align-items-start flex-column nav_srch">
+                <h2><span>Experienced OEM Parts Specialists</span> <br>For The Right Part When you Need It Most</h2>
+                <form class="w-100">
+                    <div class="form-row w-100 m-0">
+                        <input type="text" class="form-control" placeholder="Search by Keyword or Part #...">
+                        <a href="#" class="search_btn d-flex align-items-center">
+                            <img src="dist/img/icons/hero_search_icon.png" alt="">
+                        </a>
+                    </div>
+                </form>
+                <button class="navbar-toggler ml-3 d-block d-lg-none" type="button" data-toggle="collapse" data-target="#navbarTogglerTCO"
+                    aria-controls="navbarTogglerTCO" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon d-flex align-items-center"><i class="fas fa-bars"></i></span>
+                </button>
+            </div>
+            <div class="hero_info d-flex justify-content-between align-items-center w-100">
+                <div class="d-flex align-items-center">
+                    <img src="dist/img/icons/phone_icon.png" alt="">
+                    <div class="phone_info">
+                        <h3>Call 877-247-1717</h3>
+                        <p>8 am to 5 pm PST Mon - Fri / 9 am to 2 pm PST Sat</p>
+                    </div>
+                </div>
+                <div class="hero_icons d-flex align-items-center">
+                    <img class="bnz_ship_1" src="/dist/img/icons/shipping_logo_1.png" alt="">
+                    <img src="/dist/img/icons/shipping_logo_2.png" alt="">
+                    <img class="bnz_ship_2" src="/dist/img/icons/warranty_logo.png" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- Swiper -->
+        <div class="swiper-container swiper-container-hero">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide hero_bg_1"></div>
+                <div class="swiper-slide hero_bg_3"></div>
+                <div class="swiper-slide hero_bg_3"></div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
     </section>
     <!-- hero -->
 
@@ -116,13 +155,13 @@
                         <div class="search_list">
                             <div class="accordion" id="benzeenAccordionMarks">
                                 <div class="card">
-                                    <div class="bnz_card_header card-header d-flex align-items-center justify-content-between"
-                                        id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
-                                        aria-controls="collapseOne">
+                                    <div class="bnz_card_header collapsed card-header d-flex align-items-center justify-content-between"
+                                        id="headingOne">
                                         <a href="">
                                             <h5 class="mb-0">BMW</h5>
                                         </a>
-                                        <button class="btn btn-link" type="button"></button>
+                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                                            aria-expanded="true" aria-controls="collapseOne"></button>
                                     </div>
                                     <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#benzeenAccordionMarks">
                                         <div class="card-body">
@@ -131,78 +170,78 @@
                                     </div>
                                 </div>
                                 <div class="card">
-                                    <div class="bnz_card_header card-header d-flex align-items-center justify-content-between"
-                                        id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
-                                        aria-controls="collapseOne">
-                                        <h5 class="mb-0">BMW</h5>
+                                    <div class="bnz_card_header collapsed card-header d-flex align-items-center justify-content-between"
+                                        id="headingOne" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
+                                        aria-controls="collapseTwo">
+                                        <h5 class="mb-0">Lexus</h5>
                                         <button class="btn btn-link" type="button"></button>
                                     </div>
-                                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#benzeenAccordionMarks">
+                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#benzeenAccordionMarks">
                                         <div class="card-body">
                                             <p class="mb-4">This is a genuine</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="card">
-                                    <div class="bnz_card_header card-header d-flex align-items-center justify-content-between"
-                                        id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
-                                        aria-controls="collapseOne">
-                                        <h5 class="mb-0">BMW</h5>
+                                    <div class="bnz_card_header collapsed card-header d-flex align-items-center justify-content-between"
+                                        id="headingOne" data-toggle="collapse" data-target="#collapseThree"
+                                        aria-expanded="true" aria-controls="collapseThree">
+                                        <h5 class="mb-0">Toyota</h5>
                                         <button class="btn btn-link" type="button"></button>
                                     </div>
-                                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#benzeenAccordionMarks">
+                                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#benzeenAccordionMarks">
                                         <div class="card-body">
                                             <p class="mb-4">This is a genuine</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="card">
-                                    <div class="bnz_card_header card-header d-flex align-items-center justify-content-between"
-                                        id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
-                                        aria-controls="collapseOne">
-                                        <h5 class="mb-0">BMW</h5>
+                                    <div class="bnz_card_header collapsed card-header d-flex align-items-center justify-content-between"
+                                        id="headingOne" data-toggle="collapse" data-target="#collapseFour"
+                                        aria-expanded="true" aria-controls="collapseFour">
+                                        <h5 class="mb-0">Audi</h5>
                                         <button class="btn btn-link" type="button"></button>
                                     </div>
-                                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#benzeenAccordionMarks">
+                                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#benzeenAccordionMarks">
                                         <div class="card-body">
                                             <p class="mb-4">This is a genuine</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="card">
-                                    <div class="bnz_card_header card-header d-flex align-items-center justify-content-between"
-                                        id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
-                                        aria-controls="collapseOne">
-                                        <h5 class="mb-0">BMW</h5>
+                                    <div class="bnz_card_header collapsed card-header d-flex align-items-center justify-content-between"
+                                        id="headingOne" data-toggle="collapse" data-target="#collapseFive"
+                                        aria-expanded="true" aria-controls="collapseFive">
+                                        <h5 class="mb-0">Land Rover</h5>
                                         <button class="btn btn-link" type="button"></button>
                                     </div>
-                                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#benzeenAccordionMarks">
+                                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#benzeenAccordionMarks">
                                         <div class="card-body">
                                             <p class="mb-4">This is a genuine</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="card">
-                                    <div class="bnz_card_header card-header d-flex align-items-center justify-content-between"
-                                        id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
-                                        aria-controls="collapseOne">
-                                        <h5 class="mb-0">BMW</h5>
+                                    <div class="bnz_card_header collapsed card-header d-flex align-items-center justify-content-between"
+                                        id="headingOne" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true"
+                                        aria-controls="collapseSix">
+                                        <h5 class="mb-0">Mazda</h5>
                                         <button class="btn btn-link" type="button"></button>
                                     </div>
-                                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#benzeenAccordionMarks">
+                                    <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#benzeenAccordionMarks">
                                         <div class="card-body">
                                             <p class="mb-4">This is a genuine</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="card">
-                                    <div class="bnz_card_header card-header d-flex align-items-center justify-content-between"
-                                        id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
-                                        aria-controls="collapseOne">
-                                        <h5 class="mb-0">BMW</h5>
+                                    <div class="bnz_card_header collapsed card-header d-flex align-items-center justify-content-between"
+                                        id="headingOne" data-toggle="collapse" data-target="#collapseSeven"
+                                        aria-expanded="true" aria-controls="collapseSeven">
+                                        <h5 class="mb-0">MINI</h5>
                                         <button class="btn btn-link" type="button"></button>
                                     </div>
-                                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#benzeenAccordionMarks">
+                                    <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#benzeenAccordionMarks">
                                         <div class="card-body">
                                             <p class="mb-4">This is a genuine</p>
                                         </div>

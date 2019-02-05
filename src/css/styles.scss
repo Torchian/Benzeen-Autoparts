@@ -61,21 +61,88 @@ $gray-base:             #000000 !default;
 // Hero Section
 #hero {
     height: 100vh;
-    background-image: url('../../dist/img/photos/hero_bg.png');
-    background-repeat: no-repeat;
-    background-size: cover;
     position: relative;
     margin-bottom: 40px;
+    .hero_nav_cont {
+        height: calc(100% - 45px);
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        position: relative;
+        z-index: 1;
+        .nav_srch {
+            h2 {
+                font-size: 24px;
+                color: #ffffff;
+                line-height: 1.5;
+                margin-bottom: 25px;
+                span {
+                    font-size: 22px;
+                }
+            }
+            form {
+                max-width: none;
+                .form-row {
+                    input {
+                        background-color: #ffffff;
+                        padding: 20px;
+                    }
+                    .search_btn {
+                        padding: 0 20px;
+                    }
+                }
+            }
+        }
+        .hero_icons {
+            position: relative;
+            img {
+                &.bnz_ship_1 {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    -webkit-animation: spin 10s linear infinite;
+                    -moz-animation: spin 10s linear infinite;
+                    animation: spin 10s linear infinite;
+                }
+                &.bnz_ship_2 {
+                    padding-left: 22px;
+                }
+            }
+        }
+    }
+    .swiper-container-hero {
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 0;
+    }
+    .nav_srch {
+        top: 50%;
+        z-index: 2;
+        width: 700px;
+        max-width: 90%;
+    }
+    .swiper-slide {
+        background-image: url('../../dist/img/photos/hero_bg_1.png');
+    }
     &::before {
         content: '';
         position: absolute;
         left: 0;
         right: 0;
         top: 0;
-        bottom: 0;
+        bottom: 100px;
         background-image: linear-gradient(black 0%, transparent 25%);
     }
 }
+@-moz-keyframes spin { 100% { -moz-transform: rotate(-360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(-360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(-360deg); transform:rotate(-360deg); } }
 // hero section
 
 // Main -
@@ -421,14 +488,6 @@ $gray-base:             #000000 !default;
                 }
             }
         }
-        .swiper-pagination-bullet {
-            height: 13px;
-            width: 13px;
-            background-color: #ffffff;
-            &.swiper-pagination-bullet-active {
-                background-color: $primary;
-            }
-        }
     }
 }
 // reviews section
@@ -515,6 +574,9 @@ $gray-base:             #000000 !default;
                 h5 {
                     font-size: 18px;
                     color: #444343;
+                    &:hover {
+                        color: $primary;
+                    }
                 }
                 .btn-link {
                     width: 15px;

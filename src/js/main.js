@@ -64,6 +64,16 @@ $(document).ready(function () {
         },
     });
 
+    // Hero Slider
+    var swiper = new Swiper('.swiper-container-hero', {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
+
     // Homepage Reviews
     var swiper = new Swiper('.swiper-container-customer-review', {
         loop: true,

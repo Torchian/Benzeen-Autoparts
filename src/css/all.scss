@@ -133,6 +133,49 @@ a {
 }
 // titles and buttons
 
+// Navigation(Search and Phone Info)
+.nav_srch {
+    form {
+        max-width: 645px;
+        .form-row {
+            position: relative;
+            input {
+                padding: 12px 15px;
+                height: auto;
+                font-size: 16px;
+                color: #707070;
+                line-height: 0.852;
+                background-color: #c1bebe;
+                border-radius: 0;
+                border: 0;
+            }
+            .search_btn {
+                position: absolute;
+                right: 0;
+                top: 0;
+                height: 100%;
+                padding: 10px 15px;
+                background-color: $primary;
+            }
+        }
+    }
+}
+.phone_info {
+    margin-left: 12px;
+    h3 {
+        font-size: 30px;
+        color: $primary-text;
+        font-weight: bold;
+        line-height: 0.802;
+    }
+    p {
+        font-size: 11px;
+        color: #eeeeee;
+        line-height: 1.136;
+    }
+}
+// navigation(search and phone info)
+
 // Sliders -
 .recently_sliders {
     padding: 60px 0 32px;
@@ -217,6 +260,16 @@ a {
                 }
             }
         }
+    }
+}
+
+// Pagination Bullets
+.swiper-pagination-bullet {
+    height: 13px;
+    width: 13px;
+    background-color: #ffffff;
+    &.swiper-pagination-bullet-active {
+        background-color: $primary;
     }
 }
 // -recently sold section

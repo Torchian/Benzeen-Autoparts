@@ -23,44 +23,6 @@ $gray-base:             #000000 !default;
             font-size: 35px;
         }
     }
-    form {
-        max-width: 645px;
-        .form-row {
-            position: relative;
-            input {
-                padding: 12px 15px;
-                height: auto;
-                font-size: 16px;
-                color: #707070;
-                line-height: 0.852;
-                background-color: #c1bebe;
-                border-radius: 0;
-                border: 0;
-            }
-            .search_btn {
-                position: absolute;
-                right: 0;
-                top: 0;
-                height: 100%;
-                padding: 10px 15px;
-                background-color: $primary;
-            }
-        }
-    }
-    .phone_info {
-        margin-left: 12px;
-        h3 {
-            font-size: 30px;
-            color: $primary-text;
-            font-weight: bold;
-            line-height: 0.802;
-        }
-        p {
-            font-size: 11px;
-            color: #eeeeee;
-            line-height: 1.136;
-        }
-    }
 }
 
 // Navbar
