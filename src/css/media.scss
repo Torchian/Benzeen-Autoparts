@@ -69,6 +69,48 @@
 
 // // Medium devices (tablets, less than 992px)
 @media (max-width: 991.98px) {
+    #hero {
+        .hero_nav_cont {
+            .nav_srch {
+                max-width: 100%;
+                h2 {
+                    font-size: 25px;
+                    font-weight: 700;
+                    span {
+                        font-size: 18px;
+                        font-weight: 400;
+                    }
+                }
+                form {
+                    .form-row {
+                        input {
+                            padding: 13px 20px;
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+    #featured_parts {
+        .parts_cards {
+            .col-12 {
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 10px;
+                padding: 0 !important;
+            }
+            .card {
+                padding: 20px 4%;
+                .card-title {
+                    font-size: 16px;
+                }
+                .card-text {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
     .header {
         padding: 15px 0;
         .nav_srch {

@@ -568,8 +568,12 @@ $gray-base:             #000000 !default;
     }
     // accordion marks list
     .parts_cards {
-        .col-12.col-lg-4 {
-            margin-bottom: 20px;
+        .col-12 {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 20px;
+        }
+        .part_card_one {
             &:nth-child(1) {
                 &:hover {
                     img {

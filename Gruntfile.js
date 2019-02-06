@@ -39,7 +39,7 @@ module.exports = function (grunt) {
         },
         watch: {
             project: {
-                files: ['**/*.js', '**/*.html', '**/*.json', '**/*.scss'],
+                files: ['*.html', 'main.js', '**/*.scss'],
                 tasks: ['sass'],
                 options: {
                     livereload: true,
@@ -54,4 +54,4 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
 
     grunt.registerTask('default', ['imagemin', 'sass', 'connect', 'watch']);
-}
+};
