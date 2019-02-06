@@ -95,7 +95,9 @@ $gray-base:             #000000 !default;
             }
         }
         .hero_icons {
-            position: relative;
+            .shipp_car {
+                position: relative;
+            }
             img {
                 &.bnz_ship_1 {
                     position: absolute;
@@ -105,10 +107,15 @@ $gray-base:             #000000 !default;
                     -moz-animation: spin 10s linear infinite;
                     animation: spin 10s linear infinite;
                 }
-                &.bnz_ship_2 {
-                    animation: bobbing 0.1s infinite ease-in-out forwards alternate;
-                }
                 &.bnz_ship_3 {
+                    position: absolute;
+                    left: 0;
+                    top: 1.2px;
+                }
+                &.bnz_ship_2 {
+                    animation: bobbing 0.08s infinite ease-in-out forwards alternate;
+                }
+                &.bnz_ship_4 {
                     padding-left: 22px;
                 }
             }
@@ -132,6 +139,7 @@ $gray-base:             #000000 !default;
     }
     .swiper-slide {
         background-image: url('../../dist/img/photos/hero_bg_1.png');
+        background-size: cover;
     }
     &::before {
         content: '';
@@ -274,14 +282,14 @@ $gray-base:             #000000 !default;
             img {
                 position: relative;
                 transform-origin: right center;
-                animation: bobbing 0.2s infinite ease-in-out forwards alternate;
+                animation: bobbing 0.1s infinite ease-in-out forwards alternate;
             }
             @keyframes bobbing {
                 0%{
-                    transform: rotate(0) translateY(-1px);
+                    transform: rotate(0) translateY(0.5px);
                 }
                 100%{
-                    transform: rotate(0.4deg) translateY(1px);
+                    transform: rotate(0.4deg) translateY(1.5px);
                 }
             }
         }
@@ -515,6 +523,9 @@ $gray-base:             #000000 !default;
             .bnz_card_header {
                 background-color: #e8e7e7;
                 border-bottom: 2px solid #ffffff;
+                &:last-child {
+                    border-bottom: 0;
+                }
                 h5 {
                     font-size: 18px;
                     color: #444343;
@@ -542,13 +553,16 @@ $gray-base:             #000000 !default;
                     }
                 }
             }
-            .bnz_card_btn {
-                .btn {
-                    padding: 16px 25px;
-                    width: 100%;
-                    color: #ffffff;
-                    text-transform: uppercase;
-                }
+        }
+        .bnz_card_btn {
+            border-bottom: 0;
+            .btn {
+                padding: 15px 25px;
+                line-height: normal;
+                width: 100%;
+                color: #ffffff;
+                text-transform: uppercase;
+                box-shadow: none !important;
             }
         }
     }
