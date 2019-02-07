@@ -140,6 +140,7 @@ $gray-base:             #000000 !default;
     .swiper-slide {
         background-image: url('../../dist/img/photos/hero_bg_1.png');
         background-size: cover;
+        background-position: center;
     }
     &::before {
         content: '';

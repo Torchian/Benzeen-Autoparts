@@ -76,9 +76,23 @@ $(document).ready(function () {
 
     // Homepage Reviews
     var swiperCustomerReview = new Swiper('.swiper-container-customer-review', {
-        // autoplay: true,
+        autoplay: true,
         slidesPerView: 4,
         spaceBetween: 20,
+        breakpoints: {
+            991: {
+                slidesPerView: 3,
+            },
+            800: {
+                slidesPerView: 2,
+            },
+            520: {
+                slidesPerView: 1,
+            },
+            320: {
+                spaceBetween: 10,
+            }
+        },
         pagination: {
             el: '.swiper-pagination',
             clickable: true,
