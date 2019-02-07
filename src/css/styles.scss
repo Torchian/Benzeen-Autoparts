@@ -568,9 +568,9 @@ $gray-base:             #000000 !default;
     }
     // Accordion marks list
     .search_list {
+        border-top: 5px solid $primary;
         .accordion {
-            border-top: 5px solid $primary;
-            height: 643px;
+            height: 644px;
             overflow: auto;
             .card {
                 border: 0;
