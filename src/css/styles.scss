@@ -514,16 +514,71 @@ $gray-base:             #000000 !default;
 // Featured Parts
 #featured_parts {
     margin-bottom: 55px;
+    // Mobile marks list
+    .mobile_search_list {
+        margin-top: -38px;
+        margin-bottom: 45px;
+        .dropdown {
+            background-color: $gray-text;
+            cursor: pointer;
+            position: relative;
+            img {
+                position: absolute;
+                top: 50%;
+                right: 20px;
+                transform: translateY(-50%);
+                height: 20px;
+            }
+            .dropdown-toggle {
+                &::after {
+                    content: none;
+                }
+            }
+            .dropdown-menu {
+                margin: 0;
+                padding: 0;
+                border: 0;
+                width: 100%;
+                box-shadow: -1px 2px 2px -2px #424242;
+                .dropdown-item {
+                    background-color: #dfdfdf;
+                    border-bottom: 2px solid #ffffff;
+                    padding: 6px 20px;
+                    &:hover {
+                        background-color: #cccccc;
+                    }
+                    &.view_drop {
+                        border-bottom: 0;
+                        text-align: center;
+                        background-color: $primary;
+                        text-transform: uppercase;
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+        h4 {
+            padding: 15px 20px;
+            font-size: 18px;
+            color: #ffffff;
+            &.mark_srch_title {
+                background-color: $primary;
+            }
+        }
+    }
     // Accordion marks list
     .search_list {
         .accordion {
             border-top: 5px solid $primary;
+            height: 643px;
+            overflow: auto;
             .card {
                 border: 0;
             }
             .bnz_card_header {
                 background-color: #e8e7e7;
                 border-bottom: 2px solid #ffffff;
+                padding: 18px 25px;
                 &:last-child {
                     border-bottom: 0;
                 }
@@ -535,14 +590,14 @@ $gray-base:             #000000 !default;
                     }
                 }
                 .btn-link {
-                    width: 15px;
-                    height: 15px;
+                    width: 17px;
+                    height: 17px;
                     padding: 0;
                     &::before {
-                        height: 2.4px;
+                        height: 3px;
                     }
                     &::after {
-                        width: 2.4px;
+                        width: 3px;
                         height: 0;
                         top: 50%;
                     }
@@ -554,11 +609,36 @@ $gray-base:             #000000 !default;
                     }
                 }
             }
+            .card-body {
+                padding: 10px 25px;
+                ul {
+                    columns: 3;
+                    padding: 0;
+                    list-style: none;
+                    li {
+                        padding-left: 20px;
+                        a {
+                            color: $default-text;
+                            &:hover {
+                                color: $primary;
+                            }
+                        }
+                        &::before {
+                            content: "\2022";
+                            color: $primary;
+                            font-weight: 900;
+                            display: inline-block; 
+                            width: 1em;
+                            margin-left: -1em;
+                        }
+                    }
+                }
+            }
         }
         .bnz_card_btn {
             border-bottom: 0;
             .btn {
-                padding: 15px 25px;
+                padding: 18px 25px;
                 line-height: normal;
                 width: 100%;
                 color: #ffffff;
@@ -569,11 +649,9 @@ $gray-base:             #000000 !default;
     }
     // accordion marks list
     .parts_cards {
-        .col-12 {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-gap: 20px;
-        }
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
         .part_card_one {
             &:nth-child(1) {
                 &:hover {
@@ -585,34 +663,37 @@ $gray-base:             #000000 !default;
             }
             &:nth-child(3) {
                 .card {
-                    position: relative;
-                    &::before {
-                        content: "";
-                        position: absolute;
-                        top: 15px;
-                        left: -61%;
-                        height: 400px;
-                        width: 400px;
-                        background-color: rgba(255, 252, 234, 0);
-                        -webkit-clip-path: polygon(-20% 80%, 40% 120%, 89% 22%, 91% 18%, 91% 17%, 90% 15%, 87% 15%, 87% 15%, 84% 17%);
-                        clip-path: polygon(-20% 80%, 40% 120%, 89% 22%, 91% 18%, 91% 17%, 90% 15%, 87% 15%, 87% 15%, 84% 17%);
-                        transition: all .3s;
-                    }
-                    &::after {
-                        content: "";
-                        position: absolute;
-                        top: 24px;
-                        left: -28.5%;
-                        height: 400px;
-                        width: 400px;
-                        background-color: rgba(249, 221, 81, 0);
-                        -webkit-clip-path: polygon(1% 82%, 31% 99%, 71% 14%, 71% 13%, 71% 13%, 70% 12%, 70% 12%, 68% 12%);
-                        clip-path: polygon(1% 82%, 31% 99%, 71% 14%, 71% 13%, 71% 13%, 70% 12%, 70% 12%, 68% 12%);
-                        transition: all .3s;
+                    .card_effect {
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            top: -25px;
+                            right: 16%;
+                            height: 400px;
+                            width: 400px;
+                            background-color: rgba(255, 252, 234, 0);
+                            -webkit-clip-path: polygon(-20% 80%, 40% 120%, 89% 22%, 91% 18%, 91% 17%, 90% 15%, 87% 15%, 87% 15%, 84% 17%);
+                            clip-path: polygon(-20% 80%, 40% 120%, 89% 22%, 91% 18%, 91% 17%, 90% 15%, 87% 15%, 87% 15%, 84% 17%);
+                            transition: all .3s;
+                        }
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            top: -15px;
+                            right: -85%;
+                            height: 400px;
+                            width: 400px;
+                            background-color: rgba(249, 221, 81, 0);
+                            -webkit-clip-path: polygon(1% 82%, 31% 99%, 71% 14%, 71% 13%, 71% 13%, 70% 12%, 70% 12%, 68% 12%);
+                            clip-path: polygon(1% 82%, 31% 99%, 71% 14%, 71% 13%, 71% 13%, 70% 12%, 70% 12%, 68% 12%);
+                            transition: all .3s;
+                        }
                     }
                     &:hover {
-                        &::before, &::after {
-                            background-color: rgba(255, 236, 141, 0.7);
+                        .card_effect {
+                            &::before, &::after {
+                                background-color: rgba(255, 236, 141, 0.7);
+                            }
                         }
                     }
                 }
@@ -620,13 +701,11 @@ $gray-base:             #000000 !default;
             &:nth-child(6) {
                 #bnz_bars {
                     height: 30px;
-                    left: 53%;
-                    margin: -30px 0 0 -20px;
+                    left: 42%;
                     position: absolute;
-                    top: 85px;
+                    top: 15px;
                     width: 46px;
                 }
-                
                 .bnz_bar {
                     background: $primary;
                     bottom: 1px;
@@ -660,10 +739,13 @@ $gray-base:             #000000 !default;
             overflow: hidden;
             border: 0;
             position: relative;
-            img {
+            .card_effect {
+                position: relative;
                 width: 104px;
-                margin-bottom: 25px;
                 height: 80px;
+                margin-bottom: 25px;
+            }
+            img {
                 object-fit: contain;
             }
             .card-title {
@@ -715,7 +797,7 @@ $gray-base:             #000000 !default;
 footer {
     .footer_nav {
         background-color: #292828;
-        padding: 60px 0 50px;
+        padding: 60px 15px 50px;
         .nav_cols {
             padding-bottom: 40px;
             margin-bottom: 26px;

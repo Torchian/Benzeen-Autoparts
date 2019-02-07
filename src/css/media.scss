@@ -547,6 +547,24 @@
                 }
             }
         }
+        #featured_parts {
+            .mobile_search_list {
+                h4 {
+                    padding: 12px 15px;
+                    font-size: 14px;
+                }
+                .dropdown {
+                    img {
+                        right: 10px;
+                        height: 15px;
+                    }
+                }
+            }
+            .parts_cards {
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 15px;
+            }
+        }
     }
 }
 
