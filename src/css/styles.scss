@@ -35,6 +35,8 @@ $gray-base:             #000000 !default;
         position: absolute;
         top: 0;
         right: 0;
+        bottom: 30px;
+        transition: all .3s;
         .nav-link {
             padding: 25px !important;
             margin: 0 !important;
@@ -117,6 +119,7 @@ $gray-base:             #000000 !default;
                 }
                 &.bnz_ship_4 {
                     padding-left: 22px;
+                    box-sizing: content-box;
                 }
             }
         }
@@ -328,7 +331,7 @@ $gray-base:             #000000 !default;
                 margin-bottom: 17px;
             }
             label {
-                font-size: 14.222px;
+                font-size: 14px;
                 color: $gray-text;
                 line-height: 1.2;
                 padding-left: 6px;
@@ -350,8 +353,9 @@ $gray-base:             #000000 !default;
                     margin-left: 7px;
                     height: 16px;
                     width: 16px;
-                    padding: 2px 0;
+                    padding: 3px 0;
                     cursor: pointer;
+                    font-weight: 600;
                 }
             }
             .custom-radio .custom-control-input:checked~.custom-control-label::after {
@@ -711,7 +715,7 @@ $gray-base:             #000000 !default;
                     bottom: 1px;
                     height: 3px;
                     position: absolute;
-                    width: 4px;
+                    width: 3px;
                     animation: sound 0ms -800ms linear infinite alternate;
                     display: none;
                     

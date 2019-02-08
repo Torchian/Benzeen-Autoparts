@@ -76,7 +76,7 @@ $(document).ready(function () {
 
     // Homepage Reviews
     var swiperCustomerReview = new Swiper('.swiper-container-customer-review', {
-        autoplay: true,
+        // autoplay: true,
         slidesPerView: 4,
         spaceBetween: 20,
         breakpoints: {
