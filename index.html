@@ -17,8 +17,8 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700,800" rel="stylesheet">
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
     <!-- CSS -->
     <link rel="stylesheet" href="src/css/swiper.min.css">
@@ -33,13 +33,137 @@
     <!-- Header Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark px-0 home_nav fixed-top">
         <div class="container">
-            <button class="navbar-toggler ml-3 d-block d-lg-none" type="button" data-toggle="collapse" data-target="#navbarTogglerTCO"
-                aria-controls="navbarTogglerTCO" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon d-flex align-items-center"><i class="fas fa-bars"></i></span>
+            <button class="navbar-toggler ml-3 d-block d-lg-none" type="button" data-toggle="collapse"
+                data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon d-flex align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100.1 78" width="40">
+                        <g id="Layer_2" data-name="Layer 2">
+                            <g id="Layer_1-2" data-name="Layer 1">
+                                <path fill="#ffffff"
+                                    d="M91.5,30H8.5A8.49,8.49,0,0,0,0,38.5C0,43.2,3.8,48,8.5,48H91.6c4.7,0,8.5-4.7,8.5-9.5A8.51,8.51,0,0,0,91.5,30ZM8.5,18H91.6c4.7,0,8.5-4.7,8.5-9.5A8.51,8.51,0,0,0,91.5,0H8.5A8.49,8.49,0,0,0,0,8.5C0,13.2,3.8,18,8.5,18Zm83,42H8.5A8.49,8.49,0,0,0,0,68.5C0,73.2,3.8,78,8.5,78H91.6c4.7,0,8.5-4.7,8.5-9.5A8.51,8.51,0,0,0,91.5,60Z" />
+                            </g>
+                        </g>
+                    </svg>
+                </span>
             </button>
-            <div class="logo_cont px-0 pr-md-5">
+            <div class="navbar-collapse offcanvas-collapse collapse" id="navbarsExampleDefault">
+                <div class="offcanvas_inner">
+                    <ul class="navbar-nav offcanv_account">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><img src="/dist/img/icons/accounts_icon.png" alt=""> My
+                                Account</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><img src="/dist/img/icons/order_icon.png" alt=""> My Orders</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><img src="/dist/img/icons/quote_icon.png" alt=""> View
+                                Quote</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><img src="/dist/img/icons/logout_icon.png" alt=""> Logout</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav offcanv_links">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Part Request</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sell Your Car</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Recent Arrivals</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                    <div class="offcanvas_socials d-flex align-items-center justify-content-start">
+                        <a href=""><i class="fab fa-facebook-f pl-0"></i></a>
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                        <a href=""><i class="fab fa-google-plus-g"></i></a>
+                        <a href=""><i class="fab fa-youtube"></i></a>
+                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="accordion" id="offcanvasAccordion">
+                        <div class="offcanv_inner">
+                            <div class="accordion_link d-flex align-items-center justify-content-between collapsed"
+                                data-toggle="collapse" data-target="#offcanvasPopular" aria-expanded="true"
+                                aria-controls="offcanvasPopular">
+                                <h5 class="mb-0">Popular Makes</h5>
+                                <button class="btn btn-link" type="button"></button>
+                            </div>
+                            <div id="offcanvasPopular" class="collapse" aria-labelledby="offcanvasPopular"
+                                data-parent="#offcanvasAccordion">
+                                <ul>
+                                    <li><a href="">BMW</a></li>
+                                    <li><a href="">Mercedes-Benz</a></li>
+                                    <li><a href="">Lexus</a></li>
+                                    <li><a href="">Toyota</a></li>
+                                    <li><a href="">Land Rover</a></li>
+                                    <li><a href="">Audi</a></li>
+                                    <li><a href="">Acura</a></li>
+                                    <li><a href="">MINI</a></li>
+                                    <li><a href="">Porsche</a></li>
+                                    <li><a href="">Infiniti</a></li>
+                                    <li><a href="">Nissan</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="offcanv_inner">
+                            <div class="accordion_link d-flex align-items-center justify-content-between collapsed"
+                                data-toggle="collapse" data-target="#offcanvasLinks" aria-expanded="true"
+                                aria-controls="offcanvasLinks">
+                                <h5 class="mb-0">QUICK LINKS</h5>
+                                <button class="btn btn-link" type="button"></button>
+                            </div>
+                            <div id="offcanvasLinks" class="collapse" aria-labelledby="offcanvasLinks"
+                                data-parent="#offcanvasAccordion">
+                                <ul>
+                                    <li><a href="">Privacy Policy</a></li>
+                                    <li><a href="">Security Policy</a></li>
+                                    <li><a href="">Warranty & Terms of Use</a></li>
+                                    <li><a href="">Returns & Refunds</a></li>
+                                    <li><a href="">Shipping</a></li>
+                                    <li><a href="">Forms</a></li>
+                                    <li><a href="">Sitemap</a></li>
+                                    <li><a href="">FAQs</a></li>
+                                    <li><a href="">Cut Sheets</a></li>
+                                    <li><a href="">Order Tracking</a></li>
+                                    <li><a href="">Estimates</a></li>
+                                    <li><a href="">Sell Your Car</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="logo_cont px-0 pr-md-5 ml-0 mr-auto">
                 <a class="navbar-brand" href="/">
                     <img src="dist/img/icons/logo.png" alt="logo.png">
+                </a>
+            </div>
+            <div class="d-flex d-lg-none ml-auto mr-0 nav_mobile_links">
+                <a class="nav-link d-flex align-items-center" href="tel:+3749555674855">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46.89 61.85" height="32">
+                        <g id="Layer_2" data-name="Layer 2">
+                            <g id="Layer_1-2" data-name="Layer 1">
+                                <path fill="#ffffff"
+                                    d="M9.2,1.11a18.07,18.07,0,0,0-9,13.7c-.8,6,.8,13.2,5.3,21l5.5,9.4c4.5,7.8,10.1,12.7,15.8,15.1a18.38,18.38,0,0,0,16.5-.9c3-1.6,4.5-4.6,3-7.3-3.1-3.3-6.3-6.7-9.1-9.5a5.59,5.59,0,0,0-6.7-.6c-4.6,2.6-9,.5-11.2-3.2L15.4,32c-2.6-4.5-1-9,2.8-11.2a5.38,5.38,0,0,0,2.8-6c-1.3-4.3-2.6-8.8-3.8-12.5C14.6-.59,12.2-.49,9.2,1.11Z" />
+                            </g>
+                        </g>
+                    </svg>
+                </a>
+                <a class="nav-link d-flex align-items-center mob_card" href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90.07 80.1" height="32">
+                        <g id="Layer_2" data-name="Layer 2">
+                            <g id="Layer_1-2" data-name="Layer 1">
+                                <path fill="#ffffff"
+                                    d="M3,.1a3,3,0,0,0-3,3,3,3,0,0,0,3,3H13C18,18.4,22.9,30.7,27.8,43L23.3,53.9a2.82,2.82,0,0,0,.3,2.8A3,3,0,0,0,26.1,58h50a3.08,3.08,0,0,0,3-3,3.15,3.15,0,0,0-3-3H30.5l2.6-6.2L81.3,42A3.1,3.1,0,0,0,84,39.7l6-26A3.12,3.12,0,0,0,87.1,10H21L17.8,1.9A3.06,3.06,0,0,0,15,0Zm20.4,16H83.2L78.5,36.3,32.9,39.9ZM36,60.1a10,10,0,1,0,10,10A10,10,0,0,0,36,60.1Zm30,0a10,10,0,1,0,10,10A10,10,0,0,0,66,60.1Zm-30,6a4,4,0,1,1-4,4A4,4,0,0,1,36,66.1Zm30,0a4,4,0,1,1-4,4A4,4,0,0,1,66,66.1Z" />
+                            </g>
+                        </g>
+                    </svg>
                 </a>
             </div>
             <div class="collapse navbar-collapse tco_nav" id="navbarTogglerTCO">
@@ -63,7 +187,9 @@
                             My Account
                             <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" width="16"
                                 class="ml-3">
-                                <path fill="currentColor" d="M119.5 326.9L3.5 209.1c-4.7-4.7-4.7-12.3 0-17l7.1-7.1c4.7-4.7 12.3-4.7 17 0L128 287.3l100.4-102.2c4.7-4.7 12.3-4.7 17 0l7.1 7.1c4.7 4.7 4.7 12.3 0 17L136.5 327c-4.7 4.6-12.3 4.6-17-.1z"></path>
+                                <path fill="currentColor"
+                                    d="M119.5 326.9L3.5 209.1c-4.7-4.7-4.7-12.3 0-17l7.1-7.1c4.7-4.7 12.3-4.7 17 0L128 287.3l100.4-102.2c4.7-4.7 12.3-4.7 17 0l7.1 7.1c4.7 4.7 4.7 12.3 0 17L136.5 327c-4.7 4.6-12.3 4.6-17-.1z">
+                                </path>
                             </svg>
                         </a>
                     </li>
@@ -72,7 +198,8 @@
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90.07 80.1" width="28" height="25px">
                                 <g id="Layer_2" data-name="Layer 2">
                                     <g id="Layer_1-2" data-name="Layer 1">
-                                        <path fill="#ffffff" d="M3,.1a3,3,0,0,0-3,3,3,3,0,0,0,3,3H13C18,18.4,22.9,30.7,27.8,43L23.3,53.9a2.82,2.82,0,0,0,.3,2.8A3,3,0,0,0,26.1,58h50a3.08,3.08,0,0,0,3-3,3.15,3.15,0,0,0-3-3H30.5l2.6-6.2L81.3,42A3.1,3.1,0,0,0,84,39.7l6-26A3.12,3.12,0,0,0,87.1,10H21L17.8,1.9A3.06,3.06,0,0,0,15,0Zm20.4,16H83.2L78.5,36.3,32.9,39.9ZM36,60.1a10,10,0,1,0,10,10A10,10,0,0,0,36,60.1Zm30,0a10,10,0,1,0,10,10A10,10,0,0,0,66,60.1Zm-30,6a4,4,0,1,1-4,4A4,4,0,0,1,36,66.1Zm30,0a4,4,0,1,1-4,4A4,4,0,0,1,66,66.1Z" />
+                                        <path fill="#ffffff"
+                                            d="M3,.1a3,3,0,0,0-3,3,3,3,0,0,0,3,3H13C18,18.4,22.9,30.7,27.8,43L23.3,53.9a2.82,2.82,0,0,0,.3,2.8A3,3,0,0,0,26.1,58h50a3.08,3.08,0,0,0,3-3,3.15,3.15,0,0,0-3-3H30.5l2.6-6.2L81.3,42A3.1,3.1,0,0,0,84,39.7l6-26A3.12,3.12,0,0,0,87.1,10H21L17.8,1.9A3.06,3.06,0,0,0,15,0Zm20.4,16H83.2L78.5,36.3,32.9,39.9ZM36,60.1a10,10,0,1,0,10,10A10,10,0,0,0,36,60.1Zm30,0a10,10,0,1,0,10,10A10,10,0,0,0,66,60.1Zm-30,6a4,4,0,1,1-4,4A4,4,0,0,1,36,66.1Zm30,0a4,4,0,1,1-4,4A4,4,0,0,1,66,66.1Z" />
                                     </g>
                                 </g>
                             </svg>
@@ -96,7 +223,8 @@
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 81.92 82.1" width="25" height="25">
                                 <g id="Layer_2" data-name="Layer 2">
                                     <g id="Layer_1-2" data-name="Layer 1">
-                                        <path fill="#ffffff" d="M34,0a34,34,0,0,0,0,68,33.55,33.55,0,0,0,19.3-6.1L71.7,80.3a5.92,5.92,0,0,0,8.5,0,6.1,6.1,0,0,0,0-8.5L61.9,53.4A34,34,0,0,0,34,0Zm0,12A22,22,0,1,1,12,34,21.94,21.94,0,0,1,34,12Z" />
+                                        <path fill="#ffffff"
+                                            d="M34,0a34,34,0,0,0,0,68,33.55,33.55,0,0,0,19.3-6.1L71.7,80.3a5.92,5.92,0,0,0,8.5,0,6.1,6.1,0,0,0,0-8.5L61.9,53.4A34,34,0,0,0,34,0Zm0,12A22,22,0,1,1,12,34,21.94,21.94,0,0,1,34,12Z" />
                                     </g>
                                 </g>
                             </svg>
@@ -109,7 +237,8 @@
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46.89 61.85" width="19" height="25">
                         <g id="Layer_2" data-name="Layer 2">
                             <g id="Layer_1-2" data-name="Layer 1">
-                                <path fill="#ffffff" d="M9.2,1.11a18.07,18.07,0,0,0-9,13.7c-.8,6,.8,13.2,5.3,21l5.5,9.4c4.5,7.8,10.1,12.7,15.8,15.1a18.38,18.38,0,0,0,16.5-.9c3-1.6,4.5-4.6,3-7.3-3.1-3.3-6.3-6.7-9.1-9.5a5.59,5.59,0,0,0-6.7-.6c-4.6,2.6-9,.5-11.2-3.2L15.4,32c-2.6-4.5-1-9,2.8-11.2a5.38,5.38,0,0,0,2.8-6c-1.3-4.3-2.6-8.8-3.8-12.5C14.6-.59,12.2-.49,9.2,1.11Z" />
+                                <path fill="#ffffff"
+                                    d="M9.2,1.11a18.07,18.07,0,0,0-9,13.7c-.8,6,.8,13.2,5.3,21l5.5,9.4c4.5,7.8,10.1,12.7,15.8,15.1a18.38,18.38,0,0,0,16.5-.9c3-1.6,4.5-4.6,3-7.3-3.1-3.3-6.3-6.7-9.1-9.5a5.59,5.59,0,0,0-6.7-.6c-4.6,2.6-9,.5-11.2-3.2L15.4,32c-2.6-4.5-1-9,2.8-11.2a5.38,5.38,0,0,0,2.8-6c-1.3-4.3-2.6-8.8-3.8-12.5C14.6-.59,12.2-.49,9.2,1.11Z" />
                             </g>
                         </g>
                     </svg>
@@ -149,8 +278,9 @@
                     <div class="col d-flex p-0">
                         <h4 class="m-0 f_bold mark_srch_title">Search by make</h4>
                         <div class="dropdown flex-fill">
-                            <h4 class="m-0 dropdown-toggle text-center" role="button" id="dropdownMenuLink" data-toggle="dropdown"
-                                data-display="static" aria-haspopup="true" aria-expanded="false">---- Please Select
+                            <h4 class="m-0 dropdown-toggle text-center" role="button" id="dropdownMenuLink"
+                                data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false">
+                                ---- Please Select
                                 ----<img src="/dist/img/icons/drop_arr.png" alt=""></h4>
 
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
@@ -194,9 +324,11 @@
                                             <h5 class="mb-0">BMW</h5>
                                         </a>
                                         <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                                            data-target="#collapse1" aria-expanded="true" aria-controls="collapse1"></button>
+                                            data-target="#collapse1" aria-expanded="true"
+                                            aria-controls="collapse1"></button>
                                     </div>
-                                    <div id="collapse1" class="collapse" aria-labelledby="heading1" data-parent="#benzeenAccordionMarks">
+                                    <div id="collapse1" class="collapse" aria-labelledby="heading1"
+                                        data-parent="#benzeenAccordionMarks">
                                         <div class="card-body">
                                             <ul>
                                                 <li><a href="">325i</a></li>
@@ -223,9 +355,11 @@
                                             <h5 class="mb-0">Mercedes-Benz</h5>
                                         </a>
                                         <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                                            data-target="#collapse2" aria-expanded="true" aria-controls="collapse2"></button>
+                                            data-target="#collapse2" aria-expanded="true"
+                                            aria-controls="collapse2"></button>
                                     </div>
-                                    <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#benzeenAccordionMarks">
+                                    <div id="collapse2" class="collapse" aria-labelledby="heading2"
+                                        data-parent="#benzeenAccordionMarks">
                                         <div class="card-body">
                                             <p class="mb-4">This is a genuine</p>
                                         </div>
@@ -240,9 +374,11 @@
                                             <h5 class="mb-0">Lexus</h5>
                                         </a>
                                         <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                                            data-target="#collapse3" aria-expanded="true" aria-controls="collapse3"></button>
+                                            data-target="#collapse3" aria-expanded="true"
+                                            aria-controls="collapse3"></button>
                                     </div>
-                                    <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#benzeenAccordionMarks">
+                                    <div id="collapse3" class="collapse" aria-labelledby="heading3"
+                                        data-parent="#benzeenAccordionMarks">
                                         <div class="card-body">
                                             <p class="mb-4">This is a genuine</p>
                                         </div>
@@ -257,9 +393,11 @@
                                             <h5 class="mb-0">Toyota</h5>
                                         </a>
                                         <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                                            data-target="#collapse4" aria-expanded="true" aria-controls="collapse4"></button>
+                                            data-target="#collapse4" aria-expanded="true"
+                                            aria-controls="collapse4"></button>
                                     </div>
-                                    <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#benzeenAccordionMarks">
+                                    <div id="collapse4" class="collapse" aria-labelledby="heading4"
+                                        data-parent="#benzeenAccordionMarks">
                                         <div class="card-body">
                                             <p class="mb-4">This is a genuine</p>
                                         </div>
@@ -274,9 +412,11 @@
                                             <h5 class="mb-0">Land Rover</h5>
                                         </a>
                                         <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                                            data-target="#collapse5" aria-expanded="true" aria-controls="collapse5"></button>
+                                            data-target="#collapse5" aria-expanded="true"
+                                            aria-controls="collapse5"></button>
                                     </div>
-                                    <div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#benzeenAccordionMarks">
+                                    <div id="collapse5" class="collapse" aria-labelledby="heading5"
+                                        data-parent="#benzeenAccordionMarks">
                                         <div class="card-body">
                                             <p class="mb-4">This is a genuine</p>
                                         </div>
@@ -291,9 +431,11 @@
                                             <h5 class="mb-0">Audi</h5>
                                         </a>
                                         <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                                            data-target="#collapse6" aria-expanded="true" aria-controls="collapse6"></button>
+                                            data-target="#collapse6" aria-expanded="true"
+                                            aria-controls="collapse6"></button>
                                     </div>
-                                    <div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#benzeenAccordionMarks">
+                                    <div id="collapse6" class="collapse" aria-labelledby="heading6"
+                                        data-parent="#benzeenAccordionMarks">
                                         <div class="card-body">
                                             <p class="mb-4">This is a genuine</p>
                                         </div>
@@ -308,9 +450,11 @@
                                             <h5 class="mb-0">Acura</h5>
                                         </a>
                                         <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                                            data-target="#collapse7" aria-expanded="true" aria-controls="collapse7"></button>
+                                            data-target="#collapse7" aria-expanded="true"
+                                            aria-controls="collapse7"></button>
                                     </div>
-                                    <div id="collapse7" class="collapse" aria-labelledby="heading7" data-parent="#benzeenAccordionMarks">
+                                    <div id="collapse7" class="collapse" aria-labelledby="heading7"
+                                        data-parent="#benzeenAccordionMarks">
                                         <div class="card-body">
                                             <p class="mb-4">This is a genuine</p>
                                         </div>
@@ -325,9 +469,11 @@
                                             <h5 class="mb-0">MINI</h5>
                                         </a>
                                         <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                                            data-target="#collapse8" aria-expanded="true" aria-controls="collapse8"></button>
+                                            data-target="#collapse8" aria-expanded="true"
+                                            aria-controls="collapse8"></button>
                                     </div>
-                                    <div id="collapse8" class="collapse" aria-labelledby="heading8" data-parent="#benzeenAccordionMarks">
+                                    <div id="collapse8" class="collapse" aria-labelledby="heading8"
+                                        data-parent="#benzeenAccordionMarks">
                                         <div class="card-body">
                                             <p class="mb-4">This is a genuine</p>
                                         </div>
@@ -342,9 +488,11 @@
                                             <h5 class="mb-0">Porsche</h5>
                                         </a>
                                         <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                                            data-target="#collapse9" aria-expanded="true" aria-controls="collapse9"></button>
+                                            data-target="#collapse9" aria-expanded="true"
+                                            aria-controls="collapse9"></button>
                                     </div>
-                                    <div id="collapse9" class="collapse" aria-labelledby="heading9" data-parent="#benzeenAccordionMarks">
+                                    <div id="collapse9" class="collapse" aria-labelledby="heading9"
+                                        data-parent="#benzeenAccordionMarks">
                                         <div class="card-body">
                                             <p class="mb-4">This is a genuine</p>
                                         </div>
@@ -359,9 +507,11 @@
                                             <h5 class="mb-0">Infiniti</h5>
                                         </a>
                                         <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                                            data-target="#collapse10" aria-expanded="true" aria-controls="collapse10"></button>
+                                            data-target="#collapse10" aria-expanded="true"
+                                            aria-controls="collapse10"></button>
                                     </div>
-                                    <div id="collapse10" class="collapse" aria-labelledby="heading10" data-parent="#benzeenAccordionMarks">
+                                    <div id="collapse10" class="collapse" aria-labelledby="heading10"
+                                        data-parent="#benzeenAccordionMarks">
                                         <div class="card-body">
                                             <p class="mb-4">This is a genuine</p>
                                         </div>
@@ -375,9 +525,11 @@
                                             <h5 class="mb-0">Nissan</h5>
                                         </a>
                                         <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                                            data-target="#collapse11" aria-expanded="true" aria-controls="collapse11"></button>
+                                            data-target="#collapse11" aria-expanded="true"
+                                            aria-controls="collapse11"></button>
                                     </div>
-                                    <div id="collapse11" class="collapse" aria-labelledby="heading11" data-parent="#benzeenAccordionMarks">
+                                    <div id="collapse11" class="collapse" aria-labelledby="heading11"
+                                        data-parent="#benzeenAccordionMarks">
                                         <div class="card-body">
                                             <p class="mb-4">This is a genuine</p>
                                         </div>
@@ -399,7 +551,8 @@
                                         <img src="dist/img/icons/parts/parts_icon_1.svg" class="card-img-top mx-auto"
                                             alt="...">
                                     </div>
-                                    <div class="card-body p-0 d-flex align-items-center justify-content-start flex-column">
+                                    <div
+                                        class="card-body p-0 d-flex align-items-center justify-content-start flex-column">
                                         <h5 class="card-title">USED ENGINES</h5>
                                         <p class="card-text">Quality assured and inspected, used OEM long block
                                             engines for sale at affordable prices. Hassle-Free, your
@@ -414,7 +567,8 @@
                                         <img src="dist/img/icons/parts/parts_icon_2.svg" class="card-img-top mx-auto"
                                             alt="...">
                                     </div>
-                                    <div class="card-body p-0 d-flex align-items-center justify-content-start flex-column">
+                                    <div
+                                        class="card-body p-0 d-flex align-items-center justify-content-start flex-column">
                                         <h5 class="card-title">USED TRANSMISSIONS</h5>
                                         <p class="card-text">OEM replacement automatic and manual transmissions
                                             for all makes and models. OEM quality guaranteed.</p>
@@ -428,10 +582,13 @@
                                         <img src="dist/img/icons/parts/parts_icon_3.svg" class="card-img-top mx-auto"
                                             alt="...">
                                         <svg>
-                                            <path points="-20 80, 40 120, 89 22, 91 18, 91 17, 90 15, 87 15, 87 15, 84 17"></path>
+                                            <path
+                                                points="-20 80, 40 120, 89 22, 91 18, 91 17, 90 15, 87 15, 87 15, 84 17">
+                                            </path>
                                         </svg>
                                     </div>
-                                    <div class="card-body p-0 d-flex align-items-center justify-content-start flex-column">
+                                    <div
+                                        class="card-body p-0 d-flex align-items-center justify-content-start flex-column">
                                         <h5 class="card-title">USED HEADLAMPS</h5>
                                         <p class="card-text">Quality used headlamps you need for sale at prices
                                             you want with a hassle-free 1 Year Warranty. Low cost, high
@@ -446,7 +603,8 @@
                                         <img src="dist/img/icons/parts/parts_icon_4.svg" class="card-img-top mx-auto"
                                             alt="...">
                                     </div>
-                                    <div class="card-body p-0 d-flex align-items-center justify-content-start flex-column">
+                                    <div
+                                        class="card-body p-0 d-flex align-items-center justify-content-start flex-column">
                                         <h5 class="card-title">USED ABS PUMPS</h5>
                                         <p class="card-text">Get your Anti-lock brakes braking again with a
                                             quality used OEM ABS pump and our hassle-free 1 Year Warranty.</p>
@@ -460,7 +618,8 @@
                                         <img src="dist/img/icons/parts/parts_icon_5.png" class="card-img-top mx-auto"
                                             alt="...">
                                     </div>
-                                    <div class="card-body p-0 d-flex align-items-center justify-content-start flex-column">
+                                    <div
+                                        class="card-body p-0 d-flex align-items-center justify-content-start flex-column">
                                         <h5 class="card-title">USED ECU/ECM COMPUTERS</h5>
                                         <p class="card-text">Only a quality OEM ECU with our hassle-free 1 Year
                                             Warranty should replace the brain behind your engine. Buy used &
@@ -486,7 +645,8 @@
                                             <div class='bnz_bar'></div>
                                         </div>
                                     </div>
-                                    <div class="card-body p-0 d-flex align-items-center justify-content-start flex-column">
+                                    <div
+                                        class="card-body p-0 d-flex align-items-center justify-content-start flex-column">
                                         <h5 class="card-title">USED RADIOS & AMPLIFIERS</h5>
                                         <p class="card-text">Restore your sound with an OEM used radio or
                                             amplifier! With a 1 Year Warranty and low prices.</p>
@@ -516,7 +676,8 @@
                                 <div class="swiper-slide">
                                     <div class="card">
                                         <div class="card-body p-0">
-                                            <a href=""><img class="card-img-top" src="dist/img/photos/Layer15.png" alt="Card image cap"></a>
+                                            <a href=""><img class="card-img-top" src="dist/img/photos/Layer15.png"
+                                                    alt="Card image cap"></a>
                                             <div class="card-body text-center">
                                                 <a href="">
                                                     <h5 class="card-title f_boldest">2006 TOYOTA 4RUNNER</h5>
@@ -525,11 +686,13 @@
                                                 <h6 class="card-subtitle">Stock# 6160BL available for parts.</h6>
                                                 <h6 class="card-subtitle">Save up to 70% off MSRP prices.</h6>
                                                 <div class="text-center badges">
-                                                    <div class="badge badge-secondary d-flex align-items-center justify-content-center">
+                                                    <div
+                                                        class="badge badge-secondary d-flex align-items-center justify-content-center">
                                                         <img src="dist/img/icons/calendar_icon.png" alt="">
                                                         Arrived: <span>8/19/17</span>
                                                     </div>
-                                                    <div class="badge badge-secondary d-flex align-items-center justify-content-center">
+                                                    <div
+                                                        class="badge badge-secondary d-flex align-items-center justify-content-center">
                                                         <img src="dist/img/icons/car_icon.png" alt="">
                                                         Stock# <span>7482GY</span>
                                                     </div>
@@ -544,7 +707,8 @@
                                 <div class="swiper-slide">
                                     <div class="card">
                                         <div class="card-body p-0">
-                                            <a href=""><img class="card-img-top" src="dist/img/photos/Layer16.png" alt="Card image cap"></a>
+                                            <a href=""><img class="card-img-top" src="dist/img/photos/Layer16.png"
+                                                    alt="Card image cap"></a>
                                             <div class="card-body text-center">
                                                 <a href="">
                                                     <h5 class="card-title f_boldest">2006 TOYOTA 4RUNNER</h5>
@@ -553,11 +717,13 @@
                                                 <h6 class="card-subtitle">Stock# 6160BL available for parts.</h6>
                                                 <h6 class="card-subtitle">Save up to 70% off MSRP prices.</h6>
                                                 <div class="text-center badges">
-                                                    <div class="badge badge-secondary d-flex align-items-center justify-content-center">
+                                                    <div
+                                                        class="badge badge-secondary d-flex align-items-center justify-content-center">
                                                         <img src="dist/img/icons/calendar_icon.png" alt="">
                                                         Arrived: <span>8/19/17</span>
                                                     </div>
-                                                    <div class="badge badge-secondary d-flex align-items-center justify-content-center">
+                                                    <div
+                                                        class="badge badge-secondary d-flex align-items-center justify-content-center">
                                                         <img src="dist/img/icons/car_icon.png" alt="">
                                                         Stock# <span>7482GY</span>
                                                     </div>
@@ -572,7 +738,8 @@
                                 <div class="swiper-slide">
                                     <div class="card">
                                         <div class="card-body p-0">
-                                            <a href=""><img class="card-img-top" src="dist/img/photos/Layer17.png" alt="Card image cap"></a>
+                                            <a href=""><img class="card-img-top" src="dist/img/photos/Layer17.png"
+                                                    alt="Card image cap"></a>
                                             <div class="card-body text-center">
                                                 <a href="">
                                                     <h5 class="card-title f_boldest">2006 TOYOTA 4RUNNER</h5>
@@ -581,11 +748,13 @@
                                                 <h6 class="card-subtitle">Stock# 6160BL available for parts.</h6>
                                                 <h6 class="card-subtitle">Save up to 70% off MSRP prices.</h6>
                                                 <div class="text-center badges">
-                                                    <div class="badge badge-secondary d-flex align-items-center justify-content-center">
+                                                    <div
+                                                        class="badge badge-secondary d-flex align-items-center justify-content-center">
                                                         <img src="dist/img/icons/calendar_icon.png" alt="">
                                                         Arrived: <span>8/19/17</span>
                                                     </div>
-                                                    <div class="badge badge-secondary d-flex align-items-center justify-content-center">
+                                                    <div
+                                                        class="badge badge-secondary d-flex align-items-center justify-content-center">
                                                         <img src="dist/img/icons/car_icon.png" alt="">
                                                         Stock# <span>7482GY</span>
                                                     </div>
@@ -600,7 +769,8 @@
                                 <div class="swiper-slide">
                                     <div class="card">
                                         <div class="card-body p-0">
-                                            <a href=""><img class="card-img-top" src="dist/img/photos/Layer16.png" alt="Card image cap"></a>
+                                            <a href=""><img class="card-img-top" src="dist/img/photos/Layer16.png"
+                                                    alt="Card image cap"></a>
                                             <div class="card-body text-center">
                                                 <a href="">
                                                     <h5 class="card-title f_boldest">2006 TOYOTA 4RUNNER</h5>
@@ -609,11 +779,13 @@
                                                 <h6 class="card-subtitle">Stock# 6160BL available for parts.</h6>
                                                 <h6 class="card-subtitle">Save up to 70% off MSRP prices.</h6>
                                                 <div class="text-center badges">
-                                                    <div class="badge badge-secondary d-flex align-items-center justify-content-center">
+                                                    <div
+                                                        class="badge badge-secondary d-flex align-items-center justify-content-center">
                                                         <img src="dist/img/icons/calendar_icon.png" alt="">
                                                         Arrived: <span>8/19/17</span>
                                                     </div>
-                                                    <div class="badge badge-secondary d-flex align-items-center justify-content-center">
+                                                    <div
+                                                        class="badge badge-secondary d-flex align-items-center justify-content-center">
                                                         <img src="dist/img/icons/car_icon.png" alt="">
                                                         Stock# <span>7482GY</span>
                                                     </div>
@@ -628,7 +800,8 @@
                                 <div class="swiper-slide">
                                     <div class="card">
                                         <div class="card-body p-0">
-                                            <a href=""><img class="card-img-top" src="dist/img/photos/Layer15.png" alt="Card image cap"></a>
+                                            <a href=""><img class="card-img-top" src="dist/img/photos/Layer15.png"
+                                                    alt="Card image cap"></a>
                                             <div class="card-body text-center">
                                                 <a href="">
                                                     <h5 class="card-title f_boldest">2006 TOYOTA 4RUNNER</h5>
@@ -637,11 +810,13 @@
                                                 <h6 class="card-subtitle">Stock# 6160BL available for parts.</h6>
                                                 <h6 class="card-subtitle">Save up to 70% off MSRP prices.</h6>
                                                 <div class="text-center badges">
-                                                    <div class="badge badge-secondary d-flex align-items-center justify-content-center">
+                                                    <div
+                                                        class="badge badge-secondary d-flex align-items-center justify-content-center">
                                                         <img src="dist/img/icons/calendar_icon.png" alt="">
                                                         Arrived: <span>8/19/17</span>
                                                     </div>
-                                                    <div class="badge badge-secondary d-flex align-items-center justify-content-center">
+                                                    <div
+                                                        class="badge badge-secondary d-flex align-items-center justify-content-center">
                                                         <img src="dist/img/icons/car_icon.png" alt="">
                                                         Stock# <span>7482GY</span>
                                                     </div>
@@ -695,7 +870,8 @@
                                 <!-- One Slide -->
                                 <div class="swiper-slide">
                                     <div class="card">
-                                        <img class="card-img-top" src="dist/img/icons/google_icon.png" alt="Card image cap">
+                                        <img class="card-img-top" src="dist/img/icons/google_icon.png"
+                                            alt="Card image cap">
                                         <div class="card-body text-left p-0 d-flex flex-column">
                                             <a href="">
                                                 <h5 class="card-title">Ryan B</h5>
@@ -720,7 +896,8 @@
                                 <!-- One Slide -->
                                 <div class="swiper-slide">
                                     <div class="card">
-                                        <img class="card-img-top" src="dist/img/icons/google_icon.png" alt="Card image cap">
+                                        <img class="card-img-top" src="dist/img/icons/google_icon.png"
+                                            alt="Card image cap">
                                         <div class="card-body text-left p-0 d-flex flex-column">
                                             <a href="">
                                                 <h5 class="card-title">Marcel Pinzari</h5>
@@ -744,7 +921,8 @@
                                 <!-- One Slide -->
                                 <div class="swiper-slide">
                                     <div class="card">
-                                        <img class="card-img-top" src="dist/img/icons/google_icon.png" alt="Card image cap">
+                                        <img class="card-img-top" src="dist/img/icons/google_icon.png"
+                                            alt="Card image cap">
                                         <div class="card-body text-left p-0 d-flex flex-column">
                                             <a href="">
                                                 <h5 class="card-title">Artem Perminov</h5>
@@ -770,7 +948,8 @@
                                 <!-- One Slide -->
                                 <div class="swiper-slide">
                                     <div class="card">
-                                        <img class="card-img-top" src="dist/img/icons/google_icon.png" alt="Card image cap">
+                                        <img class="card-img-top" src="dist/img/icons/google_icon.png"
+                                            alt="Card image cap">
                                         <div class="card-body text-left p-0 d-flex flex-column">
                                             <a href="">
                                                 <h5 class="card-title">Artem Perminov</h5>
@@ -795,7 +974,8 @@
                                 <!-- One Slide -->
                                 <div class="swiper-slide">
                                     <div class="card">
-                                        <img class="card-img-top" src="dist/img/icons/google_icon.png" alt="Card image cap">
+                                        <img class="card-img-top" src="dist/img/icons/google_icon.png"
+                                            alt="Card image cap">
                                         <div class="card-body text-left p-0 d-flex flex-column">
                                             <a href="">
                                                 <h5 class="card-title">Artem Perminov</h5>
@@ -821,7 +1001,8 @@
                                 <!-- One Slide -->
                                 <div class="swiper-slide">
                                     <div class="card">
-                                        <img class="card-img-top" src="dist/img/icons/google_icon.png" alt="Card image cap">
+                                        <img class="card-img-top" src="dist/img/icons/google_icon.png"
+                                            alt="Card image cap">
                                         <div class="card-body text-left p-0 d-flex flex-column">
                                             <a href="">
                                                 <h5 class="card-title">Artem Perminov</h5>

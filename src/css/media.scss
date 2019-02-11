@@ -79,6 +79,13 @@
 
 // // Medium devices (tablets, less than 992px)
 @media (max-width: 991.98px) {
+    .navbar.home_nav {
+        padding-top: 8px;
+        padding-bottom: 8px;
+        .navbar_right {
+            display: none;
+        }
+    }
     body {
         #hero {
             .hero_nav_cont {
@@ -358,6 +365,17 @@
         }
         .logo_cont {
             text-align: center;
+            img {
+                max-width: 180px;
+            }
+        }
+        .nav_mobile_links {
+            .nav-link {
+                padding: 24px 12px !important;
+                svg {
+                    height: 26px !important;
+                }
+            }
         }
         .tco_nav {
             .nav-item {
