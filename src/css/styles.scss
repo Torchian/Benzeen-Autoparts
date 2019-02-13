@@ -270,20 +270,8 @@ $gray-base:             #000000 !default;
             }
             .msrp {
                 font-size: 21.6px;
-                color: #979696;
                 line-height: 1.2;
                 margin-right: 32px;
-                text-transform: uppercase;
-                position: relative;
-                &:before {
-                    content: '';
-                    position: absolute;
-                    top: 50%;
-                    left: -10px;
-                    right: -10px;
-                    height: 1px;
-                    background-color: #979696;
-                }
             }
             .save {
                 font-size: 18px;
@@ -294,22 +282,12 @@ $gray-base:             #000000 !default;
 
         // Shipping Info
         .ship_info {
-            padding: 7px 10px;
             background-color: #5d5c5c;
             margin-bottom: 25px;
             p {
-                font-size: 14.657px;
                 color: #ffffff;
-                font-weight: 500;
-                line-height: 1.2;
-                margin-right: 10px;
-                span {
-                    font-size: 15px;
-                }
             }
             img {
-                position: relative;
-                transform-origin: right center;
                 animation: bobbing 0.1s infinite ease-in-out forwards alternate;
             }
             @keyframes bobbing {

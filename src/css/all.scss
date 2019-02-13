@@ -127,6 +127,7 @@ a {
         line-height: 0.757;
         padding: 15px;
         border-radius: 0;
+        border: 0;
         box-shadow: none !important;
         min-width: 170px;
     }
@@ -448,6 +449,163 @@ aside {
 }
 // search parts form
 
+// Main View
+.engine_main {
+    flex-shrink: 1;
+}
+.view_header {
+    min-height: 275px;
+    background-image: url(../img/photos/engine_hero.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 30px;
+    h2 {
+        font-size: 32px;
+        padding: 12px 20px;
+        background-color: $primary;
+        text-transform: uppercase;
+        color: #ffffff;
+        margin: 0;
+    }
+    .bnz_ship_4 {
+        margin: 0 25px;
+    }
+}
+.view_title {
+    padding-bottom: 55px;
+    border-bottom: 1px solid #dddcdc;
+    h3 {
+        font-size: 26px;
+        color: $gray-text;
+        margin-bottom: 16px;
+        text-transform: uppercase;
+    }
+    p {
+        font-size: 20px;
+        color: $gray-text;
+        line-height: 1.22;
+    }
+}
+// main view
+
+// Products Grid View
+.grid_sort {
+    .dropdown-toggle {
+        font-size: 16px;
+        color: $gray-text;
+        text-transform: unset;
+        padding: 12px 15px;
+        line-height: normal;
+        font-weight: 400;
+        background-color: #e8e7e7;
+    }
+}
+.grid_nav {
+    padding: 15px 0 25px;
+    .view_by {
+        a {
+            color: $default-text;
+            &:hover, &.active {
+                color: $primary;
+            }
+        }
+    }
+}
+.product_grid_view {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 40px 50px;
+}
+.grid_view_card {
+    .card {
+        border: 0;
+    }
+    .card-img-top {
+        height: 170px;
+        object-fit: cover;
+        margin-bottom: 13px;
+    }
+    .card-body {
+        padding: 0;
+        .card-title {
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+        .card-text {
+            margin-bottom: 20px;
+        }
+        .price {
+            margin-bottom: 10px;
+            .was {
+                font-size: 21px;
+                color: #858585;
+                margin-right: 20px;
+            }
+            .now {
+                font-size: 28px;
+                color: $primary;
+            }
+        }
+        .info {
+            margin-bottom: 15px;
+            .status {
+                color: #48990d;
+            }
+        }
+    }
+    .ship_info {
+        border: 1px solid $primary;
+    }
+    &:hover {
+        .ship_info {
+            img {
+                animation: bobbing 0.1s infinite ease-in-out forwards alternate;
+            }
+        }
+    }
+}
+.ship_info {
+    padding: 7px 10px;
+    p {
+        font-size: 14px;
+        color: $primary;
+        font-weight: 500;
+        line-height: 1.2;
+        margin-right: 10px;
+        span {
+            font-size: 15px;
+        }
+    }
+    img {
+        position: relative;
+        transform-origin: right center;
+    }
+}
+.msrp {
+    color: #979696;
+    text-transform: uppercase;
+    position: relative;
+    &:before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: -10px;
+        right: -10px;
+        height: 1px;
+        background-color: #979696;
+    }
+}
+@keyframes bobbing {
+    0%{
+        transform: rotate(0) translateY(0.5px);
+    }
+    100%{
+        transform: rotate(0.4deg) translateY(1.5px);
+    }
+}
+// products grid view
+
 // Mobile marks list
 .mobile_search_list {
     margin-top: -38px;
@@ -759,6 +917,87 @@ aside {
             font-size: 15px;
             padding: 10px;
             min-width: 130px;
+        }
+    }
+}
+@keyframes rotateRev {
+    0% {
+      transform: rotateY(0deg);
+    }
+    2% {
+      transform: rotateY(90deg);
+    }
+    4% {
+      transform: rotateY(180deg);
+    }
+    7% {
+      transform: rotateY(90deg);
+    }
+    10% {
+      transform: rotateY(0deg);
+    }
+}
+// reviews section
+
+// Reviews Section
+#reviews.review_testim {
+    padding-top: 80px;
+    padding-bottom: 50px;
+    background-image: url(../img/photos/prev_bg.png);
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.75);
+    }
+    .rev_header {
+        width: 220px;
+        margin: auto;
+    }
+    .ver_rev_title {
+        .ver_r, .rev_r {
+            font-size: 41px;
+        }
+    }
+    .swiper-container-review {
+        overflow: hidden;
+        .swiper-button-next, .swiper-button-prev {
+            background-image: none;
+            background-color: $primary;
+            padding: 10px 15px;
+            transform: translateY(-50%);
+            width: auto;
+            height: auto;
+            margin: 0;
+        }
+        .swiper-button-next {
+            right: 0;
+        }
+        .swiper-button-prev {
+            left: 0;
+        }
+    }
+    .swiper-slide {
+        color: #ffffff;
+        .review_text {
+            margin-bottom: 35px;
+            font-size: 18px;
+        }
+        h4 {
+            margin-bottom: 25px;
+            color: $primary-text;
+            font-style: italic;
+            font-weight: 600;
+            font-size: 22px;
+        }
+        span {
+            display: inline-block;
+            margin-bottom: 70px;
+            color: #c3c0c0;
+            font-size: 16px;
         }
     }
 }
