@@ -48,10 +48,10 @@ module.exports = function (grunt) {
         }
     });
 
-    // grunt.loadNpmTasks('grunt-contrib-imagemin');
+    grunt.loadNpmTasks('grunt-contrib-imagemin');
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-contrib-watch');
 
-    grunt.registerTask('default', ['sass', 'connect', 'watch']);
+    grunt.registerTask('default', ['imagemin', 'sass', 'connect', 'watch']);
 };
