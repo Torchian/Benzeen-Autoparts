@@ -513,11 +513,16 @@ aside {
     }
 }
 .product_grid_view {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-gap: 40px 50px;
+    overflow: hidden;
+    &>div {
+        margin: -25px;
+    }
 }
 .grid_view_card {
+    flex: 0 1 33.33333%;
+    padding: 25px;
+    border-bottom: 1px solid #dddcdc;
+    border-right: 1px solid #dddcdc;
     .card {
         border: 0;
     }

@@ -87,6 +87,10 @@
         }
     }
     body {
+        .grid_view_card {
+            flex: 0 1 50%;
+            padding: 20px;
+        }
         #hero {
             .hero_nav_cont {
                 .nav_srch {
@@ -555,6 +559,17 @@
 @media (max-width: 575.98px) {
     body {
         main {
+            .grid_view_card {
+                flex: 0 1 100%;
+                padding: 25px 10px;
+                border-right: 0;
+                .card-img-top {
+                    height: 250px;
+                }
+            }
+            .product_grid_view>div {
+                margin: 0;
+            }
             #product_view {
                 .prod_slider {
                     .swiper-container_prod.gallery-top {
