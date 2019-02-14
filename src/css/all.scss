@@ -50,16 +50,16 @@ a {
 }
 
 .f_light {
-    font-weight: 200;
+    font-weight: 200 !important;
 }
 .f_bold {
-    font-weight: 600;
+    font-weight: 600 !important;
 }
 .f_bolder {
-    font-weight: 700;
+    font-weight: 700 !important;
 }
 .f_boldest {
-    font-weight: 800;
+    font-weight: 800 !important;
 }
 
 // Bootstrap and its default variables
@@ -614,21 +614,119 @@ aside {
 // Shopping Cart
 #shipping_cart {
     margin-top: 90px;
+    margin-bottom: 30px;
 }
 .prod_shop_cart {
     padding: 25px;
-    img {
+    position: relative;
+    margin-bottom: 25px;
+    .card-body {
+        padding-left: 20px;
+        p {
+            font-size: 15px;
+            span {
+                color: $primary;
+                line-height: 1.6;
+            }
+            a {
+                text-decoration: underline !important;
+            }
+        }
+    }
+    .card-img-top {
         max-width: 270px;
         height: 100%;
         object-fit: cover;
     }
     .card-title {
-        font-size: 27px;
+        font-size: 21px;
         color: #010101;
+        font-weight: 700;
+    }
+    .cart_info {
+        margin-bottom: 15px;
+        padding-bottom: 13px;
+        padding-right: 30px;
+        border-bottom: 1px solid #d7d7d7;
+    }
+    .cart_info_2 {
+        position: relative;
+        padding-right: 30px;
+        img {
+            position: absolute;
+            top: 0;
+            right: 0;
+            cursor: pointer;
+        }
+    }
+    .remove_prod_cart {
+        padding: 0;
+        line-height: 0;
+        background-color: $primary;
+        border: 0;
+        outline: 0;
+        border-radius: 50%;
+        height: 22px;
+        width: 22px;
+        color: #ffffff;
+        cursor: pointer;
+        position: absolute;
+        top: 25px;
+        right: 25px;
+    }
+}
+.total_cart {
+    max-width: max-content;
+    margin-left: auto;
+    padding: 0;
+    .total_info {
+        padding: 15px 55px 10px;
+        border-bottom: 1px solid #d7d7d7;
+    }
+    .total_title {
+        font-size: 17px;
+        padding: 15px 55px 10px;
+        font-weight: 700;
+        span {
+            color: $primary;
+        }
     }
 }
 .cart_payment_sec {
     padding-left: 60px;
+    .sec_title {
+        h3 {
+            color: $default-text;
+        }
+        .price {
+            color: $primary;
+        }
+    }
+    .cart_payment_methods {
+        .btn {
+            padding: 8px;
+            color: #fff;
+            font-size: 20px;
+            margin-bottom: 10px;
+            border: 0;
+            &.btn-secondary {
+                background-color: #4d4d4d;
+            }
+        }
+    }
+    .cart_payment_methods, .cart_payment_options {
+        padding-bottom: 50px;
+        margin-bottom: 45px;
+        border-bottom: 1px solid #d7d7d7;
+    }
+    .cart_payment_options, .cart_security {
+        h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: $default-text;
+            text-transform: uppercase;
+        }
+    }
 }
 // shopping cart
 
