@@ -611,6 +611,27 @@ aside {
 }
 // products grid view
 
+// Shopping Cart
+#shipping_cart {
+    margin-top: 90px;
+}
+.prod_shop_cart {
+    padding: 25px;
+    img {
+        max-width: 270px;
+        height: 100%;
+        object-fit: cover;
+    }
+    .card-title {
+        font-size: 27px;
+        color: #010101;
+    }
+}
+.cart_payment_sec {
+    padding-left: 60px;
+}
+// shopping cart
+
 // Mobile marks list
 .mobile_search_list {
     margin-top: -38px;
