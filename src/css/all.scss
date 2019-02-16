@@ -24,7 +24,7 @@ $container-max-widths: (
   xl: 1430px
 );
 
-$primary:               #f0ad4e !default;
+$primary:               #de9e3c !default;
 $default-text:          #000000 !default;
 $primary-text:          #de9e3c !default;
 $gray-text:             #343333 !default;
@@ -553,7 +553,7 @@ aside {
             }
         }
         .info {
-            margin-bottom: 15px;
+            margin-bottom: 10px;
             .status {
                 color: #48990d;
             }
@@ -561,11 +561,19 @@ aside {
     }
     .ship_info {
         border: 1px solid $primary;
+        overflow: hidden;
+        transform-origin: 90% 100%;
     }
     &:hover {
+        .card-body {
+            .msrp {
+                animation: .1s truckRes .9s cubic-bezier(0.26, 0.07, 0.8, 0.93) forwards;
+            }
+        }
         .ship_info {
+            animation: .66s truckContainer .34s cubic-bezier(0.26, 0.07, 0.8, 0.93) forwards;
             img {
-                animation: bobbing 0.1s infinite ease-in-out forwards alternate;
+                animation: truck 1s cubic-bezier(0.12, 0.48, 1, 0.87) forwards;
             }
         }
     }
@@ -601,6 +609,37 @@ aside {
         background-color: #979696;
     }
 }
+@keyframes truckRes {
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(3deg);
+    }
+}
+@keyframes truck {
+    0%{
+        transform: rotate(0) translate(0);
+    }
+    70%{
+        transform: rotate(-2deg) translate(20px, 1px);
+    }
+    100%{
+        transform: rotate(-5deg) translate(30px, 2px);
+    }
+}
+@keyframes truckContainer {
+    0%{
+        border-radius: 0;
+        padding-right: 10px;
+        transform: translateX(0) rotate(0deg);
+    }
+    100%{
+        border-radius: 0 46% 35% 0;
+        padding-right: 30px;
+        transform: translateX(10%) rotate(5deg);
+    }
+}
 @keyframes bobbing {
     0%{
         transform: rotate(0) translateY(0.5px);
@@ -615,6 +654,9 @@ aside {
 #shipping_cart {
     margin-top: 90px;
     margin-bottom: 30px;
+    h2 {
+        color: $default-text;
+    }
 }
 .prod_shop_cart {
     padding: 25px;
@@ -642,6 +684,7 @@ aside {
         font-size: 21px;
         color: #010101;
         font-weight: 700;
+        padding-right: 30px;
     }
     .cart_info {
         margin-bottom: 15px;
@@ -693,7 +736,7 @@ aside {
     }
 }
 .cart_payment_sec {
-    padding-left: 60px;
+    padding-left: 4%;
     .sec_title {
         h3 {
             color: $default-text;
@@ -712,6 +755,15 @@ aside {
             &.btn-secondary {
                 background-color: #4d4d4d;
             }
+            &.btn-warning {
+                font-size: 13px;
+                font-weight: 700;
+                color: #222d65;
+                img {
+                    height: 30px;
+                    margin-left: 10px;
+                }
+            }
         }
     }
     .cart_payment_methods, .cart_payment_options {
@@ -725,6 +777,16 @@ aside {
             margin-bottom: 20px;
             color: $default-text;
             text-transform: uppercase;
+        }
+        img {
+            max-height: 40px;
+        }
+    }
+    .cart_payment_options {
+        padding-bottom: 20px;
+        img {
+            height: 35px;
+            margin: 0 15% 30px 0;
         }
     }
 }
@@ -1123,23 +1185,6 @@ aside {
             color: #c3c0c0;
             font-size: 16px;
         }
-    }
-}
-@keyframes rotateRev {
-    0% {
-      transform: rotateY(0deg);
-    }
-    2% {
-      transform: rotateY(90deg);
-    }
-    4% {
-      transform: rotateY(180deg);
-    }
-    7% {
-      transform: rotateY(90deg);
-    }
-    10% {
-      transform: rotateY(0deg);
     }
 }
 // reviews section
