@@ -21,8 +21,8 @@
 
         .container {
             width: 100%;
-            padding-right: 15px;
-            padding-left: 15px;
+            padding-right: 10px;
+            padding-left: 10px;
             margin-right: auto;
             margin-left: auto
         }
@@ -53,8 +53,8 @@
 
         .container-fluid {
             width: 100%;
-            padding-right: 15px;
-            padding-left: 15px;
+            padding-right: 10px;
+            padding-left: 10px;
             margin-right: auto;
             margin-left: auto
         }
@@ -64,8 +64,8 @@
             display: flex;
             -ms-flex-wrap: wrap;
             flex-wrap: wrap;
-            margin-right: -15px;
-            margin-left: -15px
+            margin-right: -10px;
+            margin-left: -10px
         }
 
         .no-gutters {
@@ -151,8 +151,8 @@
         .col-xl-auto {
             position: relative;
             width: 100%;
-            padding-right: 15px;
-            padding-left: 15px
+            padding-right: 10px;
+            padding-left: 10px
         }
 
         .col {
@@ -3453,6 +3453,10 @@
             margin-left: 20px;
         }
 
+        #recent_arr .amp-scrollable-carousel-slide:first-child {
+            margin-left: 0;
+        }
+
         #reviews {
             padding-top: 50px;
             padding-bottom: 34px;
@@ -3710,6 +3714,37 @@
 
         .footer_main .footer_info p:first-child {
             margin-bottom: 25px;
+        }
+        @media (max-width: 991.98px) {
+            #hero .nav_srch {
+                max-width: 100%;
+            }
+            #hero .hero_nav_cont .nav_srch h2 {
+                font-size: 25px;
+            }
+            #hero .hero_nav_cont .nav_srch h2 span {
+                font-size: 18px;
+            }
+            .parts_cards {
+    margin: -10px 0;
+}
+.sec_title h2 {
+    font-size: 20px;
+}
+.btn-lg {
+    padding: 10px 8px;
+    font-size: 14px;
+}
+#recent_arr {
+    padding: 60px 0 22px;
+}
+.part_card_one {
+    padding: 0 5px;
+    margin: 5px 0;
+}
+.part_card_one .card {
+    padding: 20px 5%;
+}
         }
     </style>
 
@@ -4320,11 +4355,11 @@
                     <div class="col-12 sold_slider order-2">
                         <amp-carousel class="amp_carousel" layout="fixed-height" height="500" type="carousel">
                             <div class="slide">
-                                <amp-img src="../dist/img/photos/Layer15.png" width="400" height="250"
-                                    alt="Border Collie">
+                                <amp-img src="../dist/img/photos/Layer15.png" width="300" height="250"
+                                    alt="Border Collie" sizes="(min-width: 650px) 400px, 300px" layout="fixed">
                                 </amp-img>
-                                <amp-fit-text layout="responsive" width="500" height="260"
-                                    class="amp-text-body text-center">
+                                <amp-fit-text layout="responsive" width="500" height="250"
+                                    class="amp-text-body text-center" heights="(min-width: 650px) 400px, 250px">
                                     <a href="">
                                         <h5 class="card-title f_boldest">2006 TOYOTA 4RUNNER</h5>
                                     </a>
@@ -4364,11 +4399,11 @@
                                 </amp-fit-text>
                             </div>
                             <div class="slide">
-                                <amp-img src="../dist/img/photos/Layer15.png" width="400" height="250"
-                                    alt="Border Collie">
+                                <amp-img src="../dist/img/photos/Layer15.png" width="300" height="250"
+                                    alt="Border Collie" sizes="(min-width: 650px) 400px, 300px" layout="fixed">
                                 </amp-img>
                                 <amp-fit-text layout="responsive" width="500" height="260"
-                                    class="amp-text-body text-center">
+                                    class="amp-text-body text-center" heights="(min-width: 650px) 500px, 250px">
                                     <a href="">
                                         <h5 class="card-title f_boldest">2006 TOYOTA 4RUNNER</h5>
                                     </a>
@@ -4408,11 +4443,11 @@
                                 </amp-fit-text>
                             </div>
                             <div class="slide">
-                                <amp-img src="../dist/img/photos/Layer15.png" width="400" height="250"
-                                    alt="Border Collie">
+                                <amp-img src="../dist/img/photos/Layer15.png" width="300" height="250"
+                                    alt="Border Collie" sizes="(min-width: 650px) 400px, 300px" layout="fixed">
                                 </amp-img>
                                 <amp-fit-text layout="responsive" width="500" height="260"
-                                    class="amp-text-body text-center">
+                                    class="amp-text-body text-center" heights="(min-width: 650px) 500px, 250px">
                                     <a href="">
                                         <h5 class="card-title f_boldest">2006 TOYOTA 4RUNNER</h5>
                                     </a>
@@ -4452,55 +4487,11 @@
                                 </amp-fit-text>
                             </div>
                             <div class="slide">
-                                <amp-img src="../dist/img/photos/Layer15.png" width="400" height="250"
-                                    alt="Border Collie">
+                                <amp-img src="../dist/img/photos/Layer15.png" width="300" height="250"
+                                    alt="Border Collie" sizes="(min-width: 650px) 400px, 300px" layout="fixed">
                                 </amp-img>
                                 <amp-fit-text layout="responsive" width="500" height="260"
-                                    class="amp-text-body text-center">
-                                    <a href="">
-                                        <h5 class="card-title f_boldest">2006 TOYOTA 4RUNNER</h5>
-                                    </a>
-                                    <h6 class="card-subtitle">This is a 2006 Toyota 4Runner,</h6>
-                                    <h6 class="card-subtitle">Stock# 6160BL available for parts.</h6>
-                                    <h6 class="card-subtitle">Save up to 70% off MSRP prices.</h6>
-                                    <div class="text-center badges mt-2">
-                                        <div
-                                            class="badge badge-secondary d-flex align-items-center justify-content-center">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 69.1 74.9" width="20"
-                                                class="mr-3">
-                                                <title>calendar</title>
-                                                <g id="Layer_2" data-name="Layer 2">
-                                                    <g id="Layer_1-2" data-name="Layer 1" fill="#5d5c5c">
-                                                        <path id="a"
-                                                            d="M69.1,30.3V19.6a8.92,8.92,0,0,0-8.9-8.9H55.8V4.9C55.8,2.2,52.7,0,50,0s-5.8,2.2-5.8,4.9v5.8H25.8V4.9C25.8,2.2,22.7,0,20,0s-5.8,2.2-5.8,4.9v5.8H8.9A8.92,8.92,0,0,0,0,19.6V64.9a10,10,0,0,0,10,10H59a10,10,0,0,0,10-10V30.3ZM21.8,10.6v4H48.2V4.9c0-.1.1-.2.4-.4A2.66,2.66,0,0,1,50,3.9a2.66,2.66,0,0,1,1.4.6,1.2,1.2,0,0,1,.4.4v9.7h8.4a4.91,4.91,0,0,1,4.9,4.9V29.8H4.1V19.5A4.91,4.91,0,0,1,9,14.6h9.3V4.9c0-.1.1-.2.4-.4a2.66,2.66,0,0,1,1.4-.6,2.66,2.66,0,0,1,1.4.6,1.2,1.2,0,0,1,.4.4v5.7ZM4.1,34.3h61V64.9a6,6,0,0,1-6,6h-49a6,6,0,0,1-6-6Z" />
-                                                    </g>
-                                                </g>
-                                            </svg>
-                                            Arrived: <span class="f_bold ml-2">8/19/17</span>
-                                        </div>
-                                        <div
-                                            class="badge badge-secondary d-flex align-items-center justify-content-center">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 67.13" width="20"
-                                                class="mr-3">
-                                                <title>car</title>
-                                                <g id="Layer_2" data-name="Layer 2">
-                                                    <g id="Layer_1-2" data-name="Layer 1" fill="#5d5c5c">
-                                                        <path
-                                                            d="M79.9,17.1c-.6-1.2-2.3-2.1-5-2.2-3.4-.2-4.6,3.4-2.3,5.2a2.05,2.05,0,0,1-.9,2c-.2-.3-.3-.5-.5-.8-.4-.9-.8-1.8-1.2-2.8-1.8-4.7-3.6-9-5.7-13.7a5.65,5.65,0,0,0-3.7-3.2C54.9.3,47.6.1,40.1,0h0C32.6.1,25.3.3,19.6,1.6a5.65,5.65,0,0,0-3.7,3.2c-2.1,4.7-3.9,9.1-5.7,13.7-.4.9-.8,1.9-1.2,2.8-.2.3-.3.5-.5.8a2.26,2.26,0,0,1-.9-2c2.2-1.8,1.1-5.4-2.3-5.2-2.7.1-4.4,1-5,2.2a.91.91,0,0,0-.3.8c.2,1.8,1.8,2.5,3.8,2.7.8.1,1,0,1.5.8.5,1,1.1,2.6,1.6,3.7a14.34,14.34,0,0,0-.7,2.8A34.34,34.34,0,0,1,3.8,33a14.11,14.11,0,0,0-1.6,6.4,45.81,45.81,0,0,0,.5,8.8,78.89,78.89,0,0,0,.4,16.2A3.26,3.26,0,0,0,5,67.1H9c1.1,0,2.1.2,2.9-.5,1.5-1.3,1.1-4,1.2-5.8H66.9c0,1.8-.4,4.5,1.2,5.8.9.7,1.8.5,2.9.5h4a3,3,0,0,0,1.9-2.7,86.41,86.41,0,0,0,.4-16.2,55.6,55.6,0,0,0,.5-8.8A14.11,14.11,0,0,0,76.2,33a26.59,26.59,0,0,1-2.4-5.1,12.76,12.76,0,0,0-.7-2.8c.5-1.1,1.1-2.7,1.6-3.7.4-.8.6-.7,1.5-.8,2-.3,3.5-1,3.8-2.7A2.2,2.2,0,0,0,79.9,17.1ZM18.7,7c.8-1.4,1-1.8,2.6-2A138.07,138.07,0,0,1,39.9,3.7h0A136.91,136.91,0,0,1,58.5,5c1.6.2,1.9.6,2.6,2a151.62,151.62,0,0,1,6.1,14.2c-9.4-.1-45.4-.1-54.8,0C14.7,16,16.3,11.8,18.7,7ZM9.1,47.7a2,2,0,1,1,2-2A2,2,0,0,1,9.1,47.7Zm3.8-8.2a5,5,0,1,1,5-5A5,5,0,0,1,12.9,39.5ZM61.1,54.3C55.5,57.2,48,57,40,57h0c-7.9,0-15.4.2-21.1-2.7-3-1.5-3.9-3.3-2.7-5.5.9-1.8,1.9-3.6,2.9-5.3s2.9-2.9,5.7-3.1c4.9-.3,10-.4,15.1-.5h0c5.1.1,10.2.2,15.1.5,2.9.2,4.7,1.3,5.7,3.1a39.15,39.15,0,0,1,2.9,5.3C65,51,64.1,52.8,61.1,54.3Zm6-14.8a5,5,0,1,1,5-5A5,5,0,0,1,67.1,39.5Zm3.8,8.2a2,2,0,1,1,2-2A1.89,1.89,0,0,1,70.9,47.7Z" />
-                                                    </g>
-                                                </g>
-                                            </svg>
-                                            Stock# <span class="f_bold ml-2">7482GY</span>
-                                        </div>
-                                    </div>
-                                </amp-fit-text>
-                            </div>
-                            <div class="slide">
-                                <amp-img src="../dist/img/photos/Layer15.png" width="400" height="250"
-                                    alt="Border Collie">
-                                </amp-img>
-                                <amp-fit-text layout="responsive" width="500" height="260"
-                                    class="amp-text-body text-center">
+                                    class="amp-text-body text-center" heights="(min-width: 650px) 500px, 250px">
                                     <a href="">
                                         <h5 class="card-title f_boldest">2006 TOYOTA 4RUNNER</h5>
                                     </a>
