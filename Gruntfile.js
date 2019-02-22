@@ -2,19 +2,19 @@ module.exports = function (grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
         // Imagemin
-        imagemin: {
-            dist: {
-                options: {
-                    optimizationLevel: 7
-                },
-                files: [{
-                    expand: true,
-                    cwd: 'src/img',
-                    src: ['**/*.{png,jpg,gif}'],
-                    dest: 'dist/img/'
-                }]
-            }
-        },
+        // imagemin: {
+        //     dist: {
+        //         options: {
+        //             optimizationLevel: 7
+        //         },
+        //         files: [{
+        //             expand: true,
+        //             cwd: 'src/img',
+        //             src: ['**/*.{png,jpg,gif}'],
+        //             dest: 'dist/img/'
+        //         }]
+        //     }
+        // },
 
         // Sass
         sass: {
@@ -48,10 +48,10 @@ module.exports = function (grunt) {
         }
     });
 
-    grunt.loadNpmTasks('grunt-contrib-imagemin');
+    // grunt.loadNpmTasks('grunt-contrib-imagemin');
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-contrib-watch');
 
-    grunt.registerTask('default', ['imagemin', 'sass', 'connect', 'watch']);
+    grunt.registerTask('default', ['sass', 'connect', 'watch']);
 };

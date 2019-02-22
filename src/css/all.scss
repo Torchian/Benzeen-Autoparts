@@ -14,7 +14,7 @@ $grid-breakpoints: (
   sm: 576px,
   md: 768px,
   lg: 992px,
-  xl: 1500px
+  xl: 1240px
 );
 
 $container-max-widths: (
@@ -515,7 +515,7 @@ aside {
 .product_grid_view {
     overflow: hidden;
     &>div {
-        margin: -25px;
+        margin: -20px;
     }
 }
 .grid_view_card {

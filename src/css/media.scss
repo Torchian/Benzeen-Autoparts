@@ -87,10 +87,6 @@
         }
     }
     body {
-        .grid_view_card {
-            flex: 0 1 50%;
-            padding: 20px;
-        }
         #hero {
             .hero_nav_cont {
                 .nav_srch {
@@ -222,7 +218,6 @@
                     font-size: 22px;
                 }
             }
-            
             #recently_sold {
                 padding: 40px 0 32px;
                 .swiper-container {
@@ -267,6 +262,24 @@
                     img {
                         max-width: 55px;
                     }
+                }
+            }
+            .view_header {
+                margin: 0 -10px 30px;
+                h2 {
+                    font-size: 21px;
+                    transform: translateX(10px);
+                }
+            }
+            .view_title {
+                padding-bottom: 30px;
+                border-bottom: 0;
+                h3 {
+                    font-size: 19px;
+                }
+                p {
+                    font-size: 14px;
+                    line-height: 1.4;
                 }
             }
         }
@@ -525,6 +538,12 @@
             .prod_shop_cart {
                 padding: 10px;
             }
+            .grid_nav {
+                padding: 0;
+            }
+            .product_grid_view {
+                margin-top: 30px;
+            }
         }
         footer {
             .footer_nav {
@@ -564,15 +583,42 @@
     body {
         main {
             .grid_view_card {
-                flex: 0 1 100%;
+                flex: 0 1 50%;
                 padding: 25px 10px;
-                border-right: 0;
                 .card-img-top {
-                    height: 250px;
+                    height: 180px;
+                }
+                .card-body {
+                    .card-title {
+                        font-size: 15px;
+                    }
+                    .card-text {
+                        font-size: 14px;
+                    }
+                    .price {
+                        .was {
+                            font-size: 16px;
+                        }
+                        .now {
+                            font-size: 21px;
+                        }
+                    }
+                    .info {
+                        p {
+                            font-size: 14px;
+                        }
+                    }
+                }
+                .ship_info {
+                    padding: 7px 5px;
+                    p {
+                        font-size: 14px;
+                        margin-right: 5px;
+                    }
                 }
             }
             .product_grid_view>div {
-                margin: 0;
+                margin: -1px -10px;
             }
             #product_view {
                 .prod_slider {
@@ -624,4 +670,11 @@
 }
 
 // // Large devices (desktops, less than 1200px)
-// @media (max-width: 1199.98px) { ... }
+@media (max-width: 1199.98px) {
+    body {
+        .grid_view_card {
+            flex: 0 1 50%;
+            padding: 20px;
+        }
+    }
+}
