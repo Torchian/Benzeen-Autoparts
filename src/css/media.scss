@@ -167,17 +167,18 @@
                 }
                 .prod_bottom_info {
                     margin: 20px 0;
+                    padding: 0;
                     .container {
                         .d-flex {
                             padding: 15px 0;
                             border: 0 !important;
                             img {
-                                max-width: 30px;
-                                max-height: 25px;
+                                height: 25px;
+                                margin-bottom: 15px;
                             }
                             p {
-                                margin-left: 10px;
-                                font-size: 15px;
+                                margin-left: 0;
+                                font-size: 12px;
                             }
                         }
                     }
@@ -188,18 +189,19 @@
                         .card-header {
                             padding: 15px 10px;
                             h5 {
-                                font-size: 20px;
+                                font-size: 18px;
                                 line-height: 0;
                             }
                             .btn-link {
-                                width: 25px;
-                                height: 25px;
+                                width: 20px;
+                                height: 20px;
+                                padding: 0;
                             }
                         }
                         .card-body {
                             p {
-                                font-size: 16px;
-                                line-height: 1.3;
+                                font-size: 14px;
+                                line-height: 1.2;
                             }
                         }
                     }
@@ -228,7 +230,7 @@
                         .card-body {
                             .card-subtitle {
                                 font-size: 13px;
-                                line-height: 1.6;
+                                line-height: 1.9;
                             }
                         }
                     }
@@ -248,6 +250,9 @@
                         }
                     }
                 }
+            }
+            .recently_sliders .sold_slider {
+                margin-bottom: 20px;
             }
             #assurance {
                 background-attachment: unset !important;
@@ -359,6 +364,11 @@
                 }
             }
         }
+        .navbar.home_nav {
+            .navbar-toggler {
+                margin-right: 16px;
+            }
+        }
         .top_nav {
             order: -1;
             margin-bottom: 5px;
@@ -384,12 +394,12 @@
         .logo_cont {
             text-align: center;
             img {
-                max-width: 180px;
+                max-width: 150px;
             }
         }
         .nav_mobile_links {
             .nav-link {
-                padding: 24px 12px !important;
+                padding: 20px 10px !important;
                 svg {
                     height: 26px !important;
                 }
@@ -445,7 +455,7 @@
                 }
                 .prod_buy {
                     .btn {
-                        font-size: 20px;
+                        font-size: 17px;
                         line-height: 1.4;
                         padding: 11px;
                         margin-bottom: 15px;
@@ -457,7 +467,7 @@
                         }
                     }
                     .prod_notes p {
-                        font-size: 14px;
+                        font-size: 13px;
                         color: #000;
                         margin-bottom: 10px;
                     }
@@ -493,6 +503,22 @@
                     }
                     span {
                         margin-bottom: 30px;
+                    }
+                }
+                &.review_testim {
+                    .swiper-container-review {
+                        .swiper-button-next, .swiper-button-prev {
+                            padding: 15px 7px;
+                        }
+                    }
+                    .swiper-slide {
+                        .review_text {
+                            font-size: 16px;
+                        }
+                        span {
+                            margin-bottom: 40px;
+                            font-size: 15px;
+                        }
                     }
                 }
             }
@@ -534,15 +560,77 @@
                         }
                     }
                 }
-            }
-            .prod_shop_cart {
-                padding: 10px;
+                .sec_title {
+                    p {
+                        font-size: 15px;
+                    }
+                }
             }
             .grid_nav {
                 padding: 0;
             }
             .product_grid_view {
                 margin-top: 30px;
+            }
+            #shipping_cart {
+                margin-top: 40px;
+                margin-bottom: 0;
+                .prod_shop_cart {
+                    padding: 7px;
+                    .card-title {
+                        font-size: 16px;
+                        padding-right: 40px;
+                        margin-bottom: 10px;
+                    }
+                    .cart_info {
+                        margin-bottom: 10px;
+                        padding-bottom: 10px;
+                        padding-right: 40px;
+                    }
+                    .card-body p {
+                        font-size: 13px;
+                    }
+                    .cart_info_2 {
+                        padding-right: 40px;
+                    }
+                    .remove_prod_cart {
+                        top: 15px;
+                        right: 15px;
+                    }
+                    .card-img-top {
+                        height: 200px;
+                        padding-right: 10px;
+                    }
+                }
+                .total_cart {
+                    max-width: 100%;
+                    text-align: right;
+                    .total_info, .total_title {
+                        padding: 15px 40px 10px;
+                    }
+                }
+                .cart_payment_sec {
+                    .sec_title h3 {
+                        font-size: 20px;
+                    }
+                    .cart_payment_methods .btn {
+                        font-size: 16px;
+                    }
+                    .cart_payment_methods, .cart_payment_options, .cart_security {
+                        padding-bottom: 15px;
+                        margin-bottom: 30px;
+                        .btn {
+                            font-size: 16px;
+                        }
+                        h3 {
+                            font-size: 20px;
+                        }
+                        img {
+                            max-height: 28px;
+                            margin: 0 8px 0 0;
+                        }
+                    }
+                }
             }
         }
         footer {
@@ -582,6 +670,10 @@
 @media (max-width: 575.98px) {
     body {
         main {
+            .btn_sec .btn {
+                font-size: 16px;
+                padding: 12px;
+            }
             .grid_view_card {
                 flex: 0 1 50%;
                 padding: 25px 10px;
@@ -630,13 +722,27 @@
             #reviews .container .rev_icon {
                 display: none;
             }
+            #shipping_cart {
+                .prod_shop_cart {
+                    .card-img-top {
+                        padding-right: 0;
+                        margin-bottom: 10px;
+                    }
+                    .remove_prod_cart {
+                        top: 5px;
+                        right: 5px;
+                        height: 30px;
+                        width: 30px;
+                    }
+                }
+            }
             #assurance {
                 .assur_body {
                     .assur_col {
                         padding: 2px;
                         .assur_img {
-                            height: 140px;
-                            width: 140px;
+                            height: 120px;
+                            width: 120px;
                             img {
                                 max-width: 45px;
                             }
