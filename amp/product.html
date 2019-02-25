@@ -3265,13 +3265,6 @@
             margin: 0 5px;
         }
 
-        .navbar_right {
-            position: absolute;
-            right: 0;
-            top: 4px;
-            bottom: 0;
-        }
-
         .navbar_right .nav-item .nav-link {
             text-transform: capitalize;
             padding: 20px;
@@ -3286,132 +3279,62 @@
             background-color: var(--color-primary);
         }
 
-        #hero {
-            height: calc(100vh - 91px);
-            position: relative;
-            margin-bottom: 40px;
-            background-image: url(../dist/img/photos/hero_bg_1.png);
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-        }
-
-        #hero .hero_nav_cont {
+        .nav_srch form .form-row {
             position: relative;
         }
-
-        #hero .nav_srch {
-            top: 50%;
-            z-index: 2;
-            width: 700px;
-            max-width: 90%;
-        }
-
-        #hero .hero_nav_cont .nav_srch h2 {
-            font-size: 31px;
-            font-weight: 400;
-            color: var(--color-text-light);
-            line-height: 1.5;
-            margin-bottom: 25px;
-        }
-
-        #hero .hero_nav_cont .nav_srch h2 span {
-            font-size: 22px;
-        }
-
-        #hero .form-row {
-            position: relative;
-        }
-
-        #hero form .search_btn {
+        .nav_srch form .form-row .search_btn {
             position: absolute;
             right: 0;
             top: 0;
+            height: 100%;
             padding: 10px 15px;
             background-color: var(--color-primary);
         }
-
         .nav_srch form .form-row input {
             color: #707070;
             line-height: .852;
             border: 0;
             width: 100%;
-            padding: 13px 20px;
+            padding: 13px 75px 13px 20px;
             font-size: 15px;
             background-color: var(--color-text-light);
         }
-
-        .hero_nav_cont {
-            height: 100%;
-            padding-bottom: 40px;
+        nav.navbar {
+            background-color: #4d4d4d;
         }
-
-        .phone_info {
-            margin-left: 12px;
-        }
-
-        .phone_info h3 {
-            font-size: 30px;
-            color: var(--color-primary);
-            font-weight: bold;
-        }
-
-        .phone_info p {
-            font-size: 11px;
-            color: #eeeeee;
-        }
-
-        .search_list {
-            border-top: 5px solid #de9e3c;
-        }
-
-        #featured_parts section h4 {
-            background-color: #e8e7e7;
-            border: 0;
-            border-bottom: 2px solid #fff;
-            padding: 18px 25px;
-        }
-
-        .parts_cards_sec {
-            overflow: hidden;
-        }
-
-        .parts_cards {
-            margin: -10px;
-        }
-
-        .part_card_one {
-            padding: 0 10px;
-            margin: 10px 0;
-        }
-
-        .part_card_one .card {
-            background-color: var(--primary-grey);
-            padding: 40px 9%;
-            color: var(--color-text-light);
-        }
-
-        .part_card_one .card-body {
-            flex: 1 1 100%;
-        }
-
-        .part_card_one h3 {
+        .tco_nav .nav-item .nav-link {
             font-size: 16px;
-            margin-bottom: 13px;
-        }
-
-        .part_card_one p {
-            font-size: 14px;
-            margin-bottom: 20px;
-        }
-
-        .part_card_one a {
-            font-size: 14px;
             text-transform: uppercase;
+            padding: 20px 10px;
+            margin: 0 10px;
+            color: #ffffff !important;
         }
-
-        #featured_parts {
-            padding-bottom: 55px;
+        .tco_nav .nav-item .nav-link:first-child {
+            margin-left: 0;
+        }
+        .tco_nav .navbar_right .nav-item {
+            margin: 0;
+        }
+        .tco_nav .navbar_right .nav-item .nav-link {
+            margin: 0;
+            padding-left: 0;
+            padding-right: 0;
+            font-size: 15px;
+            text-transform: capitalize;
+            color: #ffffff;
+        }
+        .tco_nav .navbar_right .nav-item .nav-link amp-img {
+            margin-right: 5px;
+        }
+        .tco_nav .navbar_right .nav-item .nav-link:before {
+            content: none;
+        }
+        .tco_nav .navbar_right .nav-item:first-child .nav-link {
+            padding-right: 20px;
+        }
+        .tco_nav .navbar_right .nav-item:last-child amp-img {
+            padding-left: 10px;
+            border-left: 1px solid #ffffff;
         }
 
         #recent_arr {
@@ -3419,7 +3342,7 @@
             background-color: #eee;
         }
 
-        #recent_arr .amp_carousel img {
+        #recent_arr .amp_carousel amp-img {
             object-fit: cover;
         }
 
@@ -3456,69 +3379,108 @@
         #recent_arr .amp-scrollable-carousel-slide:first-child {
             margin-left: 0;
         }
-
-        #reviews {
-            padding-top: 50px;
-            padding-bottom: 34px;
-            background-image: url(../dist/img/photos/prev_bg.png);
+        .review_testim {
+            padding-top: 80px;
+            padding-bottom: 50px;
+            background-image: url("../dist/img/photos/prev_bg.png");
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
             position: relative;
         }
-
-        #reviews::before {
+        .review_testim::before {
             content: "";
             position: absolute;
             left: 0;
             top: 0;
             right: 0;
             bottom: 0;
-            background-color: rgba(0, 0, 0, .75);
+            background-color: rgba(0, 0, 0, 0.75);
         }
-
-        .rev_header {
+        .review_testim .container {
+            position: relative;
+        }
+        .review_testim .container .rev_icon {
+            position: absolute;
+            top: -20px;
+            right: 40px;
+            z-index: 2;
+        }
+        .review_testim .rev_header {
             width: 220px;
             margin: auto;
         }
-
-        .ver_rev_title {
+        .review_testim .rev_stars amp-img {
+            margin: 0 5px 15px;
+        }
+        .review_testim .rev_stat {
+            margin-bottom: 90px;
+        }
+        .review_testim .rev_stat p {
+            font-size: 16px;
+            font-weight: 100;
+            color: #ffffff;
+        }
+        .review_testim .rev_stat span {
+            font-weight: 600;
+        }
+        .review_testim .btn_sec .btn {
+            font-size: 15px;
+            padding: 10px;
+            min-width: 130px;
+        }
+        .review_testim .ver_rev_title {
             position: relative;
             margin-bottom: 10px;
         }
-
-        .ver_rev_title .ver_r,
-        .rev_r {
-            font-size: 31px;
+        .review_testim .ver_rev_title .ver_r, .review_testim .ver_rev_title .rev_r {
+            font-size: 41px;
             color: var(--color-primary);
-            line-height: 0.9;
+            line-height: 0.6;
             text-transform: uppercase;
         }
-
-        .ver_rev_title .rev_r {
-            color: var(--color-text-light);
+        .review_testim .ver_rev_title .rev_r {
+            color: #ffffff;
             font-size: 45px;
             font-weight: 800;
         }
-
-        .ver_rev_title amp-img {
+        .review_testim .ver_rev_title amp-img {
             position: absolute;
-            top: -4px;
-            right: -8px;
+            top: -7px;
+            right: -13px;
         }
-
-        .rev_stars amp-img {
-            margin: 0 5px 15px;
+        .swiper-container-review .swiper-button-next, .swiper-container-review .swiper-button-prev {
+            background-image: none;
+            padding: 10px 15px;
+            transform: translateY(-50%);
+            width: auto;
+            height: auto;
+            margin: 0;
         }
-
-        .rev_stat {
-            margin-bottom: 90px;
+        .review_testim .swiper-container-review .swiper-button-next {
+            right: 0;
         }
-
-        .rev_stat p {
+        .review_testim .swiper-container-review .swiper-button-prev {
+            left: 0;
+        }
+        .review_testim .swiper-slide {
+            color: #ffffff;
+        }
+        .review_testim .swiper-slide .review_text {
+            margin-bottom: 35px;
+            font-size: 18px;
+        }
+        .review_testim .swiper-slide h4 {
+            margin-bottom: 25px;
+            font-style: italic;
+            font-weight: 600;
+            font-size: 22px;
+        }
+        .review_testim .swiper-slide span {
+            display: inline-block;
+            margin-bottom: 70px;
+            color: #c3c0c0;
             font-size: 16px;
-            font-weight: 100;
-            color: var(--color-text-light);
         }
 
         .customer_rev .swiper-container-customer-review {
@@ -3716,35 +3678,23 @@
             margin-bottom: 25px;
         }
         @media (max-width: 991.98px) {
-            #hero .nav_srch {
-                max-width: 100%;
+            .sec_title h2 {
+                font-size: 20px;
             }
-            #hero .hero_nav_cont .nav_srch h2 {
-                font-size: 25px;
+            .btn-lg {
+                padding: 10px 8px;
+                font-size: 14px;
             }
-            #hero .hero_nav_cont .nav_srch h2 span {
-                font-size: 18px;
+            #recent_arr {
+                padding: 60px 0 22px;
             }
-            .parts_cards {
-    margin: -10px 0;
-}
-.sec_title h2 {
-    font-size: 20px;
-}
-.btn-lg {
-    padding: 10px 8px;
-    font-size: 14px;
-}
-#recent_arr {
-    padding: 60px 0 22px;
-}
-.part_card_one {
-    padding: 0 5px;
-    margin: 5px 0;
-}
-.part_card_one .card {
-    padding: 20px 5%;
-}
+            .part_card_one {
+                padding: 0 5px;
+                margin: 5px 0;
+            }
+            .part_card_one .card {
+                padding: 20px 5%;
+            }
         }
     </style>
 
@@ -3850,15 +3800,24 @@
             <div class="row">
                 <div class="col-12 col-sm-6 col-lg-3 col-xl-3 logo_cont">
                     <a class="navbar-brand" href="/">
-                        <img src="dist/img/icons/logo.png" alt="logo.png">
+                        <amp-img alt="" src="../dist/img/icons/logo.png" width="209" height="56" layout="fixed">
+                        </amp-img>
                     </a>
                 </div>
                 <div class="col-12 col-lg-5 col-xl-6 d-flex align-items-center nav_srch">
-                    <form class="w-100">
+                    <form method="post" action-xhr="/components/amp-form/submit-form-input-text-xhr" target="_top"
+                        class="w-100">
                         <div class="form-row w-100 m-0">
                             <input type="text" class="form-control" placeholder="Search by Keyword or Part #...">
-                            <a href="#" class="search_btn">
-                                <img src="dist/img/icons/search_icon.png" alt="">
+                            <a href="#" class="search_btn d-flex align-items-center h-100">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 81.92 82.1" width="25" height="25">
+                                    <g id="Layer_2" data-name="Layer 2">
+                                        <g id="Layer_1-2" data-name="Layer 1">
+                                            <path fill="#ffffff"
+                                                d="M34,0a34,34,0,0,0,0,68,33.55,33.55,0,0,0,19.3-6.1L71.7,80.3a5.92,5.92,0,0,0,8.5,0,6.1,6.1,0,0,0,0-8.5L61.9,53.4A34,34,0,0,0,34,0Zm0,12A22,22,0,1,1,12,34,21.94,21.94,0,0,1,34,12Z" />
+                                        </g>
+                                    </g>
+                                </svg>
                             </a>
                         </div>
                     </form>
@@ -3878,7 +3837,8 @@
                     </button>
                 </div>
                 <div class="col-12 col-sm-6 col-lg-4 col-xl-3 d-flex justify-content-md-end align-items-center top_nav">
-                    <img src="dist/img/icons/phone_icon.png" alt="">
+                    <amp-img alt="" src="../dist/img/icons/phone_icon.png" width="20" height="27" layout="fixed">
+                    </amp-img>
                     <div class="phone_info">
                         <h3>Call 877-247-1717</h3>
                         <p>8 am to 5 pm PST Mon - Fri / 9 am to 2 pm PST Sat</p>
@@ -3892,34 +3852,34 @@
     <!-- Header Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark py-0">
         <div class="container">
-            <div class="collapse navbar-collapse tco_nav" id="navbarTogglerTCO">
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                    <li class="nav-item active">
+            <div class="collapse navbar-collapse tco_nav d-flex" id="navbarTogglerTCO">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0 d-flex flex-row pl-0 mb-0">
+                    <li class="nav-item d-flex active">
                         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item d-flex">
                         <a class="nav-link" href="#">Part Request</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item d-flex">
                         <a class="nav-link" href="#">Sell Your Car</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item d-flex">
                         <a class="nav-link" href="#">About Benzeen</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item d-flex">
                         <a class="nav-link" href="#">Warranty</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item d-flex">
                         <a class="nav-link" href="#">Shipping</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item d-flex">
                         <a class="nav-link" href="#">Blog</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item d-flex">
                         <a class="nav-link" href="#">Contact Us</a>
                     </li>
                 </ul>
-                <ul class="navbar-nav my-2 my-lg-0 navbar_right">
+                <ul class="navbar-nav my-2 my-lg-0 navbar_right d-flex flex-row pl-0 mb-0">
                     <li class="nav-item">
                         <a class="nav-link d-flex align-items-center" href="#"><img
                                 src="dist/img/icons/account_icon.png" alt="">My Account</a>
@@ -4032,342 +3992,7 @@
         </amp-accordion>
     </amp-sidebar>
 
-    <!-- Hero -->
-    <section id="hero">
-        <div class="container hero_nav_cont h-100 d-flex justify-content-start flex-wrap align-items-end">
-            <div class="d-flex align-items-start flex-column nav_srch">
-                <h2><span>Experienced OEM Parts Specialists</span> <br>For The Right Part When you Need It Most</h2>
-                <form method="post" action-xhr="/components/amp-form/submit-form-input-text-xhr" target="_top"
-                    class="w-100">
-                    <div class="form-row w-100 m-0">
-                        <input type="text" class="form-control" placeholder="Search by Keyword or Part #...">
-                        <a href="#" class="search_btn d-flex align-items-center h-100">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 81.92 82.1" width="25" height="25">
-                                <g id="Layer_2" data-name="Layer 2">
-                                    <g id="Layer_1-2" data-name="Layer 1">
-                                        <path fill="#ffffff"
-                                            d="M34,0a34,34,0,0,0,0,68,33.55,33.55,0,0,0,19.3-6.1L71.7,80.3a5.92,5.92,0,0,0,8.5,0,6.1,6.1,0,0,0,0-8.5L61.9,53.4A34,34,0,0,0,34,0Zm0,12A22,22,0,1,1,12,34,21.94,21.94,0,0,1,34,12Z" />
-                                    </g>
-                                </g>
-                            </svg>
-                        </a>
-                    </div>
-                </form>
-            </div>
-            <div class="hero_info d-flex justify-content-between align-items-center w-100">
-                <div class="align-items-center d-none d-lg-flex">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46.89 61.85" width="19" height="25">
-                        <g id="Layer_2" data-name="Layer 2">
-                            <g id="Layer_1-2" data-name="Layer 1">
-                                <path fill="#ffffff"
-                                    d="M9.2,1.11a18.07,18.07,0,0,0-9,13.7c-.8,6,.8,13.2,5.3,21l5.5,9.4c4.5,7.8,10.1,12.7,15.8,15.1a18.38,18.38,0,0,0,16.5-.9c3-1.6,4.5-4.6,3-7.3-3.1-3.3-6.3-6.7-9.1-9.5a5.59,5.59,0,0,0-6.7-.6c-4.6,2.6-9,.5-11.2-3.2L15.4,32c-2.6-4.5-1-9,2.8-11.2a5.38,5.38,0,0,0,2.8-6c-1.3-4.3-2.6-8.8-3.8-12.5C14.6-.59,12.2-.49,9.2,1.11Z" />
-                            </g>
-                        </g>
-                    </svg>
-                    <div class="phone_info">
-                        <h3>Call 877-247-1717</h3>
-                        <p>8 am to 5 pm PST Mon - Fri / 9 am to 2 pm PST Sat</p>
-                    </div>
-                </div>
-                <div class="hero_icons d-flex align-items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" height="110">
-                        <title>freeship</title>
-                        <g id="Layer_2" data-name="Layer 2">
-                            <g id="Layer_1-2" data-name="Layer 1">
-                                <path
-                                    d="M150,300C67.29,300,0,232.71,0,150S67.29,0,150,0,300,67.29,300,150,232.71,300,150,300ZM150,8.91C72.2,8.9,8.9,72.2,8.9,150S72.2,291.1,150,291.1,291.1,227.8,291.1,150,227.8,8.9,150,8.91Z" />
-                                <path
-                                    d="M214.64,109.58h-73.5a3.69,3.69,0,0,0-3.68,3.67v55.13h-4.33V128a3.68,3.68,0,0,0-3.67-3.67H107.41a5.45,5.45,0,0,0-4.84,3.48l-5,15.08a5.46,5.46,0,0,1-4.84,3.49H85.36A3.68,3.68,0,0,0,81.69,150v22.05a3.69,3.69,0,0,0,3.67,3.68h4.41a17.64,17.64,0,0,1,35.28,0h35.2a17.64,17.64,0,0,1,35.28,0h19.11a3.69,3.69,0,0,0,3.67-3.68v-58.8A3.68,3.68,0,0,0,214.64,109.58Z" />
-                                <path
-                                    d="M177.89,161a14.7,14.7,0,1,0,14.7,14.7A14.7,14.7,0,0,0,177.89,161Zm0,20a5.33,5.33,0,1,1,5.33-5.32A5.33,5.33,0,0,1,177.89,181.05Z" />
-                                <path
-                                    d="M107.41,161a14.7,14.7,0,1,0,14.7,14.7A14.7,14.7,0,0,0,107.41,161Zm0,20a5.33,5.33,0,1,1,5.33-5.32A5.33,5.33,0,0,1,107.41,181.05Z" />
-                                <path
-                                    d="M97.07,249.2a4.1,4.1,0,0,0-1.44,1.86l-1.19,2.32a3.08,3.08,0,0,0-.51,2.11c.16.44.71.9,1.66,1.39l3.67-7.16-.53-.3A2,2,0,0,0,97.07,249.2Z" />
-                                <path
-                                    d="M202.93,50.8a4.1,4.1,0,0,0,1.44-1.86l1.19-2.31a3.09,3.09,0,0,0,.51-2.11c-.16-.45-.71-.91-1.66-1.4l-3.67,7.16.53.3A1.92,1.92,0,0,0,202.93,50.8Z" />
-                                <path
-                                    d="M117.73,257.71a4.18,4.18,0,0,0-1,2.12l-.7,2.5a3.05,3.05,0,0,0-.08,2.17,3.17,3.17,0,0,0,1.9,1l2.17-7.74-.58-.19A1.94,1.94,0,0,0,117.73,257.71Z" />
-                                <path
-                                    d="M182.27,42.29a4.19,4.19,0,0,0,1-2.11l.7-2.51a3,3,0,0,0,.08-2.16,3.12,3.12,0,0,0-1.9-1L180,42.22l.58.18A1.94,1.94,0,0,0,182.27,42.29Z" />
-                                <path
-                                    d="M237.55,225.71l1.33,1.12a2.69,2.69,0,0,0,1.86.86,3,3,0,0,0,1.62-1.2L237,222a3.58,3.58,0,0,0-1,1.73C236,224.14,236.48,224.81,237.55,225.71Z" />
-                                <path
-                                    d="M62.45,74.29l-1.33-1.12a2.67,2.67,0,0,0-1.85-.86,3.18,3.18,0,0,0-1.63,1.2L63,78a3.53,3.53,0,0,0,1-1.73C64,75.86,63.52,75.19,62.45,74.29Z" />
-                                <path
-                                    d="M150,16.47A133.53,133.53,0,1,0,283.53,150,133.53,133.53,0,0,0,150,16.47Zm97.7,124.69,9.85,1.69,7-7.16,1.43,9.89,9,4.42-9,4.42-1.44,9.89-7-7.16-9.84,1.69,4.64-8.84Zm13-25,6.37,3.15-6.37,3.14-1,7-5-5.08-7,1.2,3.3-6.29-3.3-6.29,7,1.2,5-5.09Zm-8.83-37.6a9.84,9.84,0,0,1,4.64,4.15,11.22,11.22,0,0,1,1.94,5.87A7.12,7.12,0,0,1,257.11,93a18.76,18.76,0,0,1-4.64,3.76l-1.15.73-4.38-7L249.37,89a14.33,14.33,0,0,0,2.75-2,1,1,0,0,0,0-1.31,1,1,0,0,0-1-.56,9.31,9.31,0,0,0-2.69,1.37l-12.85,8.08a8.84,8.84,0,0,0-2.22,1.73,1,1,0,0,0,0,1.28,1.2,1.2,0,0,0,1.29.63A9.05,9.05,0,0,0,237.29,97l3.17-2-.88-1.4L243.64,91l5.13,8.14-14.36,9.05-2.75-4.38,1.51-1.85a5.73,5.73,0,0,1-3-.62A5.92,5.92,0,0,1,228,99.16a7.84,7.84,0,0,1-1.22-3.82,7.43,7.43,0,0,1,.65-3.65,7.83,7.83,0,0,1,2-2.65,38.51,38.51,0,0,1,4-2.8l8-5a31,31,0,0,1,5.83-3.09A6.75,6.75,0,0,1,251.86,78.51ZM238,150a88,88,0,1,1-88-88A88,88,0,0,1,238,150Zm-.31-89.57-6.92,13.28,10.15-10,4.82,4.9L223.21,90.8l-5.06-5.13,7.25-13.14L215.15,82.62l-4.82-4.9,22.53-22.18ZM227,51.06,208.41,76.62l-6.64-4.84,18.61-25.56Zm-20.1-12.73a19.8,19.8,0,0,1,4.36,2.82,5.86,5.86,0,0,1,1.72,2.6,5.3,5.3,0,0,1,0,2.71,20.6,20.6,0,0,1-1.71,4L210,53a11.52,11.52,0,0,1-2.57,3.64,4.26,4.26,0,0,1-3,.85,10.81,10.81,0,0,1-4.22-1.33l-2-1-5.8,11.33-7.32-3.74,14.4-28.15Zm-23.22-9.06a19.66,19.66,0,0,1,4.83,1.9,5.87,5.87,0,0,1,2.21,2.2,5.25,5.25,0,0,1,.53,2.66,20.73,20.73,0,0,1-.87,4.31L189.67,43a11.44,11.44,0,0,1-1.79,4.08,4.24,4.24,0,0,1-2.78,1.43,10.89,10.89,0,0,1-4.41-.46l-2.12-.59-3.44,12.26-7.91-2.22L175.74,27ZM160.45,25l8.17.95L165,57.4l-8.17-.95Zm-18-.14L143,36.19l2.46-.12-.56-11.3,8.21-.4L154.7,56l-8.21.41-.66-13.27-2.46.12L144,56.48l-8.21.41L134.25,25.3ZM110,34a6.27,6.27,0,0,1,2.22-3.31,11.8,11.8,0,0,1,4.58-2.21,12.88,12.88,0,0,1,5.54-.42,5.75,5.75,0,0,1,3.56,1.74,13.74,13.74,0,0,1,2.1,5l.32,1.21-7.37,2-.61-2.26a4.65,4.65,0,0,0-.83-1.95,1.12,1.12,0,0,0-1.06-.18,1.25,1.25,0,0,0-.92.88,3.52,3.52,0,0,0,.1,1.87,5.3,5.3,0,0,0,1,2.2,6.25,6.25,0,0,0,2.74,1.26q6.15,1.73,8.07,3.37t3.12,6.14a11.77,11.77,0,0,1,.53,5,6.15,6.15,0,0,1-2.26,3.39,12.05,12.05,0,0,1-4.81,2.42,11.78,11.78,0,0,1-5.76.25A6.13,6.13,0,0,1,116.54,58a16.24,16.24,0,0,1-2.12-5.12l-.54-2,7.38-2,1,3.72a5,5,0,0,0,.91,2.12,1.22,1.22,0,0,0,1.23.2,1.36,1.36,0,0,0,1-.94,3.84,3.84,0,0,0-.11-1.95c-.49-1.8-1-2.91-1.69-3.33A24.41,24.41,0,0,0,119.15,47a38.7,38.7,0,0,1-4.69-1.79,6.92,6.92,0,0,1-2.25-2,11,11,0,0,1-1.7-3.83A11.56,11.56,0,0,1,110,34ZM94.08,37.6l3.14,5.5-4.77,2.72,3,5.21,4.46-2.55,3,5.23L98.4,56.25l3.45,6,5.24-3,3.14,5.5L97.84,71.86,82.17,44.4ZM76.42,48.3l4,4.91-4.25,3.46,3.78,4.65,4-3.24,3.79,4.67-4,3.24,4.38,5.39,4.69-3.8,4,4.91-11.06,9L65.79,57ZM52,71.87a43.48,43.48,0,0,1,5.42-5.74A5.4,5.4,0,0,1,61.29,65c1.5.13,3.28,1.07,5.35,2.8q2.82,2.39,3.2,3.9c.25,1-.13,2.26-1.16,3.74A6.18,6.18,0,0,1,72,74a4.87,4.87,0,0,1,2.1.4,28.93,28.93,0,0,1,3.71,2.86l6.38,5.37-4.91,5.84-8-6.77A7.37,7.37,0,0,0,68.6,80c-.48,0-1.08.35-1.81,1.22L77.7,90.39l-5.3,6.29L48.21,76.32ZM44.6,81.76l5.51,3.11-2.81,5,5.22,3L55,88.37l5.24,3-2.5,4.42,11.56,6.54-4,7.15L37.75,93.88Zm-5.29,34.35,1-7,4.95,5.09,7-1.2L49,119.26l3.3,6.29-7-1.2-5,5.08-1-7-6.37-3.14ZM34,145.58l1.43-9.89,7,7.15,9.84-1.68L47.65,150l4.65,8.84-9.85-1.69-7,7.16L34,154.42l-9-4.42Zm5.27,38.31-6.37-3.15,6.37-3.14,1-7,4.95,5.09,7-1.21L49,180.74l3.3,6.29-7-1.2-4.95,5.09Zm8.83,37.6a9.84,9.84,0,0,1-4.64-4.15,11.11,11.11,0,0,1-1.93-5.87,7,7,0,0,1,1.32-4.5,18.53,18.53,0,0,1,4.64-3.77l1.15-.73,4.38,7L50.63,211a14.11,14.11,0,0,0-2.75,2,1,1,0,0,0,0,1.3,1,1,0,0,0,1,.57,9.58,9.58,0,0,0,2.7-1.38l12.84-8.08a9.48,9.48,0,0,0,2.23-1.72,1.08,1.08,0,0,0,0-1.29,1.21,1.21,0,0,0-1.29-.63,9.05,9.05,0,0,0-2.69,1.31l-3.17,2,.88,1.41L56.36,209l-5.13-8.15,14.36-9.05,2.75,4.38-1.51,1.85a5.73,5.73,0,0,1,3,.62,6,6,0,0,1,2.23,2.17,7.87,7.87,0,0,1,1.22,3.82,7.43,7.43,0,0,1-.65,3.65,7.83,7.83,0,0,1-2,2.65,36,36,0,0,1-4,2.8l-8,5a31,31,0,0,1-5.83,3.09A6.69,6.69,0,0,1,48.14,221.49Zm14.17,18.08,6.92-13.28-10.15,10-4.82-4.9L76.79,209.2l5.06,5.13L74.6,227.47l10.25-10.09,4.82,4.9L67.14,244.47ZM73,249l18.61-25.57,6.65,4.84L79.62,253.79Zm20.1,12.72a19.8,19.8,0,0,1-4.36-2.82,5.8,5.8,0,0,1-1.72-2.6,5.15,5.15,0,0,1,0-2.7,20.38,20.38,0,0,1,1.71-4.05L90,247a11.52,11.52,0,0,1,2.57-3.64,4.26,4.26,0,0,1,3-.85,10.86,10.86,0,0,1,4.22,1.33l2,1,5.8-11.33,7.32,3.74-14.4,28.15Zm23.22,9.06a19.66,19.66,0,0,1-4.83-1.9,5.8,5.8,0,0,1-2.21-2.2,5.24,5.24,0,0,1-.53-2.65,20.49,20.49,0,0,1,.87-4.31l.74-2.66a11.44,11.44,0,0,1,1.79-4.08,4.29,4.29,0,0,1,2.79-1.43,10.85,10.85,0,0,1,4.4.46l2.12.6,3.44-12.27,7.91,2.22L124.26,273ZM139.55,275l-8.17-.95L135,242.6l8.17,1Zm18,.15-.56-11.3-2.46.12.56,11.3-8.21.41-1.57-31.59,8.21-.4.66,13.26,2.46-.12L156,243.52l8.21-.4,1.57,31.58ZM190,266a6.24,6.24,0,0,1-2.22,3.31,12,12,0,0,1-4.58,2.22,13,13,0,0,1-5.54.41,5.75,5.75,0,0,1-3.56-1.74,13.66,13.66,0,0,1-2.1-5l-.32-1.21,7.37-2,.61,2.26a4.65,4.65,0,0,0,.83,2,1.07,1.07,0,0,0,1.06.18,1.25,1.25,0,0,0,.92-.88,3.52,3.52,0,0,0-.1-1.87,5.19,5.19,0,0,0-1-2.19,6.13,6.13,0,0,0-2.74-1.27q-6.15-1.72-8.07-3.37t-3.12-6.14a11.76,11.76,0,0,1-.53-5,6.15,6.15,0,0,1,2.26-3.39,12,12,0,0,1,4.81-2.41,11.79,11.79,0,0,1,5.76-.26,6.13,6.13,0,0,1,3.78,2.28,16.24,16.24,0,0,1,2.12,5.12l.54,2-7.38,2-1-3.72a5,5,0,0,0-.91-2.12,1.25,1.25,0,0,0-1.23-.2,1.37,1.37,0,0,0-1,.94,3.88,3.88,0,0,0,.11,2c.49,1.79,1.05,2.9,1.69,3.32a24.41,24.41,0,0,0,4.46,1.78,40.53,40.53,0,0,1,4.69,1.79,6.92,6.92,0,0,1,2.25,2,11,11,0,0,1,1.7,3.83A11.58,11.58,0,0,1,190,266Zm15.94-3.64-3.14-5.5,4.77-2.72-3-5.2-4.46,2.54-3-5.22,4.47-2.55-3.45-6-5.24,3-3.14-5.49,12.39-7.07,15.67,27.47Zm17.66-10.7-4-4.91,4.26-3.46-3.78-4.65-4,3.24-3.79-4.67,4-3.24-4.39-5.39-4.68,3.81-4-4.91,11.06-9,20,24.53ZM248,228.13a44.46,44.46,0,0,1-5.42,5.75,5.43,5.43,0,0,1-3.91,1.09c-1.5-.13-3.28-1.07-5.35-2.8-1.88-1.59-3-2.88-3.2-3.9s.13-2.26,1.16-3.74A6.18,6.18,0,0,1,228,226a4.73,4.73,0,0,1-2.1-.4,29.46,29.46,0,0,1-3.71-2.85l-6.38-5.37,4.92-5.85,8,6.77A7.37,7.37,0,0,0,231.4,220c.48.05,1.08-.35,1.81-1.22l-10.91-9.18,5.3-6.29,24.19,20.36Zm7.36-9.89-5.51-3.11,2.81-5-5.22-2.95-2.5,4.42-5.24-3,2.5-4.42-11.56-6.54,4-7.15,27.52,15.56Zm5.29-34.35-1,7-5-5.09-7,1.2,3.3-6.29-3.3-6.29,7,1.2,5-5.08,1,7,6.37,3.14Z" />
-                            </g>
-                        </g>
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1022.03 894.27" height="110">
-                        <title>1yearwarranty</title>
-                        <g id="Layer_2" data-name="Layer 2">
-                            <g id="Layer_1-2" data-name="Layer 1">
-                                <path
-                                    d="M245.84,207.48l-5.94-7.61.34-.37c2.55,1.74,5.22,3.53,8,5.33s5.61,3.56,8.46,5.24l33.4,19.52,16-17.44L254.67,145,242.5,158.25l24.85,30.57q4.2,5.06,8.45,10.06t8.64,10.25l-.35.37q-5.85-3.63-11.53-7.18t-11.24-6.92l-34.78-19.72-10.78,11.79,22.69,32.9q3.95,5.34,8,10.68t8.07,10.77l-.35.38q-5.41-3.91-10.87-7.71c-3.64-2.52-7.22-5.07-10.78-7.62l-32.61-22.09-13,14.24,71.87,44.85,15.7-17.14L251.8,215.44Q248.91,211.41,245.84,207.48Z" />
-                                <path
-                                    d="M335.13,191.54,329.27,172,351,158.8l14.61,14.32,17.06-10.3L317.35,105,298,116.67l20.74,84.78ZM314.9,123.17q4.78,4.72,9.84,9.88t9.82,9.59l5.61,5.57L325,157.39l-2.22-7.62q-1.71-6.27-3.93-13.06l-4.36-13.28Z" />
-                                <path
-                                    d="M410.91,153.94l-8.64-28.75,9.9-3,23.94,24.15,20.2-6.07L428.6,113.81a24.59,24.59,0,0,0,7.78-11.62c1.42-4.57,1.26-9.77-.51-15.65a27,27,0,0,0-6-11.14A21.39,21.39,0,0,0,421,69.75a28.42,28.42,0,0,0-11-1.18,58.66,58.66,0,0,0-12.29,2.36l-28.76,8.65,24,79.76ZM400.53,85.69q7.1-2.13,11.53-.93t6.2,7.07q1.75,5.88-1.07,10t-9.93,6.25l-9.29,2.8-6.74-22.4Z" />
-                                <path
-                                    d="M488.78,138.35l-1-30,10.34-.36,17,29.46,21.07-.73-20-32.66a24.46,24.46,0,0,0,10.49-9.26q3.81-6.08,3.51-15.27a27.12,27.12,0,0,0-3-12.29A21.48,21.48,0,0,0,520,59.5a28.26,28.26,0,0,0-10.29-3.93,58.7,58.7,0,0,0-12.5-.85l-30,1L470,139Zm7.36-68.64c4.94-.16,8.73.51,11.38,2s4.06,4.33,4.2,8.41-1.07,7.23-3.58,9.4-6.26,3.35-11.2,3.51l-9.7.34L486.44,70Z" />
-                                <path
-                                    d="M566.41,122.5l24.87,5.28.87,20.44,19.5,4.15-8.16-86.89-22.12-4.71-42.81,76,18.73,4Zm10.4-20.65q3.06-5.75,6.06-12.23T588.77,77l.5.1q.26,6.72.43,13.94t.6,13.72l.29,7.9-17.37-3.7Z" />
-                                <path
-                                    d="M650.56,138.2a146.19,146.19,0,0,0,6.19-14q2.85-7.43,5.41-13.87l.45.22-.92,19.88.55,46.85L679.45,186l37.71-74.27-15.94-8.1-13.3,26.19a154.27,154.27,0,0,0-6.32,14.27q-3,7.68-5.41,13.89l-.45-.24,1-20.11-.62-46.73L659,82.15l-37.72,74.27,16,8.09Z" />
-                                <polygon
-                                    points="703.72 205.45 718.11 217.71 761.86 166.36 779.26 181.2 789.54 169.13 740.34 127.21 730.06 139.26 747.46 154.1 703.72 205.45" />
-                                <path
-                                    d="M748.42,249.33,760,264.12l23.35-18.27,57.77-13.22L829,217.13,809.25,223q-4.83,1.5-9.36,2.85c-3,.91-6.18,1.88-9.46,2.94l-.32-.39c1.81-2.94,3.56-5.74,5.21-8.39s3.37-5.41,5.12-8.29L811,194.08l-12.45-15.9-26.74,52.88Z" />
-                                <path
-                                    d="M301.91,677.41l-32.44,21.44c-3.59,2.44-7.16,4.87-10.73,7.33s-7.19,5-10.9,7.47l-.34-.36q4.13-5.41,8.17-10.63t7.9-10.38L286.34,660l-10.53-11.74-34.55,19.1c-3.75,2.23-7.52,4.5-11.27,6.79s-7.54,4.6-11.36,6.88l-.35-.37q4.4-4.93,8.64-9.93c2.82-3.34,5.68-6.62,8.53-9.85L260.33,631l-12.71-14.18-51.08,66.25,15.32,17.1L244.81,681c2.82-1.64,5.63-3.34,8.4-5.08l8-5.1.34.37q-3,3.51-6,7.36c-2,2.56-4,5.17-6,7.8l-22.43,30.93,15.57,17.38,71-44Z" />
-                                <path
-                                    d="M271.27,759.65l16.16,9.83,14.48-14.08,21.45,13.05-5.85,19.33L334.32,798l20.76-83.65L336,702.75ZM338,720.53q-1.95,6.35-4.15,13.13c-1.47,4.53-2.76,8.85-3.91,13l-2.31,7.45-15-9.11,5.66-5.42c3.15-2.9,6.35-6,9.64-9.42l9.62-9.87Z" />
-                                <path
-                                    d="M432.74,753.14a28.36,28.36,0,0,0-8.16-7.2,57.59,57.59,0,0,0-11.26-5.11l-28.09-9.45-26.2,78,17.56,5.9,9.45-28.1,9.68,3.25,5.5,33.13L421,830.17,413.75,793a24.34,24.34,0,0,0,12.9-4.92q5.64-4.29,8.53-12.91a26.8,26.8,0,0,0,1.51-12.4A21.13,21.13,0,0,0,432.74,753.14ZM418,769.41c-1.29,3.83-3.48,6.3-6.57,7.44s-6.94.93-11.57-.63l-9.07-3.05,7.34-21.89,9.09,3.06q6.93,2.32,9.83,5.83T418,769.41Z" />
-                                <path
-                                    d="M501.7,806.28a24.27,24.27,0,0,0,11.28-8q4.39-5.57,5.07-14.61a26.62,26.62,0,0,0-1.62-12.4,21,21,0,0,0-6.21-8.36,28,28,0,0,0-9.69-5,57.81,57.81,0,0,0-12.17-2.17l-29.57-2.18-6.07,82,18.5,1.37,2.19-29.58,10.19.76L497.13,839l20.76,1.54Zm-6.28-15.09c-2.72,1.87-6.5,2.63-11.37,2.26l-9.56-.7,1.7-23,9.57.72c4.85.35,8.52,1.43,10.95,3.21s3.51,4.68,3.22,8.71S498.12,789.34,495.42,791.19Z" />
-                                <path
-                                    d="M558.14,816.52l24.78-4.06,8.14,18.48,19.42-3.18-38.68-77-22,3.61-12.11,85.32,18.67-3Zm2.17-22.72q.74-6.39,1.18-13.43t.89-13.76l.49-.09q2.65,6.09,5.41,12.68t5.47,12.38l3.09,7.18-17.3,2.83Z" />
-                                <path
-                                    d="M654,812.09l-11.62-26.73a146.33,146.33,0,0,0-6.78-13.55Q631.68,765,628.41,759l.45-.2L643.41,772l36,29,17.48-7.6L664.11,718l-16.2,7,11.57,26.6a151.17,151.17,0,0,0,6.88,13.79q4,7.08,7.17,12.85l-.47.19L658.42,765l-36-28.94L605,743.7l32.79,75.42Z" />
-                                <polygon
-                                    points="702.18 710.25 742.9 762.96 757.68 751.55 716.96 698.84 734.83 685.04 725.25 672.65 674.74 711.67 684.31 724.05 702.18 710.25" />
-                                <path
-                                    d="M807,703.71l11.78-14.32-22.6-18.59L771,618l-12.35,15,9.89,17.77q2.49,4.34,4.76,8.41c1.52,2.72,3.13,5.54,4.87,8.49l-.33.39-9.19-3.23q-4.36-1.54-9.09-3.15l-19.26-6.37-12.66,15.39,56.7,14.47Z" />
-                                <path
-                                    d="M670.07,414.43q-3.72-14-7.29-27.85h-1q-3.57,14.06-7.14,28t-7.67,27.21l-5.88,20.44h42.67l-5.87-20.44Q673.78,428.48,670.07,414.43Z" />
-                                <path
-                                    d="M841.25,393q-9.07-5.61-26.2-5.62H791.3v54.42h23.75q17.13,0,26.2-7.16t9.06-21.45Q850.31,398.6,841.25,393Z" />
-                                <path
-                                    d="M934.32,590.86h55.77A32,32,0,0,0,1022,558.92V335.35a32,32,0,0,0-31.94-31.94H934.32C874.31,127.18,707.29,0,511,0S147.72,127.18,87.71,303.41H31.94A32,32,0,0,0,0,335.35V558.92a32,32,0,0,0,31.94,31.94H87.71c60,176.24,227,303.41,423.3,303.41S874.31,767.1,934.32,590.86ZM511,16c187.36,0,347.12,120.16,406.44,287.44H741.17C693.13,226.77,608,175.66,511,175.66S328.9,226.77,280.86,303.41H104.57C163.9,136.13,323.66,16,511,16ZM886.09,530.69H852.87l-36-65.42H791.3v65.42H761.66V363.59h56.46a110.14,110.14,0,0,1,24.27,2.55,54.19,54.19,0,0,1,19.43,8.31,40.23,40.23,0,0,1,12.9,15.2q4.72,9.45,4.72,23.51,0,19.15-9.06,30.91a49.86,49.86,0,0,1-24.15,16.86Zm-327.56-99.4v25h-60v49.31h73.58v25H468.85V363.59H569.52v25h-71v42.66ZM299.89,303.41C345.93,236,423.39,191.63,511,191.63S676.09,236,722.14,303.41Zm12.34,60.18h31.68l18.14,42.66q3.58,9.47,7.16,18.27t7.66,18.53h1q4.07-9.71,7.92-18.53t7.41-18.27l18.13-42.66h30.93L392,468.59v62.1H362.3v-62.1ZM722.14,590.86c-46,67.42-123.5,111.78-211.13,111.78S345.94,658.28,299.89,590.86Zm-18.73-60.17-13-45.23h-56.2l-13,45.23H591l54.43-167.1h34.74l54.43,167.1ZM142.32,399.87v-18.4A135.84,135.84,0,0,0,163.4,376a94.88,94.88,0,0,0,16.48-7.79h22V506.67H233.8v24H135.94v-24h36.28V399.87Zm-37.75,191H280.86c48,76.65,133.22,127.75,230.15,127.75s182.12-51.1,230.16-127.75H917.45C858.13,758.14,698.37,878.3,511,878.3S163.9,758.14,104.57,590.86Z" />
-                                <polygon
-                                    points="521.75 236.54 511.01 211.59 500.28 236.54 473.27 239.03 493.66 256.96 487.68 283.45 511.01 269.58 534.34 283.45 528.37 256.96 548.75 239.03 521.75 236.54" />
-                                <polygon
-                                    points="614.63 246.97 606.27 227.56 597.92 246.97 576.9 248.9 592.75 262.84 588.12 283.45 606.27 272.67 624.4 283.45 619.77 262.84 635.62 248.9 614.63 246.97" />
-                                <polygon
-                                    points="424.13 246.97 415.76 227.56 407.42 246.97 386.41 248.9 402.26 262.84 397.62 283.45 415.76 272.67 433.91 283.45 429.28 262.84 445.13 248.9 424.13 246.97" />
-                                <polygon
-                                    points="588.12 662.72 606.27 651.93 624.4 662.72 619.77 642.11 635.62 628.17 614.63 626.23 606.27 606.83 597.92 626.23 576.9 628.17 592.75 642.11 588.12 662.72" />
-                                <polygon
-                                    points="397.62 662.72 415.76 651.93 433.91 662.72 429.28 642.11 445.13 628.17 424.13 626.23 415.76 606.83 407.42 626.23 386.41 628.17 402.26 642.11 397.62 662.72" />
-                                <polygon
-                                    points="487.68 678.69 511.01 664.82 534.34 678.69 528.37 652.19 548.75 634.27 521.75 631.76 511.01 606.83 500.28 631.76 473.27 634.27 493.66 652.19 487.68 678.69" />
-                            </g>
-                        </g>
-                    </svg>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- hero -->
-
     <main>
-        <!-- Featured Parts -->
-        <section id="featured_parts" class="order-0">
-            <div class="container">
-                <div class="row mobile_search_list d-flex d-md-none">
-                    <div class="col d-flex p-0">
-                        <h4 class="m-0 f_bold mark_srch_title">Search by make</h4>
-                        <div class="dropdown flex-fill">
-                            <h4 class="m-0 dropdown-toggle text-center" role="button" id="dropdownMenuLink"
-                                data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false">
-                                ---- Please Select
-                                ----<amp-img alt="" src="../dist/img/icons/drop_arr.png" width="9" height="15"
-                                    layout="fixed"></amp-img>
-                            </h4>
-
-                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
-                                <a class="dropdown-item" href="#">BMW</a>
-                                <a class="dropdown-item" href="#">Mercedes-Benz</a>
-                                <a class="dropdown-item" href="#">Land Rover</a>
-                                <a class="dropdown-item" href="#">Audi</a>
-                                <a class="dropdown-item" href="#">MINI</a>
-                                <a class="dropdown-item" href="#">BMW</a>
-                                <a class="dropdown-item" href="#">BMW</a>
-                                <a class="dropdown-item" href="#">BMW</a>
-                                <a class="dropdown-item" href="#">BMW</a>
-                                <a class="dropdown-item" href="#">BMW</a>
-                                <a class="dropdown-item" href="#">BMW</a>
-                                <a class="dropdown-item view_drop" href="#">View All</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row d-none d-md-flex">
-                    <div class="col-12 col-md-4 col-lg-3">
-                        <div class="sec_title">
-                            <h2><span class="prim_color">Search By</span> Make</h2>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-8 col-lg-9">
-                        <div class="sec_title text-center">
-                            <h2><span class="prim_color">Featured Genuine</span> Oem Parts</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12 col-md-4 col-lg-3 d-none d-md-block">
-                        <div class="search_list">
-                            <div class="accordion" id="benzeenAccordionMarks">
-                                <amp-accordion class="sample" animate>
-                                    <section>
-                                        <h4>BMW</h4>
-                                        <ul>
-                                            <li><a href="">325i</a></li>
-                                            <li><a href="">325i</a></li>
-                                            <li><a href="">325i</a></li>
-                                            <li><a href="">325i</a></li>
-                                            <li><a href="">325i</a></li>
-                                            <li><a href="">325i</a></li>
-                                            <li><a href="">325i</a></li>
-                                            <li><a href="">325i</a></li>
-                                            <li><a href="">325i</a></li>
-                                            <li><a href="">325i</a></li>
-                                            <li><a href="">325i</a></li>
-                                        </ul>
-                                    </section>
-                                    <section>
-                                        <h4>Audi</h4>
-                                        <ul>
-                                            <li><a href="">325i</a></li>
-                                            <li><a href="">325i</a></li>
-                                            <li><a href="">325i</a></li>
-                                            <li><a href="">325i</a></li>
-                                            <li><a href="">325i</a></li>
-                                            <li><a href="">325i</a></li>
-                                            <li><a href="">325i</a></li>
-                                            <li><a href="">325i</a></li>
-                                            <li><a href="">325i</a></li>
-                                            <li><a href="">325i</a></li>
-                                            <li><a href="">325i</a></li>
-                                        </ul>
-                                    </section>
-                                    <section>
-                                        <h4>Mercedes-Benz</h4>
-                                        <ul>
-                                            <li><a href="">325i</a></li>
-                                            <li><a href="">325i</a></li>
-                                            <li><a href="">325i</a></li>
-                                            <li><a href="">325i</a></li>
-                                            <li><a href="">325i</a></li>
-                                            <li><a href="">325i</a></li>
-                                            <li><a href="">325i</a></li>
-                                            <li><a href="">325i</a></li>
-                                            <li><a href="">325i</a></li>
-                                            <li><a href="">325i</a></li>
-                                            <li><a href="">325i</a></li>
-                                        </ul>
-                                    </section>
-                                </amp-accordion>
-                            </div>
-                            <div class="bnz_card_btn card-header p-0 text-center d-flex">
-                                <button class="btn btn-primary btn-lg f_bold w-100" type="button">View All</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-8 col-lg-9 container p-0 parts_cards_sec">
-                        <div class="parts_cards h-100 d-flex flex-wrap row">
-                            <div class="part_card_one col-6 col-lg-4 d-flex align-items-stretch">
-                                <div class="card text-center d-flex flex-column">
-                                    <div class="card_effect mx-auto mb-3">
-                                        <amp-img alt="" src="../dist/img/icons/parts/parts_icon_1.svg" width="104"
-                                            height="80" layout="fixed"></amp-img>
-                                    </div>
-                                    <div
-                                        class="card-body p-0 d-flex align-items-center justify-content-start flex-column">
-                                        <h3 class="card-title">USED ENGINES</h3>
-                                        <p class="card-text">Quality assured and inspected, used OEM long block
-                                            engines for sale at affordable prices. Hassle-Free, your
-                                            satisfaction guaranteed.</p>
-                                        <a href="#" class="btn btn-primary btn-sm mt-auto">View Parts</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="part_card_one col-6 col-lg-4 d-flex align-items-stretch">
-                                <div class="card text-center d-flex flex-column">
-                                    <div class="card_effect mx-auto mb-3">
-                                        <amp-img alt="" src="../dist/img/icons/parts/parts_icon_2.svg" width="104"
-                                            height="80" layout="fixed"></amp-img>
-                                    </div>
-                                    <div
-                                        class="card-body p-0 d-flex align-items-center justify-content-start flex-column">
-                                        <h3 class="card-title">USED TRANSMISSIONS</h3>
-                                        <p class="card-text">OEM replacement automatic and manual transmissions
-                                            for all makes and models. OEM quality guaranteed.</p>
-                                        <a href="#" class="btn btn-primary btn-sm mt-auto">View Parts</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="part_card_one col-6 col-lg-4 d-flex align-items-stretch">
-                                <div class="card text-center d-flex flex-column">
-                                    <div class="card_effect mx-auto mb-3">
-                                        <amp-img alt="" src="../dist/img/icons/parts/parts_icon_3.svg" width="104"
-                                            height="80" layout="fixed"></amp-img>
-                                    </div>
-                                    <div
-                                        class="card-body p-0 d-flex align-items-center justify-content-start flex-column">
-                                        <h3 class="card-title">USED HEADLAMPS</h3>
-                                        <p class="card-text">Quality used headlamps you need for sale at prices
-                                            you want with a hassle-free 1 Year Warranty. Low cost, high
-                                            quality OEM headlights.</p>
-                                        <a href="#" class="btn btn-primary btn-sm mt-auto">View Parts</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="part_card_one col-6 col-lg-4 d-flex align-items-stretch">
-                                <div class="card text-center d-flex flex-column">
-                                    <div class="card_effect mx-auto mb-3">
-                                        <amp-img alt="" src="../dist/img/icons/parts/parts_icon_4.svg" width="104"
-                                            height="80" layout="fixed"></amp-img>
-                                    </div>
-                                    <div
-                                        class="card-body p-0 d-flex align-items-center justify-content-start flex-column">
-                                        <h3 class="card-title">USED ABS PUMPS</h3>
-                                        <p class="card-text">Get your Anti-lock brakes braking again with a
-                                            quality used OEM ABS pump and our hassle-free 1 Year Warranty.</p>
-                                        <a href="#" class="btn btn-primary btn-sm mt-auto">View Parts</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="part_card_one col-6 col-lg-4 d-flex align-items-stretch">
-                                <div class="card text-center d-flex flex-column">
-                                    <div class="card_effect mx-auto mb-3">
-                                        <amp-img alt="" src="../dist/img/icons/parts/parts_icon_5.svg" width="104"
-                                            height="80" layout="fixed"></amp-img>
-                                    </div>
-                                    <div
-                                        class="card-body p-0 d-flex align-items-center justify-content-start flex-column">
-                                        <h3 class="card-title">USED ECU/ECM COMPUTERS</h3>
-                                        <p class="card-text">Only a quality OEM ECU with our hassle-free 1 Year
-                                            Warranty should replace the brain behind your engine. Buy used &
-                                            save up to 70% today!</p>
-                                        <a href="#" class="btn btn-primary btn-sm mt-auto">View Parts</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="part_card_one col-6 col-lg-4 d-flex align-items-stretch">
-                                <div class="card text-center d-flex flex-column">
-                                    <div class="card_effect mx-auto mb-3">
-                                        <amp-img alt="" src="../dist/img/icons/parts/parts_icon_6.svg" width="104"
-                                            height="80" layout="fixed"></amp-img>
-                                    </div>
-                                    <div
-                                        class="card-body p-0 d-flex align-items-center justify-content-start flex-column">
-                                        <h3 class="card-title">USED RADIOS & AMPLIFIERS</h3>
-                                        <p class="card-text">Restore your sound with an OEM used radio or
-                                            amplifier! With a 1 Year Warranty and low prices.</p>
-                                        <a href="#" class="btn btn-primary btn-sm mt-auto mt-auto">View Parts</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- featured parts -->
-
         <!-- Recently Sold -->
         <section id="recent_arr" class="recently_sliders order-2">
             <div class="container">
@@ -4566,13 +4191,15 @@
         <!-- recently sold -->
 
         <!-- Product Reviews -->
-        <section id="reviews" class="customer_rev order-1">
+        <section id="reviews" class="review_testim">
             <div class="container">
+                <amp-img alt="" src="../dist/img/icons/review_icon.png" width="162" height="164"
+                                    layout="fixed" class="rev_icon"></amp-img>
                 <div class="row">
                     <div class="col-12">
                         <div class="rev_header text-center">
                             <h2 class="ver_rev_title text-left">
-                                <span class="ver_r">Customer</span>
+                                <span class="ver_r">Verified</span>
                                 <span class="rev_r">Reviews</span>
                                 <amp-img alt="" src="../dist/img/icons/review_sup.png" width="53" height="49"
                                     layout="fixed"></amp-img>
@@ -4590,241 +4217,36 @@
                                     layout="fixed"></amp-img>
                             </div>
                         </div>
-                        <div class="swiper-container-customer-review">
-                            <amp-carousel class="amp_carousel" layout="fixed-height" height="340" type="carousel">
-                                <div class="slide card">
-                                    <div>
-                                        <amp-img alt="" src="../dist/img/icons/google_icon.svg" width="50" height="50"
-                                            layout="fixed"></amp-img>
-                                    </div>
-                                    <amp-fit-text layout="fixed" width="325" height="200"
-                                        class="amp-text-body text-left">
-                                        <a href="">
-                                            <h5 class="card-title f_bold">Artem Perminov</h5>
-                                        </a>
-                                        <h6 class="card-subtitle f_light">I was working with Carlos and he really took
-                                            good care of me. Helped me load
-                                            the parts in my car and told me what was my best option. Definitely coming
-                                            back here to Benzene!</h6>
-                                        <div class="d-flex align-items-center justify-content-start rev_stars">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 50" width="16">
-                                                <g id="Layer_2" data-name="Layer 2" fill="#de9e3c">
-                                                    <g id="Layer_1-2" data-name="Layer 1">
-                                                        <path
-                                                            d="M26,0l8.1,16.3L52,19.1,39.1,32,42,50,26,41.6,9.9,50l2.9-18L0,19.1l17.9-2.8Z" />
-                                                    </g>
-                                                </g>
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 50" width="16">
-                                                <g id="Layer_2" data-name="Layer 2" fill="#de9e3c">
-                                                    <g id="Layer_1-2" data-name="Layer 1">
-                                                        <path
-                                                            d="M26,0l8.1,16.3L52,19.1,39.1,32,42,50,26,41.6,9.9,50l2.9-18L0,19.1l17.9-2.8Z" />
-                                                    </g>
-                                                </g>
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 50" width="16">
-                                                <g id="Layer_2" data-name="Layer 2" fill="#de9e3c">
-                                                    <g id="Layer_1-2" data-name="Layer 1">
-                                                        <path
-                                                            d="M26,0l8.1,16.3L52,19.1,39.1,32,42,50,26,41.6,9.9,50l2.9-18L0,19.1l17.9-2.8Z" />
-                                                    </g>
-                                                </g>
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 50" width="16">
-                                                <g id="Layer_2" data-name="Layer 2" fill="#de9e3c">
-                                                    <g id="Layer_1-2" data-name="Layer 1">
-                                                        <path
-                                                            d="M26,0l8.1,16.3L52,19.1,39.1,32,42,50,26,41.6,9.9,50l2.9-18L0,19.1l17.9-2.8Z" />
-                                                    </g>
-                                                </g>
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 50" width="16">
-                                                <g id="Layer_2" data-name="Layer 2" fill="#ffffff">
-                                                    <g id="Layer_1-2" data-name="Layer 1">
-                                                        <path
-                                                            d="M26,0l8.1,16.3L52,19.1,39.1,32,42,50,26,41.6,9.9,50l2.9-18L0,19.1l17.9-2.8Z" />
-                                                    </g>
-                                                </g>
-                                            </svg>
-                                        </div>
-                                    </amp-fit-text>
-                                </div>
-                                <div class="slide card">
-                                    <div>
-                                        <amp-img alt="" src="../dist/img/icons/google_icon.svg" width="50" height="50"
-                                            layout="fixed"></amp-img>
-                                    </div>
-                                    <amp-fit-text layout="fixed" width="325" height="200"
-                                        class="amp-text-body text-left">
-                                        <a href="">
-                                            <h5 class="card-title f_bold">Artem Perminov</h5>
-                                        </a>
-                                        <h6 class="card-subtitle f_light">I was working with Carlos and he really took
-                                            good care of me. Helped me load
-                                            the parts in my car and told me what was my best option. Definitely coming
-                                            back here to Benzene!</h6>
-                                        <div class="d-flex align-items-center justify-content-start rev_stars">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 50" width="16">
-                                                <g id="Layer_2" data-name="Layer 2" fill="#de9e3c">
-                                                    <g id="Layer_1-2" data-name="Layer 1">
-                                                        <path
-                                                            d="M26,0l8.1,16.3L52,19.1,39.1,32,42,50,26,41.6,9.9,50l2.9-18L0,19.1l17.9-2.8Z" />
-                                                    </g>
-                                                </g>
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 50" width="16">
-                                                <g id="Layer_2" data-name="Layer 2" fill="#de9e3c">
-                                                    <g id="Layer_1-2" data-name="Layer 1">
-                                                        <path
-                                                            d="M26,0l8.1,16.3L52,19.1,39.1,32,42,50,26,41.6,9.9,50l2.9-18L0,19.1l17.9-2.8Z" />
-                                                    </g>
-                                                </g>
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 50" width="16">
-                                                <g id="Layer_2" data-name="Layer 2" fill="#de9e3c">
-                                                    <g id="Layer_1-2" data-name="Layer 1">
-                                                        <path
-                                                            d="M26,0l8.1,16.3L52,19.1,39.1,32,42,50,26,41.6,9.9,50l2.9-18L0,19.1l17.9-2.8Z" />
-                                                    </g>
-                                                </g>
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 50" width="16">
-                                                <g id="Layer_2" data-name="Layer 2" fill="#de9e3c">
-                                                    <g id="Layer_1-2" data-name="Layer 1">
-                                                        <path
-                                                            d="M26,0l8.1,16.3L52,19.1,39.1,32,42,50,26,41.6,9.9,50l2.9-18L0,19.1l17.9-2.8Z" />
-                                                    </g>
-                                                </g>
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 50" width="16">
-                                                <g id="Layer_2" data-name="Layer 2" fill="#ffffff">
-                                                    <g id="Layer_1-2" data-name="Layer 1">
-                                                        <path
-                                                            d="M26,0l8.1,16.3L52,19.1,39.1,32,42,50,26,41.6,9.9,50l2.9-18L0,19.1l17.9-2.8Z" />
-                                                    </g>
-                                                </g>
-                                            </svg>
-                                        </div>
-                                    </amp-fit-text>
-                                </div>
-                                <div class="slide card">
-                                    <div>
-                                        <amp-img alt="" src="../dist/img/icons/google_icon.svg" width="50" height="50"
-                                            layout="fixed"></amp-img>
-                                    </div>
-                                    <amp-fit-text layout="fixed" width="325" height="200"
-                                        class="amp-text-body text-left">
-                                        <a href="">
-                                            <h5 class="card-title f_bold">Artem Perminov</h5>
-                                        </a>
-                                        <h6 class="card-subtitle f_light">I was working with Carlos and he really took
-                                            good care of me. Helped me load
-                                            the parts in my car and told me what was my best option. Definitely coming
-                                            back here to Benzene!</h6>
-                                        <div class="d-flex align-items-center justify-content-start rev_stars">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 50" width="16">
-                                                <g id="Layer_2" data-name="Layer 2" fill="#de9e3c">
-                                                    <g id="Layer_1-2" data-name="Layer 1">
-                                                        <path
-                                                            d="M26,0l8.1,16.3L52,19.1,39.1,32,42,50,26,41.6,9.9,50l2.9-18L0,19.1l17.9-2.8Z" />
-                                                    </g>
-                                                </g>
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 50" width="16">
-                                                <g id="Layer_2" data-name="Layer 2" fill="#de9e3c">
-                                                    <g id="Layer_1-2" data-name="Layer 1">
-                                                        <path
-                                                            d="M26,0l8.1,16.3L52,19.1,39.1,32,42,50,26,41.6,9.9,50l2.9-18L0,19.1l17.9-2.8Z" />
-                                                    </g>
-                                                </g>
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 50" width="16">
-                                                <g id="Layer_2" data-name="Layer 2" fill="#de9e3c">
-                                                    <g id="Layer_1-2" data-name="Layer 1">
-                                                        <path
-                                                            d="M26,0l8.1,16.3L52,19.1,39.1,32,42,50,26,41.6,9.9,50l2.9-18L0,19.1l17.9-2.8Z" />
-                                                    </g>
-                                                </g>
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 50" width="16">
-                                                <g id="Layer_2" data-name="Layer 2" fill="#de9e3c">
-                                                    <g id="Layer_1-2" data-name="Layer 1">
-                                                        <path
-                                                            d="M26,0l8.1,16.3L52,19.1,39.1,32,42,50,26,41.6,9.9,50l2.9-18L0,19.1l17.9-2.8Z" />
-                                                    </g>
-                                                </g>
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 50" width="16">
-                                                <g id="Layer_2" data-name="Layer 2" fill="#ffffff">
-                                                    <g id="Layer_1-2" data-name="Layer 1">
-                                                        <path
-                                                            d="M26,0l8.1,16.3L52,19.1,39.1,32,42,50,26,41.6,9.9,50l2.9-18L0,19.1l17.9-2.8Z" />
-                                                    </g>
-                                                </g>
-                                            </svg>
-                                        </div>
-                                    </amp-fit-text>
-                                </div>
-                                <div class="slide card">
-                                    <div>
-                                        <amp-img alt="" src="../dist/img/icons/google_icon.svg" width="50" height="50"
-                                            layout="fixed"></amp-img>
-                                    </div>
-                                    <amp-fit-text layout="fixed" width="325" height="200"
-                                        class="amp-text-body text-left">
-                                        <a href="">
-                                            <h5 class="card-title f_bold">Artem Perminov</h5>
-                                        </a>
-                                        <h6 class="card-subtitle f_light">I was working with Carlos and he really took
-                                            good care of me. Helped me load
-                                            the parts in my car and told me what was my best option. Definitely coming
-                                            back here to Benzene!</h6>
-                                        <div class="d-flex align-items-center justify-content-start rev_stars">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 50" width="16">
-                                                <g id="Layer_2" data-name="Layer 2" fill="#de9e3c">
-                                                    <g id="Layer_1-2" data-name="Layer 1">
-                                                        <path
-                                                            d="M26,0l8.1,16.3L52,19.1,39.1,32,42,50,26,41.6,9.9,50l2.9-18L0,19.1l17.9-2.8Z" />
-                                                    </g>
-                                                </g>
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 50" width="16">
-                                                <g id="Layer_2" data-name="Layer 2" fill="#de9e3c">
-                                                    <g id="Layer_1-2" data-name="Layer 1">
-                                                        <path
-                                                            d="M26,0l8.1,16.3L52,19.1,39.1,32,42,50,26,41.6,9.9,50l2.9-18L0,19.1l17.9-2.8Z" />
-                                                    </g>
-                                                </g>
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 50" width="16">
-                                                <g id="Layer_2" data-name="Layer 2" fill="#de9e3c">
-                                                    <g id="Layer_1-2" data-name="Layer 1">
-                                                        <path
-                                                            d="M26,0l8.1,16.3L52,19.1,39.1,32,42,50,26,41.6,9.9,50l2.9-18L0,19.1l17.9-2.8Z" />
-                                                    </g>
-                                                </g>
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 50" width="16">
-                                                <g id="Layer_2" data-name="Layer 2" fill="#de9e3c">
-                                                    <g id="Layer_1-2" data-name="Layer 1">
-                                                        <path
-                                                            d="M26,0l8.1,16.3L52,19.1,39.1,32,42,50,26,41.6,9.9,50l2.9-18L0,19.1l17.9-2.8Z" />
-                                                    </g>
-                                                </g>
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 50" width="16">
-                                                <g id="Layer_2" data-name="Layer 2" fill="#ffffff">
-                                                    <g id="Layer_1-2" data-name="Layer 1">
-                                                        <path
-                                                            d="M26,0l8.1,16.3L52,19.1,39.1,32,42,50,26,41.6,9.9,50l2.9-18L0,19.1l17.9-2.8Z" />
-                                                    </g>
-                                                </g>
-                                            </svg>
-                                        </div>
-                                    </amp-fit-text>
-                                </div>
-                            </amp-carousel>
+                        <div class="rev_stat text-center">
+                            <p><span>4.6/5 Excellent</span> - Based on 212 Reviews</p>
+                        </div>
+                        <amp-carousel height="300" layout="fixed-height" type="slides">
+                            <div class="swiper-slide text-center">
+                                <p class="review_text">“ The part I ordered came sooner than expected. <br>The
+                                    price was the best advertised online and works perfectly. <br>Thanks for great
+                                    service! ”</p>
+                                <h4>- Tracy B.</h4>
+                                <span>07-17-2017 by Tracy B. Order date 07-07-2017</span>
+                            </div>
+                            <div class="swiper-slide text-center">
+                                <p class="review_text">“ Thanks for great service! The part I ordered came sooner
+                                    than expected. <br>The
+                                    price was the best advertised online and works perfectly. ”</p>
+                                <h4>- Luke D.</h4>
+                                <span>05-30-2016 by Luke D. Order date 07-07-2017</span>
+                            </div>
+                            <div class="swiper-slide text-center">
+                                <p class="review_text">“ The part I ordered came sooner than expected. <br>The
+                                    price was the best advertised online and works perfectly. <br>Thanks for great
+                                    service! ”</p>
+                                <h4>- Tracy B.</h4>
+                                <span>07-17-2017 by Tracy B. Order date 07-07-2017</span>
+                            </div>
+                        </amp-carousel>
+                    </div>
+                    <div class="col-12 text-center">
+                        <div class="btn_sec">
+                            <button class="btn btn-primary">View All</button>
                         </div>
                     </div>
                 </div>
