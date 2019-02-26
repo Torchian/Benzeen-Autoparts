@@ -269,7 +269,7 @@
                     }
                 }
             }
-            .view_header {
+            .view_header_cont {
                 margin: 0 -10px 30px;
                 h2 {
                     font-size: 21px;
@@ -423,6 +423,26 @@
             }
         }
         main {
+            #engine_hero {
+                .view_header_cont {
+                    margin: 0 -10px 0;
+                    .view_header {
+                        min-height: auto;
+                        padding-top: 30%;
+                        margin-bottom: 60px;
+                    }
+                }
+                .mobile_search_list {
+                    margin: 0 -10px 30px;
+                    h4 {
+                        padding: 12px 10px;
+                        font-size: 15px;
+                    }
+                }
+                .breadcrumb-item {
+                    font-size: 13px;
+                }
+            }
             #product_view {
                 .prod_title {
                     h2 {

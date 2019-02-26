@@ -131,7 +131,7 @@
 
     <main class="d-flex d-md-block flex-column">
         <!-- Pagination -->
-        <section id="page_nav">
+        <section id="page_nav" class="d-none d-md-block">
             <div class="container">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
@@ -149,33 +149,6 @@
         <!-- Engine Hero -->
         <section id="engine_hero">
             <div class="container">
-                <div class="row mobile_search_list d-flex d-md-none">
-                    <div class="col d-flex p-0">
-                        <h4 class="m-0 f_bold mark_srch_title">Search by make</h4>
-                        <div class="dropdown flex-fill">
-                            <h4 class="m-0 dropdown-toggle text-center" role="button" id="dropdownMenuLink"
-                                data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false">
-                                ---- Please Select
-                                ----<img src="dist/img/icons/drop_arr.png" alt=""></h4>
-
-                            <div class="dropdown-menu dropdown-menu-right dropdown-menu dropdown-menu-right-right"
-                                aria-labelledby="dropdownMenuLink">
-                                <a class="dropdown-item" href="#">BMW</a>
-                                <a class="dropdown-item" href="#">Mercedes-Benz</a>
-                                <a class="dropdown-item" href="#">Land Rover</a>
-                                <a class="dropdown-item" href="#">Audi</a>
-                                <a class="dropdown-item" href="#">MINI</a>
-                                <a class="dropdown-item" href="#">BMW</a>
-                                <a class="dropdown-item" href="#">BMW</a>
-                                <a class="dropdown-item" href="#">BMW</a>
-                                <a class="dropdown-item" href="#">BMW</a>
-                                <a class="dropdown-item" href="#">BMW</a>
-                                <a class="dropdown-item" href="#">BMW</a>
-                                <a class="dropdown-item view_drop" href="#">View All</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <div class="row flex-nowrap">
                     <aside class="col-12 col-md-4 col-lg-3 d-none d-md-block">
                         <div class="part_search">
@@ -509,13 +482,150 @@
                         </div>
                     </aside>
                     <div class="col-12 col-md-8 col-lg-9 pl-md-4 engine_main">
-                        <div class="view_header d-flex align-items-center justify-content-between">
-                            <h2 class="f_boldest">Used ENGINE ASSEMBLY</h2>
-                            <div class="d-flex align-items-center">
+                        <div class="view_header_cont">
+                            <div class="view_header d-flex align-items-center justify-content-between">
+                                <h2 class="f_boldest">Used ENGINE ASSEMBLY</h2>
+                                <div class="d-none d-md-flex align-items-center">
+                                    <img class="bnz_ship_1" src="dist/img/icons/shipping_logo.png" alt="">
+                                    <img class="bnz_ship_4" src="dist/img/icons/warranty_logo.png" alt="">
+                                </div>
+                            </div>
+                            <div class="part_search d-block d-md-none">
+                                <div class="sec_title mb-3">
+                                    <h2><span>Find Your</span> Part</h2>
+                                    <p>Save Up To 70% Off MSRP</p>
+                                </div>
+                                <form>
+                                    <div class="form-group d-flex flex-wrap justify-content-between">
+                                        <div class="dropdown mb-3">
+                                            <button
+                                                class="btn btn-light d-flex justify-content-between align-items-center btn-lg dropdown-toggle w-100"
+                                                type="button" id="searchByYear" data-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false">
+                                                Select Year
+                                            </button>
+                                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="searchByYear">
+                                                <a class="dropdown-item" href="#">1999</a>
+                                                <a class="dropdown-item" href="#">2001</a>
+                                                <a class="dropdown-item" href="#">2002</a>
+                                                <a class="dropdown-item" href="#">2003</a>
+                                                <a class="dropdown-item" href="#">2004</a>
+                                                <a class="dropdown-item" href="#">2005</a>
+                                                <a class="dropdown-item" href="#">2006</a>
+                                                <a class="dropdown-item" href="#">2007</a>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown mb-3">
+                                            <button
+                                                class="btn btn-light d-flex justify-content-between align-items-center btn-lg dropdown-toggle w-100"
+                                                type="button" id="searchByMake" data-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false">
+                                                Select Make
+                                            </button>
+                                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="searchByMake">
+                                                <a class="dropdown-item" href="#">MINI</a>
+                                                <a class="dropdown-item" href="#">Acura</a>
+                                                <a class="dropdown-item" href="#">Chevrolet</a>
+                                                <a class="dropdown-item" href="#">Koenigsegg</a>
+                                                <a class="dropdown-item" href="#">Seat</a>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown mb-3">
+                                            <button
+                                                class="btn btn-light d-flex justify-content-between align-items-center btn-lg dropdown-toggle w-100"
+                                                type="button" id="searchByModel" data-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false">
+                                                Select Model
+                                            </button>
+                                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="searchByModel">
+                                                <a class="dropdown-item" href="#">1999</a>
+                                                <a class="dropdown-item" href="#">2001</a>
+                                                <a class="dropdown-item" href="#">2003</a>
+                                                <a class="dropdown-item" href="#">2004</a>
+                                                <a class="dropdown-item" href="#">2005</a>
+                                                <a class="dropdown-item" href="#">2006</a>
+                                                <a class="dropdown-item" href="#">2007</a>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown mb-3">
+                                            <button
+                                                class="btn btn-light d-flex justify-content-between align-items-center btn-lg dropdown-toggle w-100"
+                                                type="button" id="searchByPartCategory" data-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false">
+                                                Select Part Category
+                                            </button>
+                                            <div class="dropdown-menu dropdown-menu-right"
+                                                aria-labelledby="searchByPartCategory">
+                                                <a class="dropdown-item" href="#">Lights</a>
+                                                <a class="dropdown-item" href="#">Radio</a>
+                                                <a class="dropdown-item" href="#">Transmission</a>
+                                                <a class="dropdown-item" href="#">Engine</a>
+                                                <a class="dropdown-item" href="#">Fuel System</a>
+                                                <a class="dropdown-item" href="#">Wheels</a>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown mb-3">
+                                            <button
+                                                class="btn btn-light d-flex justify-content-between align-items-center btn-lg dropdown-toggle w-100"
+                                                type="button" id="searchByPart" data-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false">
+                                                Select Part
+                                            </button>
+                                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="searchByPart">
+                                                <a class="dropdown-item" href="#">Lights</a>
+                                                <a class="dropdown-item" href="#">Radio</a>
+                                                <a class="dropdown-item" href="#">Transmission</a>
+                                                <a class="dropdown-item" href="#">Engine</a>
+                                                <a class="dropdown-item" href="#">Fuel System</a>
+                                                <a class="dropdown-item" href="#">Wheels</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="btn_sec">
+                                        <button class="btn btn-primary">Search</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="d-flex d-md-none align-items-center justify-content-end pb-4">
                                 <img class="bnz_ship_1" src="dist/img/icons/shipping_logo.png" alt="">
-                                <img class="bnz_ship_4" src="dist/img/icons/warranty_logo.png" alt="">
+                                <img class="bnz_ship_4 mx-3" src="dist/img/icons/warranty_logo.png" alt="">
                             </div>
                         </div>
+                        <div class="mobile_search_list d-flex d-md-none">
+                            <div class="col d-flex p-0">
+                                <h4 class="m-0 f_bold mark_srch_title">Search by make</h4>
+                                <div class="dropdown flex-fill">
+                                    <h4 class="m-0 dropdown-toggle text-left text-md-center" role="button" id="dropdownMenuLink"
+                                        data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false">
+                                        ---- Please Select
+                                        ----<img src="dist/img/icons/drop_arr.png" alt=""></h4>
+        
+                                    <div class="dropdown-menu dropdown-menu-right dropdown-menu dropdown-menu-right-right"
+                                        aria-labelledby="dropdownMenuLink">
+                                        <a class="dropdown-item" href="#">BMW</a>
+                                        <a class="dropdown-item" href="#">Mercedes-Benz</a>
+                                        <a class="dropdown-item" href="#">Land Rover</a>
+                                        <a class="dropdown-item" href="#">Audi</a>
+                                        <a class="dropdown-item" href="#">MINI</a>
+                                        <a class="dropdown-item" href="#">BMW</a>
+                                        <a class="dropdown-item" href="#">BMW</a>
+                                        <a class="dropdown-item" href="#">BMW</a>
+                                        <a class="dropdown-item" href="#">BMW</a>
+                                        <a class="dropdown-item" href="#">BMW</a>
+                                        <a class="dropdown-item" href="#">BMW</a>
+                                        <a class="dropdown-item view_drop" href="#">View All</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Pagination -->
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb mobile-breadcrumb">
+                                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Engine Assembly/ Long Block</li>
+                            </ol>
+                        </nav>
+                        <!-- pagination -->
                         <div class="view_title">
                             <h3 class="f_bold">Our Quality Assurance Process </h3>
                             <p>We begin by dismantling, draining, capping and cleaning to produce quality assured and
@@ -544,11 +654,11 @@
                                     <div class="col-12 col-md-6 col-xl-4 d-none d-md-flex justify-content-end view_by">
                                         <a href=""
                                             class="d-flex justify-content-center align-items-center f_bold mr-3 mr-lg-5 active">
-                                            <img class="mr-3" src="/dist/img/icons/grid_view.png" alt="">
+                                            <img class="mr-3" src="dist/img/icons/grid_view.png" alt="">
                                             Grid View
                                         </a>
                                         <a href="" class="d-flex justify-content-center align-items-center f_bold">
-                                            <img class="mr-3" src="/dist/img/icons/list_view.png" alt="">
+                                            <img class="mr-3" src="dist/img/icons/list_view.png" alt="">
                                             List View
                                         </a>
                                     </div>
@@ -558,7 +668,7 @@
                                 <div class="d-flex flex-wrap">
                                     <div class="grid_view_card">
                                         <div class="card">
-                                            <a href=""><img class="card-img-top" src="/dist/img/parts/395579_05.jpg"
+                                            <a href=""><img class="card-img-top" src="dist/img/parts/395579_05.jpg"
                                                     alt=""></a>
                                             <div class="card-body">
                                                 <h5 class="card-title"><a href="">ENGINE ASSEMBLY LAND ROVER RANGE ROV
@@ -587,7 +697,7 @@
                                     </div>
                                     <div class="grid_view_card">
                                         <div class="card">
-                                            <a href=""><img class="card-img-top" src="/dist/img/parts/part_2.png"
+                                            <a href=""><img class="card-img-top" src="dist/img/parts/part_2.png"
                                                     alt=""></a>
                                             <div class="card-body">
                                                 <h5 class="card-title"><a href="">ENGINE ASSEMBLY LAND ROVER RANGE ROV
@@ -616,7 +726,7 @@
                                     </div>
                                     <div class="grid_view_card">
                                         <div class="card">
-                                            <a href=""><img class="card-img-top" src="/dist/img/parts/395579_04.jpg"
+                                            <a href=""><img class="card-img-top" src="dist/img/parts/395579_04.jpg"
                                                     alt=""></a>
                                             <div class="card-body">
                                                 <h5 class="card-title"><a href="">ENGINE ASSEMBLY LAND ROVER RANGE ROV
@@ -645,7 +755,7 @@
                                     </div>
                                     <div class="grid_view_card">
                                         <div class="card">
-                                            <a href=""><img class="card-img-top" src="/dist/img/parts/395579_03.jpg"
+                                            <a href=""><img class="card-img-top" src="dist/img/parts/395579_03.jpg"
                                                     alt=""></a>
                                             <div class="card-body">
                                                 <h5 class="card-title"><a href="">ENGINE ASSEMBLY LAND ROVER RANGE ROV
@@ -674,7 +784,7 @@
                                     </div>
                                     <div class="grid_view_card">
                                         <div class="card">
-                                            <a href=""><img class="card-img-top" src="/dist/img/parts/395579_06.jpg"
+                                            <a href=""><img class="card-img-top" src="dist/img/parts/395579_06.jpg"
                                                     alt=""></a>
                                             <div class="card-body">
                                                 <h5 class="card-title"><a href="">ENGINE ASSEMBLY LAND ROVER RANGE ROV
@@ -708,7 +818,7 @@
                                     <div class="col-12 col-md-6 col-lg-4 px-0 btn_sec">
                                         <button
                                             class="btn btn-primary btn-lg d-flex justify-content-center align-items-center w-100">Load
-                                            More Parts <img class="ml-3" src="/dist/img/icons/load_more.png"
+                                            More Parts <img class="ml-3" src="dist/img/icons/load_more.png"
                                                 alt=""></button>
                                     </div>
                                 </div>

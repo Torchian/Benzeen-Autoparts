@@ -418,6 +418,9 @@ nav {
         }
     }
 }
+.mobile-breadcrumb {
+    padding: 0 0 30px;
+}
 // breadcrumb
 
 // Search Parts Form
@@ -454,10 +457,6 @@ aside {
 }
 .view_header {
     min-height: 275px;
-    background-image: url(../img/photos/engine_hero.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     margin-bottom: 30px;
     h2 {
         font-size: 32px;
@@ -484,6 +483,45 @@ aside {
         font-size: 20px;
         color: $gray-text;
         line-height: 1.22;
+    }
+}
+.view_header_cont {
+    background-image: url(../img/photos/engine_hero.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .part_search {
+        padding: 15px 10px;
+        border-top: 0;
+        margin-bottom: -40px;
+        background-color: rgba(0, 0, 0, 0.3);
+        position: relative;
+        h2 {
+            transform: none;
+            font-size: 25px;
+            color: #ffffff;
+        }
+        p {
+            color: #ffffff;
+        }
+        .form-group {
+            .dropdown {
+                flex: 0 0 48%;
+                .btn-light {
+                    font-size: 14px;
+                    padding: 10px 12px;
+                }
+                &:last-child {
+                    flex: 1 0 100%;
+                }
+            }
+        }
+    }
+    .btn_sec {
+        .btn-primary {
+            min-width: auto;
+            padding: 16px 30px;
+        }
     }
 }
 // main view
