@@ -2301,7 +2301,6 @@
             --primary-grey: #343333;
         }
 
-        /* globals */
         * {
             box-sizing: border-box;
             margin: 0;
@@ -2403,8 +2402,6 @@
             font-weight: 800;
         }
 
-        /* globals */
-
         amp-sidebar#drawermenu {
             background-color: var(--primary-grey);
             top: 5px;
@@ -2419,7 +2416,6 @@
             columns: 2;
         }
 
-        /* a custom sharing icon */
         .header_socials amp-social-share {
             background-color: transparent;
             border-right: 1px solid #646464;
@@ -2499,7 +2495,7 @@
             text-transform: uppercase;
             padding: 20px 10px;
             margin: 0 10px;
-            color: #ffffff !important;
+            color: #ffffff;
         }
 
         .tco_nav .nav-item .nav-link:first-child {
@@ -2667,14 +2663,10 @@
   color: #000;
   text-transform: uppercase;
 }
-.cart_payment_sec .cart_payment_options amp-img, .cart_payment_sec .cart_security amp-img {
-  max-height: 40px;
-}
 .cart_payment_sec .cart_payment_options {
   padding-bottom: 20px;
 }
 .cart_payment_sec .cart_payment_options amp-img {
-  height: 35px;
   margin: 0 15% 30px 0;
 }
         #assurance {
@@ -2763,7 +2755,6 @@
         }
 
         footer .footer_nav .footer_list li img {
-            width: 19px;
             margin-right: 15px;
         }
 
@@ -2877,6 +2868,136 @@
             font-size: 11px;
             color: #eeeeee;
             line-height: 1.136;
+        }
+        @media (max-width: 1220px) {
+  footer .footer_nav .footer_socials a i {
+    font-size: 25px;
+    padding: 0 13px;
+  }
+        }
+        @media (max-width: 991.98px) {
+  footer .footer_nav {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding: 30px 0 20px;
+  }
+  footer .footer_nav .col-12 {
+    padding: 0 10px;
+    margin-bottom: 20px;
+  }
+  footer .footer_nav .nav_cols {
+    padding-bottom: 0;
+  }
+  footer .footer_nav .footer_list p {
+    font-size: 12px;
+    line-height: 1.3;
+  }
+  footer .footer_nav .footer_list li {
+    font-size: 13px;
+  }
+  footer .footer_nav .footer_list li amp-img {
+    margin-right: 10px;
+  }
+  footer .footer_nav .popular, footer .footer_nav .links {
+    padding: 0 10px;
+    border-left: 0;
+  }
+  footer .footer_nav .footer_title {
+    font-size: 17px;
+  }
+  footer .footer_nav .affiliates {
+    width: 100%;
+    order: -1;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  footer .footer_nav .affiliates .footer_title {
+    margin: 0 0 10px;
+  }
+  footer .footer_nav .affiliates a {
+    margin-left: 0;
+    margin: 0 5px;
+  }
+}
+        @media (max-width: 767.98px) {
+            .sec_title {
+    margin-bottom: 20px;
+}
+            #shipping_cart {
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+#shipping_cart .prod_shop_cart {
+  padding: 7px;
+}
+#shipping_cart .prod_shop_cart .card-title {
+  font-size: 16px;
+  padding-right: 40px;
+  margin-bottom: 10px;
+}
+#shipping_cart .prod_shop_cart .cart_info {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  padding-right: 40px;
+}
+#shipping_cart .prod_shop_cart .card-body p {
+  font-size: 13px;
+}
+#shipping_cart .prod_shop_cart .cart_info_2 {
+  padding-right: 40px;
+}
+#shipping_cart .prod_shop_cart .remove_prod_cart {
+  top: 15px;
+  right: 15px;
+}
+#shipping_cart .prod_shop_cart .card-img-top {
+  height: 200px;
+  padding-right: 10px;
+}
+#shipping_cart .total_cart {
+  max-width: 100%;
+  text-align: right;
+}
+#shipping_cart .total_cart .total_info, #shipping_cart .total_cart .total_title {
+  padding: 15px 40px 10px;
+}
+#shipping_cart .cart_payment_sec .sec_title h3 {
+  font-size: 20px;
+}
+#shipping_cart .cart_payment_sec .cart_payment_methods .btn {
+  font-size: 16px;
+}
+#shipping_cart .cart_payment_sec .cart_payment_methods, #shipping_cart .cart_payment_sec .cart_payment_options, #shipping_cart .cart_payment_sec .cart_security {
+  padding-bottom: 15px;
+  margin-bottom: 30px;
+}
+#shipping_cart .cart_payment_sec .cart_payment_methods .btn, #shipping_cart .cart_payment_sec .cart_payment_options .btn, #shipping_cart .cart_payment_sec .cart_security .btn {
+  font-size: 16px;
+}
+#shipping_cart .cart_payment_sec .cart_payment_methods h3, #shipping_cart .cart_payment_sec .cart_payment_options h3, #shipping_cart .cart_payment_sec .cart_security h3 {
+  font-size: 20px;
+}
+#shipping_cart .cart_payment_sec .cart_payment_methods amp-img, #shipping_cart .cart_payment_sec .cart_payment_options amp-img, #shipping_cart .cart_payment_sec .cart_security amp-img {
+  margin: 0 8px 0 0;
+}
+.prod_shop_cart .cart_info .card-text:last-child {
+    text-align: right;
+}
+        }
+        @media (max-width: 575.98px) {
+            .prod_shop_cart .card-body {
+    padding-left: 0;
+}
+            #shipping_cart .prod_shop_cart .card-img-top {
+  padding-right: 0;
+  margin-bottom: 10px;
+}
+#shipping_cart .prod_shop_cart .remove_prod_cart {
+  top: 5px;
+  right: 5px;
+  height: 30px;
+  width: 30px;
+}
         }
     </style>
 
@@ -3180,7 +3301,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-8">
-                        <div class="sec_title mb-433 mb-md-4">
+                        <div class="sec_title mb-3 mb-md-4">
                             <h2 class="f_bold">Shopping Cart</h2>
                         </div>
                         <div class="card d-flex flex-column flex-sm-row align-items-center prod_shop_cart">

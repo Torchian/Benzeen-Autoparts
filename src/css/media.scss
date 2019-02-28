@@ -605,7 +605,12 @@
                     .cart_info {
                         margin-bottom: 10px;
                         padding-bottom: 10px;
-                        padding-right: 40px;
+                        padding-right: 0;
+                        .card-text {
+                            &:last-child {
+                                text-align: right;
+                            }
+                        }
                     }
                     .card-body p {
                         font-size: 13px;
