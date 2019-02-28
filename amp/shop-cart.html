@@ -6,7 +6,7 @@
     <meta charset="utf-8">
 
     <!-- AMP -->
-    <link rel="canonical" href="../product.html">
+    <link rel="canonical" href="../shop-cart.html">
     <style amp-custom>
         html {
             box-sizing: border-box;
@@ -1351,6 +1351,9 @@
         }
 
         @media (min-width:576px) {
+            .flex-sm-row {
+                flex-direction: row;
+            }
             .m-sm-0 {
                 margin: 0
             }
@@ -2533,170 +2536,147 @@
             border-left: 1px solid #ffffff;
         }
 
-        .review_testim {
-            padding-top: 80px;
-            padding-bottom: 50px;
-            background-image: url("../dist/img/photos/prev_bg.png");
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
-            position: relative;
-        }
+        #shipping_cart {
+  margin-top: 90px;
+  margin-bottom: 30px;
+}
+#shipping_cart h2 {
+  color: #000;
+}
+.card {
+    word-wrap: break-word;
+    border: 1px solid rgba(0,0,0,.125);
+}
+.prod_shop_cart {
+  padding: 25px;
+  position: relative;
+  margin-bottom: 25px;
+}
+.prod_shop_cart .card-body {
+  padding-left: 20px;
+}
+.prod_shop_cart .card-body p {
+  font-size: 15px;
+}
+.prod_shop_cart .card-body p span {
+  color: var(--color-primary);
+  line-height: 1.6;
+}
+.prod_shop_cart .card-body p a {
+  text-decoration: underline;
+  color: var(--color-primary);
+}
+.prod_shop_cart .card-img-top {
+  object-fit: cover;
+}
+.prod_shop_cart .card-title {
+  font-size: 21px;
+  color: #010101;
+  font-weight: 700;
+  padding-right: 30px;
+}
+.prod_shop_cart .cart_info {
+  margin-bottom: 15px;
+  padding-bottom: 13px;
+  padding-right: 30px;
+  border-bottom: 1px solid #d7d7d7;
+}
+.prod_shop_cart .cart_info_2 {
+  position: relative;
+  padding-right: 30px;
+}
+.prod_shop_cart .cart_info_2 amp-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+.prod_shop_cart .remove_prod_cart {
+  padding: 0;
+  line-height: 0;
+  background-color: var(--color-primary);
+  border: 0;
+  outline: 0;
+  border-radius: 50%;
+  height: 22px;
+  width: 22px;
+  color: #ffffff;
+  cursor: pointer;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+}
 
-        .review_testim::before {
-            content: "";
-            position: absolute;
-            left: 0;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            background-color: rgba(0, 0, 0, 0.75);
-        }
+.total_cart {
+  max-width: max-content;
+  margin-left: auto;
+  padding: 0;
+}
+.total_cart .total_info {
+  padding: 15px 55px 10px;
+  border-bottom: 1px solid #d7d7d7;
+}
+.total_cart .total_title {
+  font-size: 17px;
+  padding: 15px 55px 10px;
+  font-weight: 700;
+}
+.total_cart .total_title span {
+  color: var(--color-primary);
+}
 
-        .review_testim .container {
-            position: relative;
-        }
-
-        .review_testim .container .rev_icon {
-            position: absolute;
-            top: -20px;
-            right: 40px;
-            z-index: 2;
-        }
-
-        .review_testim .rev_header {
-            width: 220px;
-            margin: auto;
-        }
-
-        .review_testim .rev_stars amp-img {
-            margin: 0 5px 15px;
-        }
-
-        .review_testim .rev_stat {
-            margin-bottom: 90px;
-        }
-
-        .review_testim .rev_stat p {
-            font-size: 16px;
-            font-weight: 100;
-            color: #ffffff;
-        }
-
-        .review_testim .rev_stat span {
-            font-weight: 600;
-        }
-
-        .review_testim .btn_sec .btn {
-            font-size: 15px;
-            padding: 10px;
-            min-width: 130px;
-        }
-
-        .review_testim .ver_rev_title {
-            position: relative;
-            margin-bottom: 10px;
-        }
-
-        .review_testim .ver_rev_title .ver_r,
-        .review_testim .ver_rev_title .rev_r {
-            font-size: 41px;
-            color: var(--color-primary);
-            line-height: 0.6;
-            text-transform: uppercase;
-        }
-
-        .review_testim .ver_rev_title .rev_r {
-            color: #ffffff;
-            font-size: 45px;
-            font-weight: 800;
-        }
-
-        .review_testim .ver_rev_title amp-img {
-            position: absolute;
-            top: -7px;
-            right: -13px;
-        }
-
-        .swiper-container-review .swiper-button-next,
-        .swiper-container-review .swiper-button-prev {
-            background-image: none;
-            padding: 10px 15px;
-            transform: translateY(-50%);
-            width: auto;
-            height: auto;
-            margin: 0;
-        }
-
-        .review_testim .swiper-container-review .swiper-button-next {
-            right: 0;
-        }
-
-        .review_testim .swiper-container-review .swiper-button-prev {
-            left: 0;
-        }
-
-        .review_testim .swiper-slide {
-            color: #ffffff;
-        }
-
-        .review_testim .swiper-slide .review_text {
-            margin-bottom: 35px;
-            font-size: 18px;
-        }
-
-        .review_testim .swiper-slide h4 {
-            margin-bottom: 25px;
-            font-style: italic;
-            font-weight: 600;
-            font-size: 22px;
-        }
-
-        .review_testim .swiper-slide span {
-            display: inline-block;
-            margin-bottom: 70px;
-            color: #c3c0c0;
-            font-size: 16px;
-        }
-
-        .customer_rev .swiper-container-customer-review {
-            padding-top: 75px;
-            padding-bottom: 100px;
-            overflow: hidden;
-        }
-
-        .customer_rev .swiper-container-customer-review .swiper-slide {
-            height: auto;
-        }
-
-        .customer_rev .swiper-container-customer-review .card {
-            padding: 30px;
-            margin-left: 20px;
-            background-color: #222222;
-        }
-
-        .customer_rev .swiper-container-customer-review .card-title {
-            font-size: 20px;
-            color: var(--color-text-light);
-            margin-bottom: 22px;
-            line-height: normal;
-        }
-
-        .customer_rev .swiper-container-customer-review .card-subtitle {
-            font-size: 15px;
-            color: var(--color-text-light);
-            margin-bottom: 20px;
-            line-height: 1.45;
-        }
-
-        .customer_rev .swiper-container-customer-review .card .rev_status {
-            margin-top: auto;
-        }
-
-        .customer_rev .rev_stars svg {
-            margin-right: 6px;
-        }
-
+.cart_payment_sec {
+  padding-left: 4%;
+}
+.cart_payment_sec .sec_title h3 {
+  font-size: 27px;
+  color: #000;
+}
+.cart_payment_sec .sec_title .price {
+  color: var(--color-primary);
+}
+.cart_payment_sec .cart_payment_methods .btn {
+  padding: 8px;
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-transform: unset;
+  line-height: 1.5;
+}
+.cart_payment_sec .cart_payment_methods .btn.btn-secondary {
+  background-color: #4d4d4d;
+}
+.cart_payment_sec .cart_payment_methods .btn.btn-warning {
+  font-size: 13px;
+  font-weight: 700;
+  color: #222d65;
+  background-color: #ffc107;
+}
+.cart_payment_sec .cart_payment_methods .btn.btn-warning amp-img {
+  height: 30px;
+  margin-left: 10px;
+}
+.cart_payment_sec .cart_payment_methods, .cart_payment_sec .cart_payment_options {
+  padding-bottom: 50px;
+  margin-bottom: 45px;
+  border-bottom: 1px solid #d7d7d7;
+}
+.cart_payment_sec .cart_payment_options h3, .cart_payment_sec .cart_security h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #000;
+  text-transform: uppercase;
+}
+.cart_payment_sec .cart_payment_options amp-img, .cart_payment_sec .cart_security amp-img {
+  max-height: 40px;
+}
+.cart_payment_sec .cart_payment_options {
+  padding-bottom: 20px;
+}
+.cart_payment_sec .cart_payment_options amp-img {
+  height: 35px;
+  margin: 0 15% 30px 0;
+}
         #assurance {
             padding-top: 75px;
             padding-bottom: 100px;
@@ -2864,10 +2844,6 @@
                 font-size: 14px;
             }
 
-            #recent_arr {
-                padding: 60px 0 22px;
-            }
-
             .part_card_one {
                 padding: 0 5px;
                 margin: 5px 0;
@@ -2902,201 +2878,6 @@
             color: #eeeeee;
             line-height: 1.136;
         }
-        .breadcrumb {
-            padding: 30px 0 25px;
-    list-style: none;
-}
-.breadcrumb .breadcrumb-item a {
-    color: var(--color-primary);
-}
-.breadcrumb .breadcrumb-item.active {
-    color: #6c757d;
-}
-.breadcrumb .breadcrumb-item + .breadcrumb-item::before {
-  content: "»";
-  color: #6c757d;
-  padding-right: 8px;
-}
-
-.mobile-breadcrumb {
-  padding: 0 0 30px;
-}
-aside {
-  min-width: 310px;
-}
-
-.part_search {
-  padding: 15px 30px;
-  border-top: 4px solid #de9e3c;
-  background-color: #e8e7e7;
-  margin-bottom: 35px;
-}
-.part_search .sec_title h2 {
-  font-size: 27px;
-  margin: 0;
-}
-.part_search form select {
-    background-color: #fff;
-    font-size: 16px;
-    padding: 10px 15px;
-    color: #6d6d6d;
-    border: 0;
-    cursor: pointer;
-}
-.part_search form .btn-lg {
-    background-color: #343a40;
-    color: var(--color-primary);
-    padding: 13px 25px;
-}
-.search_list {
-    border-top: 5px solid #de9e3c;
-}
-.by_make_search section h4 {
-    background-color: #e8e7e7;
-    border: 0;
-    border-bottom: 2px solid #fff;
-    padding: 18px 25px;
-    cursor: pointer;
-}
-.view_title {
-    padding-bottom: 55px;
-    border-bottom: 1px solid #dddcdc;
-}
-.view_title h3 {
-    font-size: 26px;
-    color: var(--primary-grey);
-    margin-bottom: 16px;
-    text-transform: uppercase;
-}
-.view_title p {
-    font-size: 20px;
-    color: var(--primary-grey);
-    line-height: 1.22;
-}
-.grid_nav {
-    padding: 15px 0 25px;
-}
-.grid_sort select {
-    font-size: 16px;
-    color: var(--primary-grey);
-    padding: 12px 15px;
-    background-color: #e8e7e7;
-    border: 0;
-    cursor: pointer;
-}
-.view_by a {
-    color: var(--primary-grey);
-}
-.view_by a.active, .view_by a:hover {
-    color: var(--color-primary);
-}
-.product_grid_view {
-    overflow: hidden;
-}
-.product_grid_view>div {
-    margin: -20px;
-}
-.grid_view_card {
-    flex: 0 1 33.33333%;
-    padding: 25px;
-    border-bottom: 1px solid #dddcdc;
-    border-right: 1px solid #dddcdc;
-}
-.grid_view_card .card-title a {
-    color: var(--color-primary);
-    font-size: 20px;
-    text-transform: uppercase;
-    line-height: 1;
-}
-.grid_view_card .card-body .card-title {
-    margin-bottom: 15px;
-}
-.grid_view_card .card-body .card-text {
-    margin-bottom: 20px;
-}
-.msrp {
-  color: #979696;
-  text-transform: uppercase;
-  position: relative;
-}
-.msrp:before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: -10px;
-  right: -10px;
-  height: 1px;
-  background-color: #979696;
-}
-.ship_info {
-  padding: 7px 10px;
-  border: 1px solid var(--color-primary);
-}
-.ship_info p {
-  font-size: 14px;
-  color: var(--color-primary);
-  font-weight: 500;
-  line-height: 1.2;
-  margin-right: 10px;
-}
-.ship_info p span {
-  font-size: 15px;
-}
-.ship_info amp-img {
-  position: relative;
-  transform-origin: right center;
-}
-.card-body {
-  padding: 0;
-}
-.card-body .card-title {
-  margin-bottom: 15px;
-  text-transform: uppercase;
-}
-.card-body .card-text {
-  margin-bottom: 20px;
-}
-.card-body .price {
-  margin-bottom: 10px;
-}
-.card-body .price .was {
-  font-size: 21px;
-  color: #858585;
-  margin-right: 20px;
-  line-height: 1.5;
-}
-.card-body .price .now {
-  font-size: 28px;
-  color: var(--color-primary);
-  line-height: 1.2;
-}
-.card-body .info {
-  margin-bottom: 10px;
-}
-.card-body .info .status {
-  color: #48990d;
-}
-.view_header {
-    min-height: 275px;
-    margin-bottom: 30px;
-}
-.view_header h2 {
-    font-size: 32px;
-    padding: 12px 20px;
-    background-color: #de9e3c;
-    text-transform: uppercase;
-    color: #fff;
-    margin: 0;
-}
-.view_header_cont {
-    background-image: url(../dist/img/photos/engine_hero.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.view_header .bnz_ship_4 {
-    margin: 0 25px;
-}
     </style>
 
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -3394,567 +3175,128 @@ aside {
     </amp-sidebar>
 
     <main class="d-flex d-md-block flex-column">
-        <!-- Pagination -->
-        <section id="page_nav" class="d-none d-md-block">
+        <!-- Shipping Cart -->
+        <section id="shipping_cart">
             <div class="container">
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb d-flex flex-row">
-                        <li class="breadcrumb-item pl-2"><a href="/">Home</a></li>
-                        <li class="breadcrumb-item pl-2"><a href="#">Search by make</a></li>
-                        <li class="breadcrumb-item pl-2"><a href="#">Land Rover</a></li>
-                        <li class="breadcrumb-item pl-2"><a href="#">Range Rover</a></li>
-                        <li class="breadcrumb-item pl-2 active" aria-current="page">Engine Assembly/ Long Block</li>
-                    </ol>
-                </nav>
-            </div>
-        </section>
-        <!-- pagination -->
-
-        <!-- Engine Hero -->
-        <section id="engine_hero">
-            <div class="container">
-                <div class="row flex-nowrap">
-                    <aside class="col-12 col-md-4 col-lg-3 d-none d-md-block">
-                        <div class="part_search">
-                            <div class="sec_title mb-3">
-                                <h2><span class="prim_color">Find Your</span> Part</h2>
-                                <p>Save Up To 70% Off MSRP</p>
-                            </div>
-                            <form class="sample-form" method="post" action-xhr="/components/amp-form/submit-form-xhr"
-                                target="_top">
-                                <select name="cars" id="cars" class="w-100 mb-3">
-                                    <option value="volvo">Volvo</option>
-                                    <option value="saab">Saab</option>
-                                    <option value="fiat">Fiat</option>
-                                    <option value="audi">Audi</option>
-                                </select>
-                                <select name="cars" id="cars" class="w-100 mb-3">
-                                    <option value="volvo">Volvo</option>
-                                    <option value="saab">Saab</option>
-                                    <option value="fiat">Fiat</option>
-                                    <option value="audi">Audi</option>
-                                </select>
-                                <select name="cars" id="cars" class="w-100 mb-3">
-                                    <option value="volvo">Volvo</option>
-                                    <option value="saab">Saab</option>
-                                    <option value="fiat">Fiat</option>
-                                    <option value="audi">Audi</option>
-                                </select>
-                                <select name="cars" id="cars" class="w-100 mb-3">
-                                    <option value="volvo">Volvo</option>
-                                    <option value="saab">Saab</option>
-                                    <option value="fiat">Fiat</option>
-                                    <option value="audi">Audi</option>
-                                </select>
-                                <select name="cars" id="cars" class="w-100 mb-3">
-                                    <option value="volvo">Volvo</option>
-                                    <option value="saab">Saab</option>
-                                    <option value="fiat">Fiat</option>
-                                    <option value="audi">Audi</option>
-                                </select>
-                                <div class="btn_sec">
-                                    <button class="btn btn-lg" type="submit">Search</button>
-                                </div>
-                                <div submit-success>
-                                    Success!
-                                </div>
-                                <div submit-error>
-                                    Error!
-                                </div>
-                            </form>
-                        </div>
-                        <div class="by_make_search">
-                            <div class="sec_title">
-                                <h2><span class="prim_color">Search By</span> Make</h2>
-                            </div>
-                            <div class="search_list">
-                                <div class="accordion" id="benzeenAccordionMarks">
-                                    <amp-accordion class="sample" animate>
-                                        <section>
-                                            <h4>BMW</h4>
-                                            <ul>
-                                                <li><a href="">325i</a></li>
-                                                <li><a href="">325i</a></li>
-                                                <li><a href="">325i</a></li>
-                                                <li><a href="">325i</a></li>
-                                                <li><a href="">325i</a></li>
-                                                <li><a href="">325i</a></li>
-                                                <li><a href="">325i</a></li>
-                                                <li><a href="">325i</a></li>
-                                                <li><a href="">325i</a></li>
-                                                <li><a href="">325i</a></li>
-                                                <li><a href="">325i</a></li>
-                                            </ul>
-                                        </section>
-                                        <section>
-                                            <h4>Audi</h4>
-                                            <ul>
-                                                <li><a href="">325i</a></li>
-                                                <li><a href="">325i</a></li>
-                                                <li><a href="">325i</a></li>
-                                                <li><a href="">325i</a></li>
-                                                <li><a href="">325i</a></li>
-                                                <li><a href="">325i</a></li>
-                                                <li><a href="">325i</a></li>
-                                                <li><a href="">325i</a></li>
-                                                <li><a href="">325i</a></li>
-                                                <li><a href="">325i</a></li>
-                                                <li><a href="">325i</a></li>
-                                            </ul>
-                                        </section>
-                                        <section>
-                                            <h4>Mercedes-Benz</h4>
-                                            <ul>
-                                                <li><a href="">325i</a></li>
-                                                <li><a href="">325i</a></li>
-                                                <li><a href="">325i</a></li>
-                                                <li><a href="">325i</a></li>
-                                                <li><a href="">325i</a></li>
-                                                <li><a href="">325i</a></li>
-                                                <li><a href="">325i</a></li>
-                                                <li><a href="">325i</a></li>
-                                                <li><a href="">325i</a></li>
-                                                <li><a href="">325i</a></li>
-                                                <li><a href="">325i</a></li>
-                                            </ul>
-                                        </section>
-                                        <section>
-                                            <h4>BMW</h4>
-                                            <ul>
-                                                <li><a href="">325i</a></li>
-                                                <li><a href="">325i</a></li>
-                                                <li><a href="">325i</a></li>
-                                                <li><a href="">325i</a></li>
-                                                <li><a href="">325i</a></li>
-                                                <li><a href="">325i</a></li>
-                                                <li><a href="">325i</a></li>
-                                                <li><a href="">325i</a></li>
-                                                <li><a href="">325i</a></li>
-                                                <li><a href="">325i</a></li>
-                                                <li><a href="">325i</a></li>
-                                            </ul>
-                                        </section>
-                                        <section>
-                                            <h4>BMW</h4>
-                                            <ul>
-                                                <li><a href="">325i</a></li>
-                                                <li><a href="">325i</a></li>
-                                                <li><a href="">325i</a></li>
-                                                <li><a href="">325i</a></li>
-                                                <li><a href="">325i</a></li>
-                                                <li><a href="">325i</a></li>
-                                                <li><a href="">325i</a></li>
-                                                <li><a href="">325i</a></li>
-                                                <li><a href="">325i</a></li>
-                                                <li><a href="">325i</a></li>
-                                                <li><a href="">325i</a></li>
-                                            </ul>
-                                        </section>
-                                        <section>
-                                            <h4>BMW</h4>
-                                            <ul>
-                                                <li><a href="">325i</a></li>
-                                                <li><a href="">325i</a></li>
-                                                <li><a href="">325i</a></li>
-                                                <li><a href="">325i</a></li>
-                                                <li><a href="">325i</a></li>
-                                                <li><a href="">325i</a></li>
-                                                <li><a href="">325i</a></li>
-                                                <li><a href="">325i</a></li>
-                                                <li><a href="">325i</a></li>
-                                                <li><a href="">325i</a></li>
-                                                <li><a href="">325i</a></li>
-                                            </ul>
-                                        </section>
-                                    </amp-accordion>
-                                </div>
-                                <div class="bnz_card_btn card-header p-0 text-center d-flex">
-                                    <button class="btn btn-primary btn-lg f_bold w-100" type="button">View All</button>
-                                </div>
-                            </div>
-                        </div>
-                    </aside>
-                    <div class="col-12 col-md-8 col-lg-9 pl-md-4 engine_main">
-                        <div class="view_header_cont">
-                            <div class="view_header d-flex align-items-center justify-content-between">
-                                <h2 class="f_boldest">Used ENGINE ASSEMBLY</h2>
-                                <div class="d-none d-md-flex align-items-center">
-                                    <amp-img class="bnz_ship_1" src="../dist/img/icons/shipping_logo.png" width="107" height="107" layout="fixed" alt=""></amp-img>
-                                    <amp-img class="bnz_ship_4" src="../dist/img/icons/warranty_logo.png" width="114" height="100" layout="fixed" alt=""></amp-img>
-                                </div>
-                            </div>
-                            <div class="part_search d-block d-md-none">
-                                <div class="sec_title mb-3">
-                                    <h2><span>Find Your</span> Part</h2>
-                                    <p>Save Up To 70% Off MSRP</p>
-                                </div>
-                                <form>
-                                    <div class="form-group d-flex flex-wrap justify-content-between">
-                                        <div class="dropdown mb-3">
-                                            <button
-                                                class="btn btn-light d-flex justify-content-between align-items-center btn-lg dropdown-toggle w-100"
-                                                type="button" id="searchByYear" data-toggle="dropdown" aria-haspopup="true"
-                                                aria-expanded="false">
-                                                Select Year
-                                            </button>
-                                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="searchByYear">
-                                                <a class="dropdown-item" href="#">1999</a>
-                                                <a class="dropdown-item" href="#">2001</a>
-                                                <a class="dropdown-item" href="#">2002</a>
-                                                <a class="dropdown-item" href="#">2003</a>
-                                                <a class="dropdown-item" href="#">2004</a>
-                                                <a class="dropdown-item" href="#">2005</a>
-                                                <a class="dropdown-item" href="#">2006</a>
-                                                <a class="dropdown-item" href="#">2007</a>
-                                            </div>
-                                        </div>
-                                        <div class="dropdown mb-3">
-                                            <button
-                                                class="btn btn-light d-flex justify-content-between align-items-center btn-lg dropdown-toggle w-100"
-                                                type="button" id="searchByMake" data-toggle="dropdown" aria-haspopup="true"
-                                                aria-expanded="false">
-                                                Select Make
-                                            </button>
-                                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="searchByMake">
-                                                <a class="dropdown-item" href="#">MINI</a>
-                                                <a class="dropdown-item" href="#">Acura</a>
-                                                <a class="dropdown-item" href="#">Chevrolet</a>
-                                                <a class="dropdown-item" href="#">Koenigsegg</a>
-                                                <a class="dropdown-item" href="#">Seat</a>
-                                            </div>
-                                        </div>
-                                        <div class="dropdown mb-3">
-                                            <button
-                                                class="btn btn-light d-flex justify-content-between align-items-center btn-lg dropdown-toggle w-100"
-                                                type="button" id="searchByModel" data-toggle="dropdown" aria-haspopup="true"
-                                                aria-expanded="false">
-                                                Select Model
-                                            </button>
-                                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="searchByModel">
-                                                <a class="dropdown-item" href="#">1999</a>
-                                                <a class="dropdown-item" href="#">2001</a>
-                                                <a class="dropdown-item" href="#">2003</a>
-                                                <a class="dropdown-item" href="#">2004</a>
-                                                <a class="dropdown-item" href="#">2005</a>
-                                                <a class="dropdown-item" href="#">2006</a>
-                                                <a class="dropdown-item" href="#">2007</a>
-                                            </div>
-                                        </div>
-                                        <div class="dropdown mb-3">
-                                            <button
-                                                class="btn btn-light d-flex justify-content-between align-items-center btn-lg dropdown-toggle w-100"
-                                                type="button" id="searchByPartCategory" data-toggle="dropdown"
-                                                aria-haspopup="true" aria-expanded="false">
-                                                Select Part Category
-                                            </button>
-                                            <div class="dropdown-menu dropdown-menu-right"
-                                                aria-labelledby="searchByPartCategory">
-                                                <a class="dropdown-item" href="#">Lights</a>
-                                                <a class="dropdown-item" href="#">Radio</a>
-                                                <a class="dropdown-item" href="#">Transmission</a>
-                                                <a class="dropdown-item" href="#">Engine</a>
-                                                <a class="dropdown-item" href="#">Fuel System</a>
-                                                <a class="dropdown-item" href="#">Wheels</a>
-                                            </div>
-                                        </div>
-                                        <div class="dropdown mb-3">
-                                            <button
-                                                class="btn btn-light d-flex justify-content-between align-items-center btn-lg dropdown-toggle w-100"
-                                                type="button" id="searchByPart" data-toggle="dropdown" aria-haspopup="true"
-                                                aria-expanded="false">
-                                                Select Part
-                                            </button>
-                                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="searchByPart">
-                                                <a class="dropdown-item" href="#">Lights</a>
-                                                <a class="dropdown-item" href="#">Radio</a>
-                                                <a class="dropdown-item" href="#">Transmission</a>
-                                                <a class="dropdown-item" href="#">Engine</a>
-                                                <a class="dropdown-item" href="#">Fuel System</a>
-                                                <a class="dropdown-item" href="#">Wheels</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="btn_sec">
-                                        <button class="btn btn-primary">Search</button>
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="d-flex d-md-none align-items-center justify-content-end pb-4">
-                                <amp-img class="bnz_ship_1" src="../dist/img/icons/shipping_logo.png" alt=""></amp-img>
-                                <amp-img class="bnz_ship_4 mx-3" src="../dist/img/icons/warranty_logo.png" alt=""></amp-img>
-                            </div>
-                        </div>
-                        <div class="mobile_search_list d-flex d-md-none">
-                            <div class="col d-flex p-0">
-                                <h4 class="m-0 f_bold mark_srch_title">Search by make</h4>
-                                <div class="dropdown flex-fill">
-                                    <h4 class="m-0 dropdown-toggle text-left text-md-center" role="button" id="dropdownMenuLink"
-                                        data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false">
-                                        ---- Please Select
-                                        ----<img src="dist/img/icons/drop_arr.png" alt=""></h4>
-        
-                                    <div class="dropdown-menu dropdown-menu-right dropdown-menu dropdown-menu-right-right"
-                                        aria-labelledby="dropdownMenuLink">
-                                        <a class="dropdown-item" href="#">BMW</a>
-                                        <a class="dropdown-item" href="#">Mercedes-Benz</a>
-                                        <a class="dropdown-item" href="#">Land Rover</a>
-                                        <a class="dropdown-item" href="#">Audi</a>
-                                        <a class="dropdown-item" href="#">MINI</a>
-                                        <a class="dropdown-item" href="#">BMW</a>
-                                        <a class="dropdown-item" href="#">BMW</a>
-                                        <a class="dropdown-item" href="#">BMW</a>
-                                        <a class="dropdown-item" href="#">BMW</a>
-                                        <a class="dropdown-item" href="#">BMW</a>
-                                        <a class="dropdown-item" href="#">BMW</a>
-                                        <a class="dropdown-item view_drop" href="#">View All</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Pagination -->
-                        <nav class="d-block d-md-none" aria-label="breadcrumb">
-                            <ol class="breadcrumb mobile-breadcrumb">
-                                <li class="breadcrumb-item"><a href="/">Home</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Engine Assembly/ Long Block</li>
-                            </ol>
-                        </nav>
-                        <!-- pagination -->
-                        <div class="view_title">
-                            <h3 class="f_bold">Our Quality Assurance Process </h3>
-                            <p>We begin by dismantling, draining, capping and cleaning to produce quality assured and
-                                inspected, used OEM long block engines and motors for sale at affordable prices. Rather
-                                than rebuilding or buying a new engine, you can keep your replacement costs low and save
-                                up to 70% off MSRP when you buy with Benzeen. With a hassle-free 1 Year Warranty and
-                                team of knowledgeable part specialists always ready to help, you’ll see these are more
-                                than typical junkyard, salvage engines and motors.</p>
-                        </div>
-                        <div class="prod_grid mb-5">
-                            <div class="container grid_nav">
-                                <div class="row justify-content-between">
-                                    <div class="col-12 col-md-5 col-lg-4 grid_sort btn_sec dropdown">
-                                        <form class="sample-form" method="post" action-xhr="/components/amp-form/submit-form-xhr" target="_top">
-                                            <select name="sortby" id="sortby" class="w-100">
-                                                <option value="volvo">Sort by Price</option>
-                                                <option value="saab">Sort by Name</option>
-                                                <option value="fiat">Sort by Quantity</option>
-                                            </select>
-                                            <div submit-success>
-                                                Success!
-                                            </div>
-                                            <div submit-error>
-                                                Error!
-                                            </div>
-                                        </form>
-                                    </div>
-                                    <div class="col-12 col-md-6 col-xl-4 d-none d-md-flex justify-content-end view_by">
-                                        <a href=""
-                                            class="d-flex justify-content-center align-items-center f_bold mr-3 mr-lg-5 active">
-                                            <amp-img class="mr-3" src="../dist/img/icons/grid_view.png" width="21" height="22" alt=""></amp-img>
-                                            Grid View
-                                        </a>
-                                        <a href="" class="d-flex justify-content-center align-items-center f_bold">
-                                            <amp-img class="mr-3" src="../dist/img/icons/list_view.png" width="26" height="17" alt=""></amp-img>
-                                            List View
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product_grid_view mb-5">
-                                <div class="d-flex flex-wrap">
-                                    <div class="grid_view_card">
-                                        <div class="card">
-                                            <a href=""><amp-img class="card-img-top mb-3" src="../dist/img/parts/395579_05.jpg" width="300" height="200" alt="" layout="fixed"></amp-img></a>
-                                            <div class="card-body">
-                                                <h5 class="card-title"><a href="">ENGINE ASSEMBLY LAND ROVER RANGE ROV
-                                                        2001</a></h5>
-                                                <p class="card-text">
-                                                    <strong>Our Part #:</strong> 437267<br>
-                                                    <strong>SKU:</strong> 105-01636A<br>
-                                                    <strong>Stock:</strong> 9074GY<br>
-                                                    <strong>Condition:</strong> Used C-Grade<br>
-                                                </p>
-                                                <div class="price d-flex">
-                                                    <p class="was">Was <strike>$850.00</strike></p>
-                                                    <h5 class="now">$800</h5>
-                                                </div>
-                                                <div class="info d-flex flex-column flex-md-row align-items-start align-items-sm-center justify-content-between">
-                                                    <p class="msrp">MSRP : $450.00</p>
-                                                    <p class="pcnt f_bold">66% Off</p>
-                                                    <p class="status f_bold">Available</p>
-                                                </div>
-                                                <div class="ship_info d-inline-flex align-items-center">
-                                                    <p class="f_bold"><span>+</span> FREE SHIPPING</p>
-                                                    <amp-img src="../dist/img/icons/truck_card.svg" width="34" height="18" alt=""></amp-img>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="grid_view_card">
-                                        <div class="card">
-                                            <a href=""><amp-img class="card-img-top mb-3" src="../dist/img/parts/395579_03.jpg" width="300" height="200" alt="" layout="fixed"></amp-img></a>
-                                            <div class="card-body">
-                                                <h5 class="card-title"><a href="">ENGINE ASSEMBLY LAND ROVER RANGE ROV
-                                                        2001</a></h5>
-                                                <p class="card-text">
-                                                    <strong>Our Part #:</strong> 437267<br>
-                                                    <strong>SKU:</strong> 105-01636A<br>
-                                                    <strong>Stock:</strong> 9074GY<br>
-                                                    <strong>Condition:</strong> Used C-Grade<br>
-                                                </p>
-                                                <div class="price d-flex">
-                                                    <p class="was">Was <strike>$850.00</strike></p>
-                                                    <h5 class="now">$800</h5>
-                                                </div>
-                                                <div class="info d-flex flex-column flex-md-row align-items-start align-items-sm-center justify-content-between">
-                                                    <p class="msrp">MSRP : $450.00</p>
-                                                    <p class="pcnt f_bold">66% Off</p>
-                                                    <p class="status f_bold">Available</p>
-                                                </div>
-                                                <div class="ship_info d-inline-flex align-items-center">
-                                                    <p class="f_bold"><span>+</span> FREE SHIPPING</p>
-                                                    <amp-img src="../dist/img/icons/truck_card.svg" width="34" height="18" alt=""></amp-img>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="grid_view_card">
-                                        <div class="card">
-                                            <a href=""><amp-img class="card-img-top mb-3" src="../dist/img/parts/395579_04.jpg" width="300" height="200" alt="" layout="fixed"></amp-img></a>
-                                            <div class="card-body">
-                                                <h5 class="card-title"><a href="">ENGINE ASSEMBLY LAND ROVER RANGE ROV
-                                                        2001</a></h5>
-                                                <p class="card-text">
-                                                    <strong>Our Part #:</strong> 437267<br>
-                                                    <strong>SKU:</strong> 105-01636A<br>
-                                                    <strong>Stock:</strong> 9074GY<br>
-                                                    <strong>Condition:</strong> Used C-Grade<br>
-                                                </p>
-                                                <div class="price d-flex">
-                                                    <p class="was">Was <strike>$850.00</strike></p>
-                                                    <h5 class="now">$800</h5>
-                                                </div>
-                                                <div class="info d-flex flex-column flex-md-row align-items-start align-items-sm-center justify-content-between">
-                                                    <p class="msrp">MSRP : $450.00</p>
-                                                    <p class="pcnt f_bold">66% Off</p>
-                                                    <p class="status f_bold">Available</p>
-                                                </div>
-                                                <div class="ship_info d-inline-flex align-items-center">
-                                                    <p class="f_bold"><span>+</span> FREE SHIPPING</p>
-                                                    <amp-img src="../dist/img/icons/truck_card.svg" width="34" height="18" alt=""></amp-img>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="grid_view_card">
-                                        <div class="card">
-                                            <a href=""><amp-img class="card-img-top mb-3" src="../dist/img/parts/395579_04.jpg" width="300" height="200" alt="" layout="fixed"></amp-img></a>
-                                            <div class="card-body">
-                                                <h5 class="card-title"><a href="">ENGINE ASSEMBLY LAND ROVER RANGE ROV
-                                                        2001</a></h5>
-                                                <p class="card-text">
-                                                    <strong>Our Part #:</strong> 437267<br>
-                                                    <strong>SKU:</strong> 105-01636A<br>
-                                                    <strong>Stock:</strong> 9074GY<br>
-                                                    <strong>Condition:</strong> Used C-Grade<br>
-                                                </p>
-                                                <div class="price d-flex">
-                                                    <p class="was">Was <strike>$850.00</strike></p>
-                                                    <h5 class="now">$800</h5>
-                                                </div>
-                                                <div class="info d-flex flex-column flex-md-row align-items-start align-items-sm-center justify-content-between">
-                                                    <p class="msrp">MSRP : $450.00</p>
-                                                    <p class="pcnt f_bold">66% Off</p>
-                                                    <p class="status f_bold">Available</p>
-                                                </div>
-                                                <div class="ship_info d-inline-flex align-items-center">
-                                                    <p class="f_bold"><span>+</span> FREE SHIPPING</p>
-                                                    <amp-img src="../dist/img/icons/truck_card.svg" width="34" height="18" alt=""></amp-img>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="grid_load_more container">
-                                <div class="row justify-content-center">
-                                    <div class="col-12 col-md-6 col-lg-4 px-0 btn_sec">
-                                        <button
-                                            class="btn btn-primary btn-lg d-flex justify-content-center align-items-center w-100">Load
-                                            More Parts <amp-img class="ml-3" src="../dist/img/icons/load_more.png" width="19" height="19" alt=""></amp-img></button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- engine hero -->
-
-        <!-- Product Reviews -->
-        <section id="reviews" class="review_testim">
-            <div class="container">
-                <amp-img alt="" src="../dist/img/icons/review_icon.png" width="162" height="164"
-                                    layout="fixed" class="rev_icon"></amp-img>
                 <div class="row">
-                    <div class="col-12">
-                        <div class="rev_header text-center">
-                            <h2 class="ver_rev_title text-left">
-                                <span class="ver_r">Verified</span>
-                                <span class="rev_r">Reviews</span>
-                                <amp-img alt="" src="../dist/img/icons/review_sup.png" width="53" height="49"
-                                    layout="fixed"></amp-img>
-                            </h2>
-                            <div class="d-flex align-items-center justify-content-center rev_stars">
-                                <amp-img alt="" src="../dist/img/icons/full_star.png" width="22" height="21"
-                                    layout="fixed"></amp-img>
-                                <amp-img alt="" src="../dist/img/icons/full_star.png" width="22" height="21"
-                                    layout="fixed"></amp-img>
-                                <amp-img alt="" src="../dist/img/icons/full_star.png" width="22" height="21"
-                                    layout="fixed"></amp-img>
-                                <amp-img alt="" src="../dist/img/icons/full_star.png" width="22" height="21"
-                                    layout="fixed"></amp-img>
-                                <amp-img alt="" src="../dist/img/icons/empty_star.png" width="22" height="21"
-                                    layout="fixed"></amp-img>
+                    <div class="col-12 col-md-8">
+                        <div class="sec_title mb-433 mb-md-4">
+                            <h2 class="f_bold">Shopping Cart</h2>
+                        </div>
+                        <div class="card d-flex flex-column flex-sm-row align-items-center prod_shop_cart">
+                            <a href=""><amp-img class="card-img-top" src="../dist/img/parts/395579_05.jpg" width="270" height="202" alt=""></amp-img></a>
+                            <div class="card-body p-0">
+                                <h5 class="card-title">2005 LAND ROVER RANGE ROVER FUEL INJECT PARTS</h5>
+                                <div class="d-flex justify-content-between cart_info">
+                                    <div class="card-text d-flex flex-column justify-content-between">
+                                        <p><strong>Our Part #: </strong>437267</p>
+                                        <p><strong>SKU: </strong><a href="">105-01636A</a></p>
+                                        <p><strong>FUEL INJECTOR: </strong><span>105-01636A</span></p>
+                                    </div>
+                                    <div class="card-text d-flex flex-column justify-content-between align-items-end">
+                                        <p><strong>Did You: </strong><a href="">Verify Vehicle Fitment?</a></p>
+                                        <p><strong>Price: </strong><span>$ 80.00</span></p>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-end cart_info_2">
+                                    <amp-img src="../dist/img/icons/edit_cart.png" width="17" height="17" layout="fixed" alt=""></amp-img>
+                                    <div class="card-text d-flex flex-column justify-content-between align-items-end">
+                                        <p><strong>Warranty: </strong><a href="">2 years extended</a><span> : $
+                                                60.00</span></p>
+                                        <p><strong>(FedEx Ground) Shipping: </strong><span>Free</span></p>
+                                        <p><strong>Sub Total: </strong><span>$ 140.00</span></p>
+                                    </div>
+                                </div>
+                                <button class="remove_prod_cart">
+                                    <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="times"
+                                        role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" height="17">
+                                        <path fill="currentColor"
+                                            d="M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z"
+                                            class=""></path>
+                                    </svg>
+                                </button>
                             </div>
                         </div>
-                        <div class="rev_stat text-center">
-                            <p><span>4.6/5 Excellent</span> - Based on 212 Reviews</p>
+                        <div class="card d-flex flex-column flex-sm-row align-items-center prod_shop_cart">
+                            <a href=""><amp-img class="card-img-top" src="../dist/img/parts/part_01.png" width="270" height="202" alt=""></amp-img></a>
+                            <div class="card-body p-0">
+                                <h5 class="card-title">2005 LAND ROVER RANGE ROVER FUEL INJECT PARTS</h5>
+                                <div class="d-flex justify-content-between cart_info">
+                                    <div class="card-text d-flex flex-column justify-content-between">
+                                        <p><strong>Our Part #: </strong>437267</p>
+                                        <p><strong>SKU: </strong><a href="">105-01636A</a></p>
+                                        <p><strong>FUEL INJECTOR: </strong><span>105-01636A</span></p>
+                                    </div>
+                                    <div class="card-text d-flex flex-column justify-content-between align-items-end">
+                                        <p><strong>Did You: </strong><a href="">Verify Vehicle Fitment?</a></p>
+                                        <p><strong>Price: </strong><span>$ 80.00</span></p>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-end cart_info_2">
+                                    <amp-img src="../dist/img/icons/edit_cart.png" width="17" height="17" layout="fixed" alt=""></amp-img>
+                                    <div class="card-text d-flex flex-column justify-content-between align-items-end">
+                                        <p><strong>Warranty: </strong><a href="">2 years extended</a><span> : $
+                                                60.00</span></p>
+                                        <p><strong>(FedEx Ground) Shipping: </strong><span>Free</span></p>
+                                        <p><strong>Sub Total: </strong><span>$ 140.00</span></p>
+                                    </div>
+                                </div>
+                                <button class="remove_prod_cart">
+                                    <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="times"
+                                        role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" height="17">
+                                        <path fill="currentColor"
+                                            d="M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z"
+                                            class=""></path>
+                                    </svg>
+                                </button>
+                            </div>
                         </div>
-                        <amp-carousel height="300" layout="fixed-height" type="slides">
-                            <div class="swiper-slide text-center">
-                                <p class="review_text">“ The part I ordered came sooner than expected. <br>The
-                                    price was the best advertised online and works perfectly. <br>Thanks for great
-                                    service! ”</p>
-                                <h4>- Tracy B.</h4>
-                                <span>07-17-2017 by Tracy B. Order date 07-07-2017</span>
+                        <div class="card flex-row align-items-center prod_shop_cart total_cart">
+                            <div class="card-body p-0">
+                                <div class="d-flex justify-content-end total_info">
+                                    <div class="card-text d-flex flex-column justify-content-between align-items-end">
+                                        <p><strong>Tax: </strong><span>$ 10.00</span></p>
+                                        <p><strong>Shipping: </strong><span>$ 30.00</span></p>
+                                    </div>
+                                </div>
+                                <h4 class="total_title">Total (2 items): <span>$ 290.00</span></h4>
                             </div>
-                            <div class="swiper-slide text-center">
-                                <p class="review_text">“ Thanks for great service! The part I ordered came sooner
-                                    than expected. <br>The
-                                    price was the best advertised online and works perfectly. ”</p>
-                                <h4>- Luke D.</h4>
-                                <span>05-30-2016 by Luke D. Order date 07-07-2017</span>
-                            </div>
-                            <div class="swiper-slide text-center">
-                                <p class="review_text">“ The part I ordered came sooner than expected. <br>The
-                                    price was the best advertised online and works perfectly. <br>Thanks for great
-                                    service! ”</p>
-                                <h4>- Tracy B.</h4>
-                                <span>07-17-2017 by Tracy B. Order date 07-07-2017</span>
-                            </div>
-                        </amp-carousel>
+                        </div>
                     </div>
-                    <div class="col-12 text-center">
-                        <div class="btn_sec">
-                            <button class="btn btn-primary">View All</button>
+                    <div class="col-12 col-md-4 cart_payment_sec">
+                        <div class="sec_title mb-4">
+                            <h3 class="f_bold">Cart summary (2 item)</h3>
+                            <h3 class="f_bold price">Total: $290</h3>
+                        </div>
+                        <div class="cart_payment_methods">
+                            <button
+                                class="btn btn-warning btn-block f_boldest d-flex justify-content-center align-items-center w-100"
+                                type="button">Check out with<amp-img src="../dist/img/icons/paypal.svg" width="113" height="30" layout="fixed" alt=""></amp-img></button>
+                            <button class="btn btn-primary btn-block f_bold w-100" type="button">Proceed to checkout</button>
+                            <button class="btn btn-secondary btn-block f_bold w-100" type="button">Continue shopping</button>
+                        </div>
+                        <div class="cart_payment_options">
+                            <h3 class="f_bold">Payment Options</h3>
+                            <div class="d-flex justify-content-start align-items-center flex-wrap">
+                                <amp-img src="../dist/img/icons/visa_p.png" width="56" height="35" alt=""></amp-img>
+                                <amp-img src="../dist/img/icons/amex_p.png" width="66" height="35" alt=""></amp-img>
+                                <amp-img src="../dist/img/icons/master_p.png" width="57" height="35" alt=""></amp-img>
+                                <amp-img src="../dist/img/icons/paypal_p.png" width="142" height="35" alt=""></amp-img>
+                            </div>
+                        </div>
+                        <div class="cart_security">
+                            <h3 class="f_bold">Payment Options</h3>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <amp-img src="../dist/img/icons/godaddy.png" width="163" height="40" alt=""></amp-img>
+                                <amp-img src="../dist/img/icons/mcafee.png" width="96" height="40" alt=""></amp-img>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- product reviews -->
-
+        <!-- shipping cart -->
+        
         <!-- Assurance -->
         <section id="assurance" class="order-3">
             <div class="container">
