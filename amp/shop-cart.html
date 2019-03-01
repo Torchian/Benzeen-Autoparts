@@ -2827,7 +2827,7 @@
 
         @media (max-width: 991.98px) {
             .sec_title h2 {
-                font-size: 20px;
+                font-size: 23px;
             }
 
             .btn-lg {
@@ -2843,40 +2843,7 @@
             .part_card_one .card {
                 padding: 20px 5%;
             }
-        }
-
-        .payments {
-            margin: 45px 0 55px 30px;
-        }
-
-        .payments amp-img {
-            margin-right: 40px;
-        }
-
-        .phone_info {
-            margin-left: 12px;
-        }
-
-        .phone_info h3 {
-            font-size: 30px;
-            color: #f0ad4e;
-            font-weight: bold;
-            line-height: 0.802;
-        }
-
-        .phone_info p {
-            font-size: 11px;
-            color: #eeeeee;
-            line-height: 1.136;
-        }
-        @media (max-width: 1220px) {
-  footer .footer_nav .footer_socials a i {
-    font-size: 25px;
-    padding: 0 13px;
-  }
-        }
-        @media (max-width: 991.98px) {
-  footer .footer_nav {
+            footer .footer_nav {
     padding-left: 10px;
     padding-right: 10px;
     padding: 30px 0 20px;
@@ -2918,9 +2885,51 @@
     margin-left: 0;
     margin: 0 5px;
   }
+  #assurance {
+  background-attachment: unset;
 }
+#assurance .sec_title p {
+  font-size: 19px;
+}
+#assurance .assur_body .assur_col .assur_img {
+  height: 137px;
+  width: 137px;
+  margin-bottom: 20px;
+}
+        }
+
+        .payments {
+            margin: 45px 0 55px 30px;
+        }
+
+        .payments amp-img {
+            margin-right: 40px;
+        }
+
+        .phone_info {
+            margin-left: 12px;
+        }
+
+        .phone_info h3 {
+            font-size: 30px;
+            color: #f0ad4e;
+            font-weight: bold;
+            line-height: 0.802;
+        }
+
+        .phone_info p {
+            font-size: 11px;
+            color: #eeeeee;
+            line-height: 1.136;
+        }
+        @media (max-width: 1220px) {
+  footer .footer_nav .footer_socials a i {
+    font-size: 25px;
+    padding: 0 13px;
+  }
+        }
         @media (max-width: 767.98px) {
-            .sec_title {
+            #assurance .sec_title {
     margin-bottom: 20px;
 }
             #shipping_cart {
@@ -2982,6 +2991,9 @@
 }
 .prod_shop_cart .cart_info .card-text:last-child {
     text-align: right;
+}
+#assurance {
+    background-size: cover;
 }
         }
         @media (max-width: 575.98px) {
@@ -3398,7 +3410,7 @@
                         </div>
                         <div class="cart_payment_options">
                             <h3 class="f_bold">Payment Options</h3>
-                            <div class="d-flex justify-content-start align-items-center flex-wrap">
+                            <div class="d-flex justify-content-start align-items-center flex-wrap" style="position: relative;">
                                 <amp-img src="../dist/img/icons/visa_p.png" width="56" height="35" alt=""></amp-img>
                                 <amp-img src="../dist/img/icons/amex_p.png" width="66" height="35" alt=""></amp-img>
                                 <amp-img src="../dist/img/icons/master_p.png" width="57" height="35" alt=""></amp-img>
@@ -3430,8 +3442,8 @@
                             can always rely on us and your part.</p>
                     </div>
                 </div>
-                <div class="row d-flex justify-content-between align-items-center assur_body">
-                    <div class="col-6 col-md-3 d-flex flex-column align-items-center text-center assur_col">
+                <div class="row d-flex justify-content-between align-items-stretch assur_body">
+                    <div class="col-6 col-md-3 d-flex flex-column align-items-center text-center assur_col mb-4">
                         <span class="assur_img d-flex align-items-center justify-content-center">
                             <amp-img alt="" src="../dist/img/icons/assur_1.png" width="83" height="54" layout="fixed">
                             </amp-img>
@@ -3439,7 +3451,7 @@
                         <h3>1 YEAR <br>WARRANTY</h3>
                         <p>Hassle-free, Satisfaction <br>Guaranteed.</p>
                     </div>
-                    <div class="col-6 col-md-3 d-flex flex-column align-items-center text-center assur_col">
+                    <div class="col-6 col-md-3 d-flex flex-column align-items-center text-center assur_col mb-4">
                         <span class="assur_img d-flex align-items-center justify-content-center">
                             <amp-img alt="" src="../dist/img/icons/assur_2.png" width="72" height="84" layout="fixed">
                             </amp-img>
@@ -3447,7 +3459,7 @@
                         <h3>QUALITY <br>ASSURED PARTS</h3>
                         <p>All Parts are Quality Tested <br>& Inspected.</p>
                     </div>
-                    <div class="col-6 col-md-3 d-flex flex-column align-items-center text-center assur_col">
+                    <div class="col-6 col-md-3 d-flex flex-column align-items-center text-center assur_col mb-4">
                         <span class="assur_img d-flex align-items-center justify-content-center">
                             <amp-img alt="" src="../dist/img/icons/assur_3.png" width="75" height="76" layout="fixed">
                             </amp-img>
@@ -3455,7 +3467,7 @@
                         <h3>24 HOUR <br>HANDLING</h3>
                         <p>Parts Leave in 24 Business <br>Hours to Lower 48 States.</p>
                     </div>
-                    <div class="col-6 col-md-3 d-flex flex-column align-items-center text-center assur_col">
+                    <div class="col-6 col-md-3 d-flex flex-column align-items-center text-center assur_col mb-4">
                         <span class="assur_img d-flex align-items-center justify-content-center">
                             <amp-img alt="" src="../dist/img/icons/assur_4.png" width="53" height="66" layout="fixed">
                             </amp-img>
